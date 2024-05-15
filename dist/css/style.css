@@ -275,6 +275,18 @@ body {
   background-image: url("../img/bg.webp");
 }
 
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 16px;
+  background-color: #fff;
+  height: 100%;
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  background: #6FAA54;
+}
+
 button,
 input {
   font-weight: inherit;

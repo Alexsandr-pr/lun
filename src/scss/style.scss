@@ -44,6 +44,17 @@ body {
     font-family: "Roboto";
     background-color: #115E2A;
     background-image: url("@img/bg.webp");
+    &::-webkit-scrollbar {
+        width: 16px;
+        background-color: #fff;
+        
+        height: 100%;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background: #6FAA54;
+        
+    }
 }
 button,
 input {
