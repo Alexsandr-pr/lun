@@ -4,12 +4,15 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css">
-	<link rel="stylesheet" href="path/to/air-datepicker.css">
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="path/to/locales/datepicker.en.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@2.2.3/dist/css/datepicker.min.css">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240515145755">
+	<link rel="stylesheet" href="path/to/air-datepicker.css?_v=20240515145755">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20240515145755"></script>
+	<script src="path/to/locales/datepicker.en.js?_v=20240515145755"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;700&display=swap&_v=20240515145755" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js?_v=20240515145755"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@2.2.3/dist/css/datepicker.min.css?_v=20240515145755">
 	<title>Главная</title>
 </head>
 	<body>
@@ -31,7 +34,7 @@
               </svg>
             <form  action="#">
                 <label class="header__search" for="search">
-                    <img class="header__image-search" src="img/header/search.svg" alt="search">
+                    <picture><source srcset="img/header/search.webp" type="image/webp"><img width="24" height="24" class="header__image-search" src="img/header/search.webp" alt="search"></picture>
                     <input autocomplete="off" class="header__search-input" id="search" type="search" placeholder="Search">
                 </label>
             </form>
@@ -51,7 +54,7 @@
 
         <div class="header__buttons">
             <button class="header__button-search">
-                <img src="img/header/search.svg" alt="search">
+                <picture><source srcset="img/header/search.webp" type="image/webp"><img width="24" height="24" src="img/header/search.webp" alt="search"></picture>
             </button>
             <button class="header__button-menu icon-menu">
                 <svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="40" onclick="this.classList.toggle('active')">
@@ -77,7 +80,7 @@
 							<aside class="main-block__aside aside">
 
 								<div class="aside__image-top">
-									<img src="img/main/aside/image-top.png" alt="">
+									<picture><source srcset="img/main/aside/image-top.webp" type="image/webp"><img src="img/main/aside/image-top.png" alt=""></picture>
 								</div>
 								<div class="aside__menu">
 									<div class="aside__select select">
@@ -281,7 +284,7 @@
 										</li>
 									</ul>
 									<div class="aside__bottom">
-										<a href="">Legal - Privacidad</a>
+										<a href="/">Legal - Privacidad</a>
 									</div>
 								</div>
 								
@@ -297,12 +300,22 @@
 											</svg>
 											LUN
 										</button>
-										<button class="top-header__select">
-											<span>partidos de</span> HOY
-											<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-												<path fill-rule="evenodd" clip-rule="evenodd" d="M4.45828 8.16715C4.51311 8.26225 4.59202 8.34123 4.68707 8.39615C4.78213 8.45107 4.88997 8.47998 4.99974 8.47998C5.10952 8.47998 5.21736 8.45107 5.31241 8.39615C5.40746 8.34123 5.48637 8.26225 5.5412 8.16715L9.1387 1.93631C9.19356 1.8413 9.22243 1.73353 9.22243 1.62382C9.22244 1.51411 9.19356 1.40633 9.13871 1.31132C9.08385 1.21631 9.00496 1.13741 8.90995 1.08255C8.81494 1.0277 8.70716 0.998817 8.59745 0.998814H1.40245C1.29274 0.998817 1.18497 1.0277 1.08996 1.08255C0.994946 1.13741 0.916049 1.21631 0.861196 1.31132C0.806343 1.40633 0.777465 1.51411 0.777466 1.62382C0.777467 1.73353 0.806345 1.8413 0.8612 1.93631L4.4587 8.16715H4.45828Z" fill="white"/>
-											</svg>
-										</button>
+										<div class="top-header__select header-select ">
+											<button class="header-select__button">
+												<span>partidos de</span> HOY
+												<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M4.45828 8.16715C4.51311 8.26225 4.59202 8.34123 4.68707 8.39615C4.78213 8.45107 4.88997 8.47998 4.99974 8.47998C5.10952 8.47998 5.21736 8.45107 5.31241 8.39615C5.40746 8.34123 5.48637 8.26225 5.5412 8.16715L9.1387 1.93631C9.19356 1.8413 9.22243 1.73353 9.22243 1.62382C9.22244 1.51411 9.19356 1.40633 9.13871 1.31132C9.08385 1.21631 9.00496 1.13741 8.90995 1.08255C8.81494 1.0277 8.70716 0.998817 8.59745 0.998814H1.40245C1.29274 0.998817 1.18497 1.0277 1.08996 1.08255C0.994946 1.13741 0.916049 1.21631 0.861196 1.31132C0.806343 1.40633 0.777465 1.51411 0.777466 1.62382C0.777467 1.73353 0.806345 1.8413 0.8612 1.93631L4.4587 8.16715H4.45828Z" fill="white"/>
+												</svg>
+											</button>
+											<div class="header-select__block">
+												<div class="header-select__option">
+													<span>partidos de</span> HOY
+												</div>
+												<div class="header-select__option">
+													<span>partidos de</span> HOY
+												</div>
+											</div>
+										</div>
 
 										<button class="top-header__button">
 											MIE
@@ -313,32 +326,32 @@
 									</div>
 									<div class="content-header__bottom botton-header">
 										<div class="botton-header__buttons">
-											<button data-border class="button-border active">TODOS</button>
-											<button data-border class="button-border">VIVO (12)</button>
+											<button data-border class="button-border button-gr active">TODOS</button>
+											<button data-border class="button-border button-red">VIVO (12)</button>
 										</div>
 										<div class="botton-header__buttons">
-											<button class="button-green">
+											<button class="button-green ">
 												CUOTAS
 											</button>
-											<button class="button-green">
-												<img src="img/main/content/icon/on.svg" alt="">
+											<button class="button-green button-off active">
+												
 											</button>
 										</div>
 									</div>
 								</div>
 
 								<div class="main-content__items">
-									<div data-spollers class="main-content__item item-event active">
+									<div style="transition: all 0.4s ease 0s;" data-spollers class="main-content__item item-event active  _anim-items anim-bottom">
 										<div data-spoller class="item-event__button ">
 											<div class="item-event__left">
 												<p>CONCACAF CHAMPIONS</p>
 											</div>
 											<div class="item-event__right icons-menu">
-												<button class="icons-menu__button">
-													<img src="img/main/content/icon/on.svg" alt="">
+												<button data-off class="icons-menu__button data-off">
+													
 												</button>
 												<button class="icons-menu__button ">
-													<img class="chevron" src="img/main/content/icon/chevron.svg" alt="">
+													<picture><source srcset="img/main/content/icon/chevron.webp" type="image/webp"><img class="chevron" src="img/main/content/icon/chevron.webp" alt="chevron"></picture>
 												</button>
 											</div>
 										</div>
@@ -347,16 +360,16 @@
 												<div class="item-event__match match">
 													<div class="match__body">
 														<div class="match__item match-item">
-															<img class="match-item__image" src="img/main/content/teams/tigre.svg" alt="team">
+															<picture><source srcset="img/main/content/teams/tigre.webp" type="image/webp"><img class="match-item__image" src="img/main/content/teams/tigre.webp" alt="team"></picture>
 															<p class="match-item__name">UANL Tigers</p>
 														</div>
 														<div class="match__canal canal">
-															<img class="canal__image" src="img/main/content/teams/tv.svg" alt="tv">
+															<picture><source srcset="img/main/content/teams/tv.webp" type="image/webp"><img class="canal__image" src="img/main/content/teams/tv.webp" alt="tv"></picture>
 															<p class="canal__time">18:00</p>
 														</div>
 														
 														<div class="match__item match-item">
-															<img class="match-item__image" src="img/main/content/teams/usa.svg" alt="team">
+															<picture><source srcset="img/main/content/teams/usa.webp" type="image/webp"><img class="match-item__image" src="img/main/content/teams/usa.webp" alt="team"></picture>
 															<p class="match-item__name">Columbus Crew</p>
 														</div>
 													</div>
@@ -368,17 +381,17 @@
 											</div>
 										</div>
 									</div>
-									<div data-spollers class="main-content__item item-event active">
+									<div style="transition: all 0.5s ease 0s;" data-spollers class="main-content__item item-event active _anim-items anim-bottom">
 										<div data-spoller class="item-event__button ">
 											<div class="item-event__left">
 												<p>CONCACAF CHAMPIONS</p>
 											</div>
 											<div class="item-event__right icons-menu">
-												<button class="icons-menu__button">
-													<img src="img/main/content/icon/on.svg" alt="">
+												<button data-off class="icons-menu__button data-off">
+													
 												</button>
 												<button class="icons-menu__button ">
-													<img class="chevron" src="img/main/content/icon/chevron.svg" alt="">
+													<picture><source srcset="img/main/content/icon/chevron.webp" type="image/webp"><img class="chevron" src="img/main/content/icon/chevron.webp" alt="chevron"></picture>
 												</button>
 											</div>
 										</div>
@@ -387,16 +400,16 @@
 												<div class="item-event__match match">
 													<div class="match__body">
 														<div class="match__item match-item">
-															<img class="match-item__image" src="img/main/content/teams/tigre.svg" alt="team">
+															<picture><source srcset="img/main/content/teams/tigre.webp" type="image/webp"><img class="match-item__image" src="img/main/content/teams/tigre.webp" alt="team"></picture>
 															<p class="match-item__name">UANL Tigers</p>
 														</div>
 														<div class="match__canal canal">
-															<img class="canal__image" src="img/main/content/teams/tv.svg" alt="tv">
+															<picture><source srcset="img/main/content/teams/tv.webp" type="image/webp"><img class="canal__image" src="img/main/content/teams/tv.webp" alt="tv"></picture>
 															<p class="canal__time">18:00</p>
 														</div>
 														
 														<div class="match__item match-item">
-															<img class="match-item__image" src="img/main/content/teams/usa.svg" alt="team">
+															<picture><source srcset="img/main/content/teams/usa.webp" type="image/webp"><img class="match-item__image" src="img/main/content/teams/usa.webp" alt="team"></picture>
 															<p class="match-item__name">Columbus Crew</p>
 														</div>
 													</div>
@@ -405,16 +418,16 @@
 												<div class="item-event__match match">
 													<div class="match__body">
 														<div class="match__item match-item">
-															<img class="match-item__image" src="img/main/content/teams/tigre.svg" alt="team">
+															<picture><source srcset="img/main/content/teams/tigre.webp" type="image/webp"><img class="match-item__image" src="img/main/content/teams/tigre.webp" alt="team"></picture>
 															<p class="match-item__name">UANL Tigers</p>
 														</div>
 														<div class="match__canal canal">
-															<img class="canal__image" src="img/main/content/teams/tv.svg" alt="tv">
+															<picture><source srcset="img/main/content/teams/tv.webp" type="image/webp"><img class="canal__image" src="img/main/content/teams/tv.webp" alt="tv"></picture>
 															<p class="canal__time">18:00</p>
 														</div>
 														
 														<div class="match__item match-item">
-															<img class="match-item__image" src="img/main/content/teams/usa.svg" alt="team">
+															<picture><source srcset="img/main/content/teams/usa.webp" type="image/webp"><img class="match-item__image" src="img/main/content/teams/usa.webp" alt="team"></picture>
 															<p class="match-item__name">Columbus Crew</p>
 														</div>
 													</div>
@@ -426,17 +439,17 @@
 											</div>
 										</div>
 									</div>
-									<div data-spollers class="main-content__item item-event active">
+									<div style="transition: all 0.6s ease 0s;" data-spollers class="main-content__item item-event active _anim-items anim-bottom">
 										<div data-spoller class="item-event__button ">
 											<div class="item-event__left">
 												<p>CONCACAF CHAMPIONS</p>
 											</div>
 											<div class="item-event__right icons-menu">
-												<button class="icons-menu__button">
-													<img src="img/main/content/icon/on.svg" alt="">
+												<button data-off class="icons-menu__button data-off">
+													
 												</button>
 												<button class="icons-menu__button ">
-													<img class="chevron" src="img/main/content/icon/chevron.svg" alt="">
+													<picture><source srcset="img/main/content/icon/chevron.webp" type="image/webp"><img class="chevron" src="img/main/content/icon/chevron.webp" alt="chevron"></picture>
 												</button>
 											</div>
 										</div>
@@ -445,21 +458,21 @@
 												<div class="item-event__match match">
 													<div class="match__body">
 														<div class="match__item match-item">
-															<img width="30" height="30" class="match-item__image" src="img/main/content/teams/tigre.svg" alt="team">
+															<picture><source srcset="img/main/content/teams/tigre.webp" type="image/webp"><img width="30" height="30" class="match-item__image" src="img/main/content/teams/tigre.webp" alt="team"></picture>
 															<p class="match-item__name">UANL Tigers</p>
 														</div>
 														<div class="match__canal canal-round">
 															<p  class="canal-round__text">VIVO</p>
 															<div class="canal-round__body">
 																<p  class="canal-round__number">0</p>
-																<img class="canal__image" src="img/main/content/teams/tv.svg" alt="tv">
+																<picture><source srcset="img/main/content/teams/tv.webp" type="image/webp"><img class="canal__image" src="img/main/content/teams/tv.webp" alt="tv"></picture>
 																<p class="canal-round__number">0</p>
 															</div>
 															<p class="canal-round__text">45+5’</p>
 														</div>
 														
 														<div class="match__item match-item">
-															<img width="30" height="30" class="match-item__image" src="img/main/content/teams/usa.svg" alt="team">
+															<picture><source srcset="img/main/content/teams/usa.webp" type="image/webp"><img width="30" height="30" class="match-item__image" src="img/main/content/teams/usa.webp" alt="team"></picture>
 															<p class="match-item__name">Columbus Crew</p>
 														</div>
 													</div>
@@ -472,17 +485,17 @@
 											</div>
 										</div>
 									</div>
-									<div data-spollers class="main-content__item item-event active">
+									<div style="transition: all 0.7s ease 0s;" data-spollers class="main-content__item item-event active _anim-items anim-bottom">
 										<div data-spoller class="item-event__button ">
 											<div class="item-event__left">
 												<p>CONCACAF CHAMPIONS</p>
 											</div>
 											<div class="item-event__right icons-menu">
-												<button class="icons-menu__button">
-													<img src="img/main/content/icon/on.svg" alt="">
+												<button data-off class="icons-menu__button data-off">
+													
 												</button>
 												<button class="icons-menu__button ">
-													<img class="chevron" src="img/main/content/icon/chevron.svg" alt="">
+													<picture><source srcset="img/main/content/icon/chevron.webp" type="image/webp"><img class="chevron" src="img/main/content/icon/chevron.webp" alt="chevron"></picture>
 												</button>
 											</div>
 										</div>
@@ -491,21 +504,21 @@
 												<div class="item-event__match match">
 													<div class="match__body">
 														<div class="match__item match-item">
-															<img width="30" height="30" class="match-item__image" src="img/main/content/teams/tigre.svg" alt="team">
+															<picture><source srcset="img/main/content/teams/tigre.webp" type="image/webp"><img width="30" height="30" class="match-item__image" src="img/main/content/teams/tigre.webp" alt="team"></picture>
 															<p class="match-item__name">UANL Tigers</p>
 														</div>
 														<div class="match__canal canal-round">
 															<p  class="canal-round__text">VIVO</p>
 															<div class="canal-round__body">
 																<p  class="canal-round__number">3</p>
-																<img class="canal__image" src="img/main/content/teams/tv.svg" alt="tv">
+																<picture><source srcset="img/main/content/teams/tv.webp" type="image/webp"><img class="canal__image" src="img/main/content/teams/tv.webp" alt="tv"></picture>
 																<p class="canal-round__number">1</p>
 															</div>
 															<p class="canal-round__text">45+5’</p>
 														</div>
 														
 														<div class="match__item match-item">
-															<img width="30" height="30" class="match-item__image" src="img/main/content/teams/usa.svg" alt="team">
+															<picture><source srcset="img/main/content/teams/usa.webp" type="image/webp"><img width="30" height="30" class="match-item__image" src="img/main/content/teams/usa.webp" alt="team"></picture>
 															<p class="match-item__name">Columbus Crew</p>
 														</div>
 													</div>
@@ -535,17 +548,17 @@
 											</div>
 										</div>
 									</div>
-									<div data-spollers class="main-content__item item-event">
+									<div data-spollers class="main-content__item item-event _anim-items anim-bottom">
 										<div data-spoller class="item-event__button">
 											<div class="item-event__left">
 												<p>CONCACAF CHAMPIONS</p>
 											</div>
 											<div class="item-event__right icons-menu">
-												<button class="icons-menu__button">
-													<img src="img/main/content/icon/on.svg" alt="">
+												<button data-off class="icons-menu__button data-off">
+													
 												</button>
 												<button class="icons-menu__button ">
-													<img class="chevron" src="img/main/content/icon/chevron.svg" alt="">
+													<picture><source srcset="img/main/content/icon/chevron.webp" type="image/webp"><img class="chevron" src="img/main/content/icon/chevron.webp" alt="chevron"></picture>
 												</button>
 											</div>
 										</div>
@@ -554,21 +567,21 @@
 												<div class="item-event__match match">
 													<div class="match__body">
 														<div class="match__item match-item">
-															<img width="30" height="30" class="match-item__image" src="img/main/content/teams/tigre.svg" alt="team">
+															<picture><source srcset="img/main/content/teams/tigre.webp" type="image/webp"><img width="30" height="30" class="match-item__image" src="img/main/content/teams/tigre.webp" alt="team"></picture>
 															<p class="match-item__name">UANL Tigers</p>
 														</div>
 														<div class="match__canal canal-round">
 															<p  class="canal-round__text">VIVO</p>
 															<div class="canal-round__body">
 																<p  class="canal-round__number">3</p>
-																<img class="canal__image" src="img/main/content/teams/tv.svg" alt="tv">
+																<picture><source srcset="img/main/content/teams/tv.webp" type="image/webp"><img class="canal__image" src="img/main/content/teams/tv.webp" alt="tv"></picture>
 																<p class="canal-round__number">1</p>
 															</div>
 															<p class="canal-round__text">45+5’</p>
 														</div>
 														
 														<div class="match__item match-item">
-															<img width="30" height="30" class="match-item__image" src="img/main/content/teams/usa.svg" alt="team">
+															<picture><source srcset="img/main/content/teams/usa.webp" type="image/webp"><img width="30" height="30" class="match-item__image" src="img/main/content/teams/usa.webp" alt="team"></picture>
 															<p class="match-item__name">Columbus Crew</p>
 														</div>
 													</div>
@@ -609,7 +622,7 @@
 										<div class="bottom-info__item info-item">
 											<p class="bottom-info__label">Anniversaries</p>
 											<div class="info-item__block">
-												<img src="img/main/content/teams/everton.svg" alt="Everton">
+												<picture><source srcset="img/main/content/teams/everton.webp" type="image/webp"><img src="img/main/content/teams/everton.webp" alt="Everton"></picture>
 												<div class="info-item__body">
 													<p class="info-item__title">Everton (La Plata - Bs. As.)</p>
 													<div class="info-item__text">cumple hoy 119 años desde su fundación.</div>
@@ -648,18 +661,14 @@
 				<div class="calendar__wrapper">
 					<div id="input" class="calendar__body">
 						<button class="calendar-close">
-							<img src="img/Vector.png" alt="close">
+							<picture><source srcset="img/Vector.webp" type="image/webp"><img src="img/Vector.png" alt="close"></picture>
 						</button>
 					</div>
 				</div>
 			</main>
-			<footer class="footer">
-    <div class="footer__container">
-        
-    </div>
-</footer>
+			
 		</div>
-		<script src="https://cdn.jsdelivr.net/npm/air-datepicker@2.2.3/dist/js/datepicker.min.js"></script>
-		<script src="js/app.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/air-datepicker@2.2.3/dist/js/datepicker.min.js?_v=20240515145755"></script>
+		<script src="js/app.min.js?_v=20240515145755"></script>
 	</body>
 </html>

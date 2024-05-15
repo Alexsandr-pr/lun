@@ -1,6 +1,6 @@
 import * as flsFunctions from "./modules/functions.js";
 flsFunctions.isWebp();
-import AirDatepicker from 'air-datepicker';
+
 
 import burgerMenu from "./ui/burger.js";
 burgerMenu();
@@ -15,6 +15,45 @@ accordion();
 //import DynamicAdapt from "./modules/dynamicadapt.js";
 //const da = new DynamicAdapt("max");
 //da.init();
+
+
+const animItems = document.querySelectorAll("._anim-items");
+
+if(animItems.length > 0) {
+
+    window.addEventListener("scroll" , animOmScroll );
+    function animOmScroll() {
+        for(let index = 0; index < animItems.length; index++) {
+            const animItem = animItems[index];
+            const offsetHeight = offset(animItem).top;
+            const elementHeight = animItem.scrollHeight;
+            const animNumber = 4;
+
+            let startAnim = window.innerHeight - elementHeight/animNumber;
+            if(window.innerHeight > elementHeight) {
+                startAnim = window.innerHeight - elementHeight/animNumber;
+            }
+
+            if((scrollY > offsetHeight - startAnim) && scrollY < (offsetHeight + elementHeight)) {
+                animItem.classList.add("_start-anim");
+            } 
+            
+
+        }
+    }
+
+    function offset(el) {
+        const rect = el.getBoundingClientRect(),
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        return {top: rect.top + scrollTop, left: rect.left + scrollLeft};
+    }
+
+    setTimeout(()=> {
+        animOmScroll();
+    }, 300);
+}
+
 
 $(document).ready(function(){
     $('#input').datepicker({
@@ -136,25 +175,66 @@ const calendarClose = document.querySelector(".calendar-close");
 const calendarActive = document.querySelector(".calendar-active");
 
 calendarActive.addEventListener("click", () => {
+    calendarActive.classList.add("active");
     calendarWrapper.style.display = "flex";
     document.body.style.overflow = "hidden";
     deleteClass()
 })
 
 calendarClose.addEventListener("click", () => {
+    calendarActive.classList.remove("active");
     calendarWrapper.style.display = "none";
     document.body.style.overflow = "";
-    
+})
+
+calendarWrapper.addEventListener("click", (e) => {
+    if(e.target.classList.contains("calendar__wrapper")) {
+        calendarActive.classList.remove("active");
+        calendarWrapper.style.display = "none";
+        document.body.style.overflow = "";
+    }
 })
 
 
+const buttonsOff = document.querySelectorAll("[data-off]");
+
+buttonsOff.forEach(item => {
+    item.addEventListener("click", () => {
+        item.classList.toggle("active")
+    })
+})
 
 
-const buttonsBorders = document.querySelectorAll("[data-border]");
+function changeActive(selector) {
+    const buttonsBorders = document.querySelectorAll(selector);
+    
+    buttonsBorders.forEach(item => {
 
-buttonsBorders.forEach(item => {
-	item.addEventListener("click", (e) => {
-		buttonsBorders.forEach(item => item.classList.remove("active"));
-		e.target.classList.add("active")
-	})
+        item.addEventListener("click", (e) => {
+            buttonsBorders.forEach(item => item.classList.remove("active"));
+            e.target.classList.add("active")
+        })
+    })
+}
+
+changeActive("[data-border]");
+changeActive(".button-green")
+
+
+
+
+
+
+const selectButton = document.querySelector(".header-select__button");
+const selectParent = document.querySelector(".header-select")
+
+selectButton.addEventListener("click", () => {
+    selectParent.classList.toggle("active")
+})
+
+const selectOption = document.querySelectorAll(".header-select__option");
+selectOption.forEach(item => {
+    item.addEventListener("click", () => {
+        selectParent.classList.remove("active")
+    })
 })

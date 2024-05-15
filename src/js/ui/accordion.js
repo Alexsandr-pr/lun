@@ -8,16 +8,18 @@
 const accordion = () => {
 	const trigger = document.querySelectorAll("[data-spoller]");   
 	trigger.forEach(item => {
-		item.addEventListener("click", ()=> {
-			const parent = item.parentElement;
-			const content = item.nextElementSibling;
-			parent.classList.toggle("active");
-
-			if(parent.classList.contains("active")) {
-				content.style.maxHeight = content.scrollHeight + "px";
-			} else {
-				content.style.maxHeight = 0;
+		item.addEventListener("click", (e)=> {
+			if(!e.target.classList.contains("data-off")) {
+				const parent = item.parentElement;
+				const content = item.nextElementSibling;
+				parent.classList.toggle("active");
+				if(parent.classList.contains("active")) {
+					content.style.maxHeight = content.scrollHeight + "px";
+				} else {
+					content.style.maxHeight = 0;
+				}
 			}
+			
 		});
 	});
 };

@@ -18,7 +18,7 @@
             top: 0px;
             transition: all 0.3s ease 0s;
             right: -120%;
-            background-image: url("@img/bg.svg");
+            background-image: url("@img/bg.webp");
             form {
                 padding: 34px 24px 0px 24px;
             }
@@ -32,6 +32,7 @@
 
     &__search {
         width: 277px;
+        align-items: center;
         border-bottom: 1px solid  #FFF;
         display: flex;
         @media(max-width:767.98px){
@@ -145,7 +146,7 @@ stroke-dashoffset: -83px;
     @media(min-width:767.98px){
         visibility: hidden;
         top: 70px;
-        background-image: url("@img/bg.svg");
+        background-image: url("@img/bg.webp");
         opacity: 0;
         box-shadow: 3px 3px 3px #749e62, -3px -3px 3px #749e62;
         z-index: -1;
@@ -225,7 +226,7 @@ stroke-dashoffset: -86px;
                 transform: translateY(-50%);
                 top: 50%;
                 height: 24px;
-                content:url("@img/header/search.svg");
+                content:url("@img/header/search.webp");
                 left: 0;
             }
             
