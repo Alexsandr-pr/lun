@@ -4,22 +4,26 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css?_v=20240515150625">
-	<link rel="stylesheet" href="path/to/air-datepicker.css?_v=20240515150625">
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20240515150625"></script>
-	<script src="path/to/locales/datepicker.en.js?_v=20240515150625"></script>
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="path/to/air-datepicker.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="path/to/locales/datepicker.en.js"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;700&display=swap&_v=20240515150625" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js?_v=20240515150625"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@2.2.3/dist/css/datepicker.min.css?_v=20240515150625">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@2.2.3/dist/css/datepicker.min.css">
 	<title>Главная</title>
 </head>
 	<body>
 		<div class="wrapper">
 			<header class="header">
     <div class="header__container">
-        
+        <div class="header__logo">
+            <a href="#">
+                <img src="img/header/logo_white.webp" alt="Logo">
+            </a>
+        </div>
         <div class="header__form">
             <svg class="ham ham3 active" viewBox="0 0 100 100" width="40" >
                 <path
@@ -34,7 +38,7 @@
               </svg>
             <form  action="#">
                 <label class="header__search" for="search">
-                    <picture><source srcset="img/header/search.webp" type="image/webp"><img width="24" height="24" class="header__image-search" src="img/header/search.webp" alt="search"></picture>
+                    <img width="24" height="24" class="header__image-search" src="img/header/search.webp" alt="search">
                     <input autocomplete="off" class="header__search-input" id="search" type="search" placeholder="Search">
                 </label>
             </form>
@@ -54,7 +58,7 @@
 
         <div class="header__buttons">
             <button class="header__button-search">
-                <picture><source srcset="img/header/search.webp" type="image/webp"><img width="24" height="24" src="img/header/search.webp" alt="search"></picture>
+                <img width="24" height="24" src="img/header/search.webp" alt="search">
             </button>
             <button class="header__button-menu icon-menu">
                 <svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="40" onclick="this.classList.toggle('active')">
@@ -78,9 +82,8 @@
 					<div class="main-block__container">
 						<div class="main-block__body">
 							<aside class="main-block__aside aside">
-
 								<div class="aside__image-top">
-									<picture><source srcset="img/main/aside/image-top.webp" type="image/webp"><img src="img/main/aside/image-top.png" alt=""></picture>
+									<img src="img/main/aside/image-top.png" alt="">
 								</div>
 								<div class="aside__menu">
 									<div class="aside__select select">
@@ -351,25 +354,27 @@
 													
 												</button>
 												<button class="icons-menu__button ">
-													<picture><source srcset="img/main/content/icon/chevron.webp" type="image/webp"><img class="chevron" src="img/main/content/icon/chevron.webp" alt="chevron"></picture>
+													<img class="chevron" src="img/main/content/icon/chevron.webp" alt="chevron">
 												</button>
 											</div>
 										</div>
+
+										
 										<div  style="max-height: max-content;" data-spollers-content class="item-event__content">
 											<div class="item-event__mathes">
 												<div class="item-event__match match">
 													<div class="match__body">
 														<div class="match__item match-item">
-															<picture><source srcset="img/main/content/teams/tigre.webp" type="image/webp"><img class="match-item__image" src="img/main/content/teams/tigre.webp" alt="team"></picture>
+															<img class="match-item__image" src="img/main/content/teams/tigre.webp" alt="team">
 															<p class="match-item__name">UANL Tigers</p>
 														</div>
 														<div class="match__canal canal">
-															<picture><source srcset="img/main/content/teams/tv.webp" type="image/webp"><img class="canal__image" src="img/main/content/teams/tv.webp" alt="tv"></picture>
+															<img class="canal__image" src="img/main/content/teams/tv.webp" alt="tv">
 															<p class="canal__time">18:00</p>
 														</div>
 														
 														<div class="match__item match-item">
-															<picture><source srcset="img/main/content/teams/usa.webp" type="image/webp"><img class="match-item__image" src="img/main/content/teams/usa.webp" alt="team"></picture>
+															<img class="match-item__image" src="img/main/content/teams/usa.webp" alt="team">
 															<p class="match-item__name">Columbus Crew</p>
 														</div>
 													</div>
@@ -391,7 +396,7 @@
 													
 												</button>
 												<button class="icons-menu__button ">
-													<picture><source srcset="img/main/content/icon/chevron.webp" type="image/webp"><img class="chevron" src="img/main/content/icon/chevron.webp" alt="chevron"></picture>
+													<img class="chevron" src="img/main/content/icon/chevron.webp" alt="chevron">
 												</button>
 											</div>
 										</div>
@@ -400,16 +405,16 @@
 												<div class="item-event__match match">
 													<div class="match__body">
 														<div class="match__item match-item">
-															<picture><source srcset="img/main/content/teams/tigre.webp" type="image/webp"><img class="match-item__image" src="img/main/content/teams/tigre.webp" alt="team"></picture>
+															<img class="match-item__image" src="img/main/content/teams/tigre.webp" alt="team">
 															<p class="match-item__name">UANL Tigers</p>
 														</div>
 														<div class="match__canal canal">
-															<picture><source srcset="img/main/content/teams/tv.webp" type="image/webp"><img class="canal__image" src="img/main/content/teams/tv.webp" alt="tv"></picture>
+															<img class="canal__image" src="img/main/content/teams/tv.webp" alt="tv">
 															<p class="canal__time">18:00</p>
 														</div>
 														
 														<div class="match__item match-item">
-															<picture><source srcset="img/main/content/teams/usa.webp" type="image/webp"><img class="match-item__image" src="img/main/content/teams/usa.webp" alt="team"></picture>
+															<img class="match-item__image" src="img/main/content/teams/usa.webp" alt="team">
 															<p class="match-item__name">Columbus Crew</p>
 														</div>
 													</div>
@@ -418,16 +423,16 @@
 												<div class="item-event__match match">
 													<div class="match__body">
 														<div class="match__item match-item">
-															<picture><source srcset="img/main/content/teams/tigre.webp" type="image/webp"><img class="match-item__image" src="img/main/content/teams/tigre.webp" alt="team"></picture>
+															<img class="match-item__image" src="img/main/content/teams/tigre.webp" alt="team">
 															<p class="match-item__name">UANL Tigers</p>
 														</div>
 														<div class="match__canal canal">
-															<picture><source srcset="img/main/content/teams/tv.webp" type="image/webp"><img class="canal__image" src="img/main/content/teams/tv.webp" alt="tv"></picture>
+															<img class="canal__image" src="img/main/content/teams/tv.webp" alt="tv">
 															<p class="canal__time">18:00</p>
 														</div>
 														
 														<div class="match__item match-item">
-															<picture><source srcset="img/main/content/teams/usa.webp" type="image/webp"><img class="match-item__image" src="img/main/content/teams/usa.webp" alt="team"></picture>
+															<img class="match-item__image" src="img/main/content/teams/usa.webp" alt="team">
 															<p class="match-item__name">Columbus Crew</p>
 														</div>
 													</div>
@@ -449,7 +454,7 @@
 													
 												</button>
 												<button class="icons-menu__button ">
-													<picture><source srcset="img/main/content/icon/chevron.webp" type="image/webp"><img class="chevron" src="img/main/content/icon/chevron.webp" alt="chevron"></picture>
+													<img class="chevron" src="img/main/content/icon/chevron.webp" alt="chevron">
 												</button>
 											</div>
 										</div>
@@ -458,21 +463,21 @@
 												<div class="item-event__match match">
 													<div class="match__body">
 														<div class="match__item match-item">
-															<picture><source srcset="img/main/content/teams/tigre.webp" type="image/webp"><img width="30" height="30" class="match-item__image" src="img/main/content/teams/tigre.webp" alt="team"></picture>
+															<img width="30" height="30" class="match-item__image" src="img/main/content/teams/tigre.webp" alt="team">
 															<p class="match-item__name">UANL Tigers</p>
 														</div>
 														<div class="match__canal canal-round">
 															<p  class="canal-round__text">VIVO</p>
 															<div class="canal-round__body">
 																<p  class="canal-round__number">0</p>
-																<picture><source srcset="img/main/content/teams/tv.webp" type="image/webp"><img class="canal__image" src="img/main/content/teams/tv.webp" alt="tv"></picture>
+																<img class="canal__image" src="img/main/content/teams/tv.webp" alt="tv">
 																<p class="canal-round__number">0</p>
 															</div>
 															<p class="canal-round__text">45+5’</p>
 														</div>
 														
 														<div class="match__item match-item">
-															<picture><source srcset="img/main/content/teams/usa.webp" type="image/webp"><img width="30" height="30" class="match-item__image" src="img/main/content/teams/usa.webp" alt="team"></picture>
+															<img width="30" height="30" class="match-item__image" src="img/main/content/teams/usa.webp" alt="team">
 															<p class="match-item__name">Columbus Crew</p>
 														</div>
 													</div>
@@ -495,7 +500,7 @@
 													
 												</button>
 												<button class="icons-menu__button ">
-													<picture><source srcset="img/main/content/icon/chevron.webp" type="image/webp"><img class="chevron" src="img/main/content/icon/chevron.webp" alt="chevron"></picture>
+													<img class="chevron" src="img/main/content/icon/chevron.webp" alt="chevron">
 												</button>
 											</div>
 										</div>
@@ -504,21 +509,21 @@
 												<div class="item-event__match match">
 													<div class="match__body">
 														<div class="match__item match-item">
-															<picture><source srcset="img/main/content/teams/tigre.webp" type="image/webp"><img width="30" height="30" class="match-item__image" src="img/main/content/teams/tigre.webp" alt="team"></picture>
+															<img width="30" height="30" class="match-item__image" src="img/main/content/teams/tigre.webp" alt="team">
 															<p class="match-item__name">UANL Tigers</p>
 														</div>
 														<div class="match__canal canal-round">
 															<p  class="canal-round__text">VIVO</p>
 															<div class="canal-round__body">
 																<p  class="canal-round__number">3</p>
-																<picture><source srcset="img/main/content/teams/tv.webp" type="image/webp"><img class="canal__image" src="img/main/content/teams/tv.webp" alt="tv"></picture>
+																<img class="canal__image" src="img/main/content/teams/tv.webp" alt="tv">
 																<p class="canal-round__number">1</p>
 															</div>
 															<p class="canal-round__text">45+5’</p>
 														</div>
 														
 														<div class="match__item match-item">
-															<picture><source srcset="img/main/content/teams/usa.webp" type="image/webp"><img width="30" height="30" class="match-item__image" src="img/main/content/teams/usa.webp" alt="team"></picture>
+															<img width="30" height="30" class="match-item__image" src="img/main/content/teams/usa.webp" alt="team">
 															<p class="match-item__name">Columbus Crew</p>
 														</div>
 													</div>
@@ -558,7 +563,7 @@
 													
 												</button>
 												<button class="icons-menu__button ">
-													<picture><source srcset="img/main/content/icon/chevron.webp" type="image/webp"><img class="chevron" src="img/main/content/icon/chevron.webp" alt="chevron"></picture>
+													<img class="chevron" src="img/main/content/icon/chevron.webp" alt="chevron">
 												</button>
 											</div>
 										</div>
@@ -567,21 +572,21 @@
 												<div class="item-event__match match">
 													<div class="match__body">
 														<div class="match__item match-item">
-															<picture><source srcset="img/main/content/teams/tigre.webp" type="image/webp"><img width="30" height="30" class="match-item__image" src="img/main/content/teams/tigre.webp" alt="team"></picture>
+															<img width="30" height="30" class="match-item__image" src="img/main/content/teams/tigre.webp" alt="team">
 															<p class="match-item__name">UANL Tigers</p>
 														</div>
 														<div class="match__canal canal-round">
 															<p  class="canal-round__text">VIVO</p>
 															<div class="canal-round__body">
 																<p  class="canal-round__number">3</p>
-																<picture><source srcset="img/main/content/teams/tv.webp" type="image/webp"><img class="canal__image" src="img/main/content/teams/tv.webp" alt="tv"></picture>
+																<img class="canal__image" src="img/main/content/teams/tv.webp" alt="tv">
 																<p class="canal-round__number">1</p>
 															</div>
 															<p class="canal-round__text">45+5’</p>
 														</div>
 														
 														<div class="match__item match-item">
-															<picture><source srcset="img/main/content/teams/usa.webp" type="image/webp"><img width="30" height="30" class="match-item__image" src="img/main/content/teams/usa.webp" alt="team"></picture>
+															<img width="30" height="30" class="match-item__image" src="img/main/content/teams/usa.webp" alt="team">
 															<p class="match-item__name">Columbus Crew</p>
 														</div>
 													</div>
@@ -622,7 +627,7 @@
 										<div class="bottom-info__item info-item">
 											<p class="bottom-info__label">Anniversaries</p>
 											<div class="info-item__block">
-												<picture><source srcset="img/main/content/teams/everton.webp" type="image/webp"><img src="img/main/content/teams/everton.webp" alt="Everton"></picture>
+												<img src="img/main/content/teams/everton.webp" alt="Everton">
 												<div class="info-item__body">
 													<p class="info-item__title">Everton (La Plata - Bs. As.)</p>
 													<div class="info-item__text">cumple hoy 119 años desde su fundación.</div>
@@ -661,14 +666,14 @@
 				<div class="calendar__wrapper">
 					<div id="input" class="calendar__body">
 						<button class="calendar-close">
-							<picture><source srcset="img/Vector.webp" type="image/webp"><img src="img/Vector.png" alt="close"></picture>
+							<img src="img/Vector.png" alt="close">
 						</button>
 					</div>
 				</div>
 			</main>
 			
 		</div>
-		<script src="https://cdn.jsdelivr.net/npm/air-datepicker@2.2.3/dist/js/datepicker.min.js?_v=20240515150625"></script>
-		<script src="js/app.min.js?_v=20240515150625"></script>
+		<script src="https://cdn.jsdelivr.net/npm/air-datepicker@2.2.3/dist/js/datepicker.min.js"></script>
+		<script src="js/app.min.js"></script>
 	</body>
 </html>

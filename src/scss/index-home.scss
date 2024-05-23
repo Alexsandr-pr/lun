@@ -1,0 +1,213 @@
+.button-bottom-green {
+    color:#6FAA54 !important;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    font-size: 14px;
+    @media(hover:hover) {
+        &:hover {
+            cursor: pointer;
+            color:#6FAA54;
+        }
+    }
+    @media(max-width:640.98px){
+        font-size: 12px;
+    }
+}
+
+
+
+
+.match-block__item {
+    &:not(:last-child) {
+        border-bottom:1px solid #60756C;
+    }
+}
+.match-block {
+
+    // .match-block__body
+    // .match-block__top
+
+    &__top {
+        border-bottom:1px solid #60756C;
+        background: rgba(17, 94, 42, 0.15);
+        padding: 4px 10px;
+        color:  #FFF;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 12px;
+        line-height: 1.2; /* 14.4px */
+    }
+    &__body {
+        display: flex;
+        //align-items: center;
+    }
+
+    // .match-block__time
+
+
+    &__time {
+        padding: 4px 10px;
+        width: 100px;
+        display: flex;
+        font-size: 10px;
+        flex-direction: column;
+        align-items: center;
+        @media(max-width:767.98px){
+            width: 48px;
+        }
+    }
+
+    // .match-block__content
+
+
+    &__content {
+        width: 100%;
+    
+        border-left: #60756C 1px solid;
+    }
+
+    // .match-block__team
+
+    &__team {
+
+        //height: 100%;
+        padding: 4px ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+.match-comand {
+
+    // .match-comand__text
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    &__text {
+        font-size: 14px;
+        @media(max-width:567.98px){
+            font-size: 11px;
+        }
+    }
+
+    // .match-comand__image
+
+    &__image {
+        width: 34px;
+        height: 34px;
+        @media(max-width:767.98px){
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+}
+
+.match-comand-right {
+    text-align: left;
+    flex: 0 1 45%;
+    display: flex;
+    justify-content: start;
+}
+.match-comand-left {
+    display: flex;
+    text-align: right;
+    justify-content: end;
+    flex: 0 1 45%;
+}
+
+
+
+.main-content__header {
+    &:not(:last-child){
+        margin-bottom:12px;
+        @media(max-width:487.98px){
+            margin-bottom: 8px;
+        }
+    }
+}
+.main-content__breadcrumbs {
+    color: rgba(255, 255, 255, 0.50);
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    @media(max-width:487.98px){
+        font-size: 11px;
+    }
+}
+
+
+/***************/
+
+.cof-team {
+    border-top: #60756C 1px solid;
+    padding: 5px 12px;
+    display: flex;
+    font-family: Roboto;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.02) 100%), rgba(17, 94, 42, 0.35);
+    span, div {
+        gap: 4px;
+        flex: 0 1 33.333%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+/*******************************/
+
+.match-foot {
+
+    // .match-foot__item
+    border-top: #60756C 1px solid;
+    display: flex;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.02) 100%), rgba(17, 94, 42, 0.35);
+    &__item {
+        display: flex;
+        flex-wrap: wrap;
+        &:nth-child(1) {
+            flex: 0 1 45%;
+        }
+        &:nth-child(2) {
+            flex: 0 1 50%;
+        }
+    }
+
+    // .match-foot__block
+
+    &__block {
+        font-size: 12px;
+        padding: 4px;
+        display: inline-flex;
+        span {
+            color:  #6FAA54;
+        }
+        color:#fff;
+    }
+}
+
+.match-team__span {
+    display: flex;
+    justify-content: center;
+    flex: 0 1 10%;
+}
+.match-foot__span {
+    div {
+        width: 1px;
+        height: 100%;
+
+        background-color: #60756C;
+    }
+}
+.match-foot__span {
+    display: flex;
+    justify-content: end;
+    flex: 0 1 5;
+}

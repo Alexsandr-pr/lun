@@ -1,7 +1,9 @@
 
 @import '../../node_modules/air-datepicker/air-datepicker.css';
-
+@import "index-home";
 @import "header";
+
+
 
 *,
 *::before,
@@ -461,7 +463,7 @@ button {
         transform: rotateX(180deg);
     }
     .item-event__button{
-        border-bottom:1px solid #fff;
+        border-bottom:1px solid #60756C;
     }
 }
 
@@ -474,15 +476,15 @@ button {
     background:  #0A2B1D;
     
     &__button {
-        padding: 13.5px 12px;
+        padding: 4px 12px;
         align-items: center;
         width: 100%;
         display: flex;
         gap: 6px;
-        
     }
     // .item-event__left
     &__left {
+        font-size: 14px;
         flex: 1 1 100%;
         position: relative;
         p {
@@ -496,9 +498,7 @@ button {
             top: 50%;
             content: url("@img/main/content/icon/world.webp")
         }
-        @media(max-width:640.98px){
-            font-size: 14px;
-        }
+        
     }
     // .item-event__right
     &__right {
@@ -523,7 +523,7 @@ button {
     @media(hover:hover) {
         &:hover {
             cursor: pointer;
-            box-shadow: 3px 3px 3px #57724b, -3px -3px 3px #57724b;
+            //box-shadow: 3px 3px 3px #57724b, -3px -3px 3px #57724b;
         }
     }
     &__content {
@@ -532,11 +532,10 @@ button {
     // .item-event__bottom
 
     &__bottom {
-        padding: 10px;
-        border-top: 1px solid #fff;
+        padding: 7px 10px;
+        border-top: 1px solid #60756C;
         display: flex;
         justify-content: center;
-
     }
 
     // .item-event__bottom-button

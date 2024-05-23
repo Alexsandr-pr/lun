@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/head.html',{
+	"title":"Главная"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/header.html',{})
+			<main class="main">
+				
+				<div class="main__block main-block">
+					<div class="main-block__container">
+						<div class="main-block__body">
+							<aside class="main-block__aside aside">
+								<div class="aside__image-top">
+									<img src="@img/main/aside/image-top.png" alt="">
+								</div>
+								<div class="aside__menu">
+									<div class="aside__select select">
+										<div data-spollers  class="select__block active">
+											<button data-spoller  class="select__button ">
+												Destacado
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+													<path d="M6 9L12 15L18 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+											</button>
+											<div  style="max-height: max-content;" data-spollers-content class="">
+												<ul  class="select__list">
+													<li class="select__item">
+														<button>Copa de la Liga</button>
+													</li>
+													<li class="select__item">
+														<button>Prim. B Nacional</button>
+													</li>
+													<li class="select__item">
+														<button>Copa Argentina</button>
+													</li>
+													<li class="select__item">
+														<button>Libertadores</button>
+													</li>
+													<li class="select__item">
+														<button>Champions</button>
+													</li>
+													<li class="select__item">
+														<button>Elim. Conmebol</button>
+													</li>
+													<li class="select__item">
+														<button>Ranking Titulos</button>
+													</li>
+													<li class="select__item">
+														<button>Ranking Copas Int</button>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div data-spollers class="select__block">
+											<button data-spoller class="select__button">
+												Argentina
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+													<path d="M6 9L12 15L18 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+											</button>
+											<div data-spollers-content class="">
+												<ul   class="select__list">
+													<li class="select__item">
+														<button>Copa de la Liga</button>
+													</li>
+													<li class="select__item">
+														<button>Prim. B Nacional</button>
+													</li>
+													<li class="select__item">
+														<button>Copa Argentina</button>
+													</li>
+													<li class="select__item">
+														<button>Libertadores</button>
+													</li>
+													<li class="select__item">
+														<button>Champions</button>
+													</li>
+													<li class="select__item">
+														<button>Elim. Conmebol</button>
+													</li>
+													<li class="select__item">
+														<button>Ranking Titulos</button>
+													</li>
+													<li class="select__item">
+														<button>Ranking Copas Int</button>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div data-spollers class="select__block">
+											<button data-spoller class="select__button">
+												Copas Int.
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+													<path d="M6 9L12 15L18 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+											</button>
+											<div data-spollers-content class="">
+												<ul   class="select__list">
+													<li class="select__item">
+														<button>Copa de la Liga</button>
+													</li>
+													<li class="select__item">
+														<button>Prim. B Nacional</button>
+													</li>
+													<li class="select__item">
+														<button>Copa Argentina</button>
+													</li>
+													<li class="select__item">
+														<button>Libertadores</button>
+													</li>
+													<li class="select__item">
+														<button>Champions</button>
+													</li>
+													<li class="select__item">
+														<button>Elim. Conmebol</button>
+													</li>
+													<li class="select__item">
+														<button>Ranking Titulos</button>
+													</li>
+													<li class="select__item">
+														<button>Ranking Copas Int</button>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div data-spollers class="select__block">
+											<button data-spoller class="select__button">
+												Ligas
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+													<path d="M6 9L12 15L18 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+											</button>
+											<div data-spollers-content class="">
+												<ul   class="select__list">
+													<li class="select__item">
+														<button>Copa de la Liga</button>
+													</li>
+													<li class="select__item">
+														<button>Prim. B Nacional</button>
+													</li>
+													<li class="select__item">
+														<button>Copa Argentina</button>
+													</li>
+													<li class="select__item">
+														<button>Libertadores</button>
+													</li>
+													<li class="select__item">
+														<button>Champions</button>
+													</li>
+													<li class="select__item">
+														<button>Elim. Conmebol</button>
+													</li>
+													<li class="select__item">
+														<button>Ranking Titulos</button>
+													</li>
+													<li class="select__item">
+														<button>Ranking Copas Int</button>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div  data-spollers class="select__block">
+											<button data-spoller class="select__button">
+												Selecciones
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+													<path d="M6 9L12 15L18 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+											</button>
+											<div data-spollers-content class="">
+												<ul   class="select__list">
+													<li class="select__item">
+														<button>Copa de la Liga</button>
+													</li>
+													<li class="select__item">
+														<button>Prim. B Nacional</button>
+													</li>
+													<li class="select__item">
+														<button>Copa Argentina</button>
+													</li>
+													<li class="select__item">
+														<button>Libertadores</button>
+													</li>
+													<li class="select__item">
+														<button>Champions</button>
+													</li>
+													<li class="select__item">
+														<button>Elim. Conmebol</button>
+													</li>
+													<li class="select__item">
+														<button>Ranking Titulos</button>
+													</li>
+													<li class="select__item">
+														<button>Ranking Copas Int</button>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+	
+									<ul class="aside__links links-aside">
+										<li class="links-aside__item">
+											<button class="links-aside__button">
+												COMUNIDAD
+											</button>
+										</li>
+										<li class="links-aside__item">
+											<button class="links-aside__button calendar-active">
+												CALENDARIO
+											</button>
+										</li>
+										<li class="links-aside__item">
+											<button class="links-aside__button">
+												CONTACTO
+											</button>
+										</li>
+									</ul>
+									<div class="aside__bottom">
+										<a href="/">Legal - Privacidad</a>
+									</div>
+								</div>
+								
+								
+							</aside>
+							<div class="main-block__content main-content">
+
+								<div class="main-header__block">
+									<div class="main-content__header content-header">
+										<div class="content-header__top top-header">
+											<button class="top-header__button">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+													<path d="M15 6L9 12L15 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+												LUN
+											</button>
+											<div class="top-header__select header-select ">
+												<button class="header-select__button">
+													<span>partidos de</span> HOY
+													<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M4.45828 8.16715C4.51311 8.26225 4.59202 8.34123 4.68707 8.39615C4.78213 8.45107 4.88997 8.47998 4.99974 8.47998C5.10952 8.47998 5.21736 8.45107 5.31241 8.39615C5.40746 8.34123 5.48637 8.26225 5.5412 8.16715L9.1387 1.93631C9.19356 1.8413 9.22243 1.73353 9.22243 1.62382C9.22244 1.51411 9.19356 1.40633 9.13871 1.31132C9.08385 1.21631 9.00496 1.13741 8.90995 1.08255C8.81494 1.0277 8.70716 0.998817 8.59745 0.998814H1.40245C1.29274 0.998817 1.18497 1.0277 1.08996 1.08255C0.994946 1.13741 0.916049 1.21631 0.861196 1.31132C0.806343 1.40633 0.777465 1.51411 0.777466 1.62382C0.777467 1.73353 0.806345 1.8413 0.8612 1.93631L4.4587 8.16715H4.45828Z" fill="white"/>
+													</svg>
+												</button>
+												<div class="header-select__block">
+													<div class="header-select__option">
+														<span>partidos de</span> HOY
+													</div>
+													<div class="header-select__option">
+														<span>partidos de</span> HOY
+													</div>
+												</div>
+											</div>
+	
+											<button class="top-header__button">
+												MIE
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+													<path d="M9 6L15 12L9 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+											</button>
+										</div>
+										<div class="content-header__bottom botton-header">
+											<div class="botton-header__buttons">
+												<button data-border class="button-border button-gr active">TODOS</button>
+												<button data-border class="button-border button-red">VIVO (12)</button>
+											</div>
+											<div class="botton-header__buttons">
+												<button class="button-green ">
+													CUOTAS
+												</button>
+												<button class="button-green button-off active">
+													
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="main-content__breadcrumbs">
+										Football results and promiedos standings
+									</div>
+								</div>
+								<div class="main-content__items">
+									<div style="transition: all 0.3s ease 0s;" data-spollers class="main-content__item item-event active  _anim-items anim-bottom">
+										<div data-spoller class="item-event__button ">
+											<div class="item-event__left">
+												<p>CONCACAF CHAMPIONS</p>
+											</div>
+											<div class="item-event__right icons-menu">
+												<button data-off class="icons-menu__button data-off">
+													
+												</button>
+												<button class="icons-menu__button ">
+													<img class="chevron" src="@img/main/content/icon/chevron.webp" alt="chevron">
+												</button>
+											</div>
+										</div>
+										<div  style="max-height: max-content;" data-spollers-content class="item-event__content">
+											<div class="item-event__mathes match-block">
+												<div class="match-block__item">
+													<div class="match-block__body">
+														<div class="match-block__time">
+															<img class="canal__image" width="24" height="24" src="@img/main/content/teams/tv.webp" alt="tv">
+															<p class="canal__time">18:00</p>
+														</div>
+														<div class="match-block__content">
+															<div class="match-block__team match-team">
+																<a href="#" class="match-team__comand match-comand match-comand-left">
+																	<span class="match-comand__text">UANL Tigers</span>
+																	<img src="@img/index-home/01.webp" alt="Comand Name" class="match-comand__image">
+																</a>
+																<span class="match-team__span">-</span>
+																<a href="#" class="match-team__comand match-comand match-comand-right">
+																	<img src="@img/index-home/02.webp" alt="Comand Name" class="match-comand__image">
+																	<span class="match-comand__text">Columbus Crews</span>
+																</a>
+															</div>
+															
+														</div>
+													</div>
+												</div>
+												
+											</div>
+											
+											<div class="item-event__bottom">
+												<button class="item-event__bottom-button button-bottom-green">Sección de Europa League
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                                                        <path d="M5 3L8 6L5 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </button>
+											</div>
+										</div>
+									</div>
+									<div style="transition: all 0.3s ease 0s;" data-spollers class="main-content__item item-event active  _anim-items anim-bottom">
+										<div data-spoller class="item-event__button ">
+											<div class="item-event__left">
+												<p>CONCACAF CHAMPIONS</p>
+											</div>
+											<div class="item-event__right icons-menu">
+												<button data-off class="icons-menu__button data-off">
+													
+												</button>
+												<button class="icons-menu__button ">
+													<img class="chevron" src="@img/main/content/icon/chevron.webp" alt="chevron">
+												</button>
+											</div>
+										</div>
+										<div  style="max-height: max-content;" data-spollers-content class="item-event__content">
+											<div class="item-event__mathes match-block">
+												<div class="match-block__item">
+													<div class="match-block__body">
+														<div class="match-block__time">
+															<img class="canal__image" width="24" height="24" src="@img/main/content/teams/tv.webp" alt="tv">
+															<p class="canal__time">18:00</p>
+														</div>
+														<div class="match-block__content">
+															<div class="match-block__team match-team">
+																<a href="#" class="match-team__comand match-comand match-comand-left">
+																	<span class="match-comand__text">UANL Tigers</span>
+																	<img src="@img/index-home/01.webp" alt="Comand Name" class="match-comand__image">
+																</a>
+																<span class="match-team__span">-</span>
+																<a href="#" class="match-team__comand match-comand match-comand-right">
+																	<img src="@img/index-home/02.webp" alt="Comand Name" class="match-comand__image">
+																	<span class="match-comand__text">Columbus Crews</span>
+																</a>
+															</div>
+															<div class="match-block__cof cof-team">
+																<span>
+																	1. 1.44  
+																	<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+																		<path fill-rule="evenodd" clip-rule="evenodd" d="M4.45841 1.31167C4.51323 1.21657 4.59215 1.13759 4.6872 1.08267C4.78225 1.02775 4.89009 0.99884 4.99986 0.99884C5.10964 0.99884 5.21748 1.02775 5.31253 1.08267C5.40758 1.13759 5.48649 1.21657 5.54132 1.31167L9.13882 7.54251C9.19368 7.63752 9.22256 7.74529 9.22256 7.855C9.22256 7.96471 9.19368 8.07249 9.13883 8.1675C9.08397 8.26251 9.00508 8.34141 8.91007 8.39627C8.81506 8.45112 8.70728 8.48 8.59757 8.48001H1.40257C1.29286 8.48 1.18509 8.45112 1.09008 8.39627C0.995068 8.34141 0.916171 8.26251 0.861318 8.1675C0.806465 8.07249 0.777587 7.96471 0.777588 7.855C0.777589 7.74529 0.806467 7.63752 0.861322 7.54251L4.45882 1.31167H4.45841Z" fill="#161616"/>
+																	</svg>
+																</span>
+																<span>X. 4.74</span>
+																<span>
+																	6.48
+																	<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+																		<path fill-rule="evenodd" clip-rule="evenodd" d="M4.45841 8.16715C4.51323 8.26225 4.59215 8.34123 4.6872 8.39615C4.78225 8.45107 4.89009 8.47998 4.99986 8.47998C5.10964 8.47998 5.21748 8.45107 5.31253 8.39615C5.40758 8.34123 5.48649 8.26225 5.54132 8.16715L9.13882 1.93631C9.19368 1.8413 9.22256 1.73353 9.22256 1.62382C9.22256 1.51411 9.19368 1.40633 9.13883 1.31132C9.08397 1.21631 9.00508 1.13741 8.91007 1.08255C8.81506 1.0277 8.70728 0.998817 8.59757 0.998814H1.40257C1.29286 0.998817 1.18509 1.0277 1.09008 1.08255C0.995068 1.13741 0.916171 1.21631 0.861318 1.31132C0.806465 1.40633 0.777587 1.51411 0.777588 1.62382C0.777589 1.73353 0.806467 1.8413 0.861322 1.93631L4.45882 8.16715H4.45841Z" fill="#161616"/>
+																	</svg>
+																</span>
+															</div>
+														</div>
+													</div>
+												</div>
+												
+											</div>
+											
+											<div class="item-event__bottom">
+												<button class="item-event__bottom-button button-bottom-green">Sección de Europa League
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                                                        <path d="M5 3L8 6L5 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </button>
+											</div>
+										</div>
+									</div>
+									<div style="transition: all 0.35s ease 0s;" data-spollers class="main-content__item item-event active  _anim-items anim-bottom">
+										<div data-spoller class="item-event__button ">
+											<div class="item-event__left">
+												<p>CONCACAF CHAMPIONS</p>
+											</div>
+											<div class="item-event__right icons-menu">
+												<button data-off class="icons-menu__button data-off">
+													
+												</button>
+												<button class="icons-menu__button ">
+													<img class="chevron" src="@img/main/content/icon/chevron.webp" alt="chevron">
+												</button>
+											</div>
+										</div>
+										<div  style="max-height: max-content;" data-spollers-content class="item-event__content">
+											<div class="item-event__mathes match-block">
+												<div class="match-block__item">
+													<div class="match-block__top">
+														Pendiente Fecha 9
+													</div>
+													<div class="match-block__body">
+														<div class="match-block__time">
+															<img class="canal__image" width="24" height="24" src="@img/main/content/teams/tv.webp" alt="tv">
+															<p class="canal__time">18:00</p>
+														</div>
+														<div class="match-block__content">
+															<div class="match-block__team match-team">
+																<a href="#" class="match-team__comand match-comand match-comand-left">
+																	<span class="match-comand__text">UANL Tigers</span>
+																	<img src="@img/index-home/01.webp" alt="Comand Name" class="match-comand__image">
+																</a>
+																<span class="match-team__span">-</span>
+																<a href="#" class="match-team__comand match-comand match-comand-right">
+																	<img src="@img/index-home/02.webp" alt="Comand Name" class="match-comand__image">
+																	<span class="match-comand__text">Columbus Crews</span>
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+												
+											</div>
+											
+											<div class="item-event__bottom">
+												<button class="item-event__bottom-button button-bottom-green">Sección de Europa League
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                                                        <path d="M5 3L8 6L5 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </button>
+											</div>
+										</div>
+									</div>
+									<div  data-spollers class="main-content__item item-event   _anim-items anim-bottom">
+										<div data-spoller class="item-event__button ">
+											<div class="item-event__left">
+												<p>CONCACAF CHAMPIONS</p>
+											</div>
+											<div class="item-event__right icons-menu">
+												<button data-off class="icons-menu__button data-off">
+													
+												</button>
+												<button class="icons-menu__button ">
+													<img class="chevron" src="@img/main/content/icon/chevron.webp" alt="chevron">
+												</button>
+											</div>
+										</div>
+										<div  data-spollers-content class="item-event__content">
+											<div class="item-event__mathes match-block">
+												<div class="match-block__item">
+													<div class="match-block__top">
+														Pendiente Fecha 9
+													</div>
+													<div class="match-block__body">
+														<div class="match-block__time">
+															<img class="canal__image" width="24" height="24" src="@img/main/content/teams/tv.webp" alt="tv">
+															<p class="canal__time">18:00</p>
+														</div>
+														<div class="match-block__content">
+															<div class="match-block__team match-team">
+																<a href="#" class="match-team__comand match-comand match-comand-left">
+																	<span class="match-comand__text">UANL Tigers</span>
+																	<img src="@img/index-home/01.webp" alt="Comand Name" class="match-comand__image">
+																</a>
+																<span class="match-team__span">-</span>
+																<a href="#" class="match-team__comand match-comand match-comand-right">
+																	<img src="@img/index-home/02.webp" alt="Comand Name" class="match-comand__image">
+																	<span class="match-comand__text">Columbus Crews</span>
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="match-block__item">
+													<div class="match-block__top">
+														Pendiente Fecha 9
+													</div>
+													<div class="match-block__body">
+														<div class="match-block__time">
+															<img class="canal__image" width="24" height="24" src="@img/main/content/teams/tv.webp" alt="tv">
+															<p class="canal__time">18:00</p>
+														</div>
+														<div class="match-block__content">
+															<div class="match-block__team match-team">
+																<a href="#" class="match-team__comand match-comand match-comand-left">
+																	<span class="match-comand__text">UANL Tigers</span>
+																	<img src="@img/index-home/01.webp" alt="Comand Name" class="match-comand__image">
+																</a>
+																<span class="match-team__span">-</span>
+																<a href="#" class="match-team__comand match-comand match-comand-right">
+																	<img src="@img/index-home/02.webp" alt="Comand Name" class="match-comand__image">
+																	<span class="match-comand__text">Columbus Crews</span>
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="item-event__bottom">
+												<button class="item-event__bottom-button button-bottom-green">Sección de Europa League
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                                                        <path d="M5 3L8 6L5 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </button>
+											</div>
+										</div>
+										
+									</div>
+									<div  data-spollers class="main-content__item item-event   _anim-items anim-bottom">
+										<div data-spoller class="item-event__button ">
+											<div class="item-event__left">
+												<p>CONCACAF CHAMPIONS</p>
+											</div>
+											<div class="item-event__right icons-menu">
+												<button data-off class="icons-menu__button data-off">
+													
+												</button>
+												<button class="icons-menu__button ">
+													<img class="chevron" src="@img/main/content/icon/chevron.webp" alt="chevron">
+												</button>
+											</div>
+										</div>
+										<div   data-spollers-content class="item-event__content">
+											<div class="item-event__mathes match-block">
+												<div class="match-block__item">
+													<div class="match-block__top">
+														Pendiente Fecha 9
+													</div>
+													<div class="match-block__body">
+														<div class="match-block__time">
+															<img class="canal__image" width="24" height="24" src="@img/main/content/teams/tv.webp" alt="tv">
+															<p class="canal__time">18:00</p>
+														</div>
+														<div class="match-block__content">
+															<div class="match-block__team match-team">
+																<a href="#" class="match-team__comand match-comand match-comand-left">
+																	<span class="match-comand__text">UANL Tigers</span>
+																	<img src="@img/index-home/01.webp" alt="Comand Name" class="match-comand__image">
+																</a>
+																<span class="match-team__span">-</span>
+																<a href="#" class="match-team__comand match-comand match-comand-right">
+																	<img src="@img/index-home/02.webp" alt="Comand Name" class="match-comand__image">
+																	<span class="match-comand__text">Columbus Crews</span>
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="match-block__item">
+													<div class="match-block__top">
+														Pendiente Fecha 9
+													</div>
+													<div class="match-block__body">
+														<div class="match-block__time">
+															<img class="canal__image" width="24" height="24" src="@img/main/content/teams/tv.webp" alt="tv">
+															<p class="canal__time">18:00</p>
+														</div>
+														<div class="match-block__content">
+															<div class="match-block__team match-team">
+																<a href="#" class="match-team__comand match-comand match-comand-left">
+																	<span class="match-comand__text">UANL Tigers</span>
+																	<img src="@img/index-home/01.webp" alt="Comand Name" class="match-comand__image">
+																</a>
+																<span class="match-team__span">-</span>
+																<a href="#" class="match-team__comand match-comand match-comand-right">
+																	<img src="@img/index-home/02.webp" alt="Comand Name" class="match-comand__image">
+																	<span class="match-comand__text">Columbus Crews</span>
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="match-block__item">
+													<div class="match-block__top">
+														Pendiente Fecha 9
+													</div>
+													<div class="match-block__body">
+														<div class="match-block__time">
+															<img class="canal__image" width="24" height="24" src="@img/main/content/teams/tv.webp" alt="tv">
+															<p class="canal__time">18:00</p>
+														</div>
+														<div class="match-block__content">
+															<div class="match-block__team match-team">
+																<a href="#" class="match-team__comand match-comand match-comand-left">
+																	<span class="match-comand__text">UANL Tigers</span>
+																	<img src="@img/index-home/01.webp" alt="Comand Name" class="match-comand__image">
+																</a>
+																<span class="match-team__span">-</span>
+																<a href="#" class="match-team__comand match-comand match-comand-right">
+																	<img src="@img/index-home/02.webp" alt="Comand Name" class="match-comand__image">
+																	<span class="match-comand__text">Columbus Crews</span>
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="match-block__item">
+													<div class="match-block__top">
+														Pendiente Fecha 9
+													</div>
+													<div class="match-block__body">
+														<div class="match-block__time">
+															<img class="canal__image" width="24" height="24" src="@img/main/content/teams/tv.webp" alt="tv">
+															<p class="canal__time">18:00</p>
+														</div>
+														<div class="match-block__content">
+															<div class="match-block__team match-team">
+																<a href="#" class="match-team__comand match-comand match-comand-left">
+																	<span class="match-comand__text">UANL Tigers</span>
+																	<img src="@img/index-home/01.webp" alt="Comand Name" class="match-comand__image">
+																</a>
+																<span class="match-team__span">-</span>
+																<a href="#" class="match-team__comand match-comand match-comand-right">
+																	<img src="@img/index-home/02.webp" alt="Comand Name" class="match-comand__image">
+																	<span class="match-comand__text">Columbus Crews</span>
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="item-event__bottom">
+												<button class="item-event__bottom-button button-bottom-green">Sección de Europa League
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                                                        <path d="M5 3L8 6L5 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </button>
+											</div>
+										</div>
+										
+									</div>
+									<div  data-spollers class="main-content__item item-event   _anim-items anim-bottom">
+										<div data-spoller class="item-event__button ">
+											<div class="item-event__left">
+												<p>CONCACAF CHAMPIONS</p>
+											</div>
+											<div class="item-event__right icons-menu">
+												<button data-off class="icons-menu__button data-off">
+													
+												</button>
+												<button class="icons-menu__button ">
+													<img class="chevron" src="@img/main/content/icon/chevron.webp" alt="chevron">
+												</button>
+											</div>
+										</div>
+										<div   data-spollers-content class="item-event__content">
+											<div class="item-event__mathes match-block">
+												<div class="match-block__item">
+													
+													<div class="match-block__body">
+														<div class="match-block__time">
+															<img class="canal__image" width="24" height="24" src="@img/main/content/teams/tv.webp" alt="tv">
+															<p class="canal__time">18:00</p>
+														</div>
+														<div class="match-block__content">
+															<div class="match-block__team match-team">
+																<a href="#" class="match-team__comand match-comand match-comand-left">
+																	<span class="match-comand__text">UANL Tigers</span>
+																	<img src="@img/index-home/01.webp" alt="Comand Name" class="match-comand__image">
+																</a>
+																<span class="match-team__span">-</span>
+																<a href="#" class="match-team__comand match-comand match-comand-right">
+																	<img src="@img/index-home/02.webp" alt="Comand Name" class="match-comand__image">
+																	<span class="match-comand__text">Columbus Crews</span>
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+												
+											</div>
+											
+											<div class="item-event__bottom">
+												<button class="item-event__bottom-button button-bottom-green">Sección de Europa League
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                                                        <path d="M5 3L8 6L5 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </button>
+											</div>
+										</div>
+									</div>
+
+									<div  data-spollers class="main-content__item item-event   _anim-items anim-bottom">
+										<div data-spoller class="item-event__button ">
+											<div class="item-event__left">
+												<p>CONCACAF CHAMPIONS</p>
+											</div>
+											<div class="item-event__right icons-menu">
+												<button data-off class="icons-menu__button data-off">
+													
+												</button>
+												<button class="icons-menu__button ">
+													<img class="chevron" src="@img/main/content/icon/chevron.webp" alt="chevron">
+												</button>
+											</div>
+										</div>
+										<div  data-spollers-content class="item-event__content">
+											<div class="item-event__mathes match-block">
+												<div class="match-block__item">
+													<div class="match-block__body">
+														<div class="match-block__time">
+															<img class="canal__image" width="24" height="24" src="@img/main/content/teams/tv.webp" alt="tv">
+															<p class="canal__time">18:00</p>
+														</div>
+														<div class="match-block__content">
+															<div class="match-block__team match-team">
+																<a href="#" class="match-team__comand match-comand match-comand-left">
+																	<span class="match-comand__text">UANL Tigers</span>
+																	<img src="@img/index-home/01.webp" alt="Comand Name" class="match-comand__image">
+																</a>
+																<div class="match-team__span">
+																	<div>-</div>
+																</div>
+																<a href="#" class="match-team__comand match-comand match-comand-right">
+																	<img src="@img/index-home/02.webp" alt="Comand Name" class="match-comand__image">
+																	<span class="match-comand__text">Columbus Crews</span>
+																</a>
+															</div>
+															<div class="match-block__foot match-foot">
+																<div class="match-foot__item">
+																	<span class="match-foot__block">
+																		<span>
+																			21’
+																		</span>
+																		<p>D.Valdes; </p>
+																	</span>
+																	<span class="match-foot__block">
+																		<span>
+																			21’
+																		</span>
+																		<p>D.Valdes; </p>
+																	</span>
+																	<span class="match-foot__block">
+																		<span>
+																			21’
+																		</span>
+																		<p>D.Valdes; </p>
+																	</span>
+																	<span class="match-foot__block">
+																		<span>
+																			21’
+																		</span>
+																		<p>D.Valdes; </p>
+																	</span>
+																</div>
+																<div class="match-foot__span">
+																	<div class=""></div>
+																</div>
+																<div class="match-foot__item">
+																	<span class="match-foot__block">
+																		<span>
+																			21’
+																		</span>
+																		<p>D.Valdes; </p>
+																	</span>
+																	<span class="match-foot__block">
+																		<span>
+																			21’
+																		</span>
+																		<p>D.Valdes; </p>
+																	</span>
+																	<span class="match-foot__block">
+																		<span>
+																			21’
+																		</span>
+																		<p>D.Valdes; </p>
+																	</span>
+																	<span class="match-foot__block">
+																		<span>
+																			21’
+																		</span>
+																		<p>D.Valdes; </p>
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												
+											</div>
+											
+											<div class="item-event__bottom">
+												<button class="item-event__bottom-button button-bottom-green">Sección de Europa League
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                                                        <path d="M5 3L8 6L5 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="main-content__bottom-info bottom-info">
+									
+									<div class="bottom-info__title">
+										<h3>HOY Jueves 11 de Abril de 2024</h3>
+									</div>
+									
+									<div class="bottom-info__items">
+
+										<div class="bottom-info__item info-item">
+											<p class="bottom-info__label">Anniversaries</p>
+											<div class="info-item__block">
+												<img src="@img/main/content/teams/everton.webp" alt="Everton">
+												<div class="info-item__body">
+													<p class="info-item__title">Everton (La Plata - Bs. As.)</p>
+													<div class="info-item__text">cumple hoy 119 años desde su fundación.</div>
+												</div>
+											</div>
+										</div>
+										<div class="bottom-info__item info-item">
+											<p class="bottom-info__label">Cumpleaños</p>
+											<div class="info-item__block">
+												
+												<div class="info-item__body">
+													<p class="info-item__title">Lucas Castro</p>
+													<div class="info-item__text">(Gimnasia (LP)) cumple hoy <span>35 años.</span></div>
+												</div>
+											</div>
+											<div class="info-item__block">
+												
+												<div class="info-item__body">
+													<p class="info-item__title">Facundo Cambeses</p>
+													<div class="info-item__text">(Racing Club) cumple hoy <span>27 años.</span></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="bottom-info__buttons">
+										<button class="bottom-info__button">Calendario Extendido</button>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+
+				<div class="calendar__wrapper">
+					<div id="input" class="calendar__body">
+						<button class="calendar-close">
+							<img src="@img/Vector.png" alt="close">
+						</button>
+					</div>
+				</div>
+			</main>
+			
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/air-datepicker@2.2.3/dist/js/datepicker.min.js"></script>
+		<script src="js/app.min.js"></script>
+	</body>
+</html>
