@@ -38,7 +38,6 @@ if(animItems.length > 0) {
                 animItem.classList.add("_start-anim");
             } 
             
-
         }
     }
 
@@ -104,15 +103,15 @@ search.addEventListener("blur", function() {
 
 
 const searchNutton = document.querySelector(".header__button-search");
-const fromMobile = document.querySelector(".header__form");
+const formMobile = document.querySelector(".header__form");
 const ham3 = document.querySelector(".ham3")
 
 searchNutton.addEventListener("click" , () => {
-    fromMobile.classList.add("active")
+    formMobile.classList.add("active")
     document.body.style.overflow = "hidden";
 })
 ham3.addEventListener("click" , () => {
-    fromMobile.classList.remove("active")
+    formMobile.classList.remove("active")
     document.body.style.overflow = "";
 })
 
@@ -125,13 +124,14 @@ ham3.addEventListener("click" , () => {
 const aside = document.querySelector(".aside")
 const ham7 = document.querySelector(".ham7")
 const buttonBurger = document.querySelector(".icon-menu")
+
 function deleteClass() {
 	aside.classList.remove("_active")
 	ham7.classList.remove("active")
 	document.body.style.overflow = "";
 	buttonBurger.classList.remove("_active")
 }
-
+/*
 let startX, startY, endX, endY;
 
 document.addEventListener('touchstart', function(e) {
@@ -169,6 +169,63 @@ function handleSwipe() {
         // Swipe down
     }
 }
+*/
+
+
+let startX;
+let startY;
+let endX;
+let endY;
+let isSwiping = false;
+
+
+function touchStart(event) {
+    startX = event.touches[0].clientX;
+    startY = event.touches[0].clientY;
+    isSwiping = true;
+}
+
+function touchMove(event) {
+    if (!isSwiping) return;
+    endX = event.touches[0].clientX;
+    endY = event.touches[0].clientY;
+
+    let deltaX = endX - startX;
+    let deltaY = endY - startY;
+
+    if (Math.abs(deltaX) > Math.abs(deltaY) && deltaX < 0) {
+        // Swipe left - dynamically update 'right' property
+        let newRight = Math.min(0, -120 + (deltaX / window.innerWidth) * 120) + '%';
+        aside.style.right = newRight;
+    }
+}
+
+function touchEnd(event) {
+    isSwiping = false;
+    let deltaX = endX - startX;
+    let deltaY = endY - startY;
+
+    if (Math.abs(deltaX) > Math.abs(deltaY) && deltaX > 0) {
+        // Swipe right
+        aside.classList.remove("active");
+        document.body.style.overflow = "";
+        deleteClass();
+    } else if (Math.abs(deltaX) > Math.abs(deltaY) && deltaX < 0) {
+        // Swipe left
+        aside.classList.add("active");
+    } else if (Math.abs(deltaY) > Math.abs(deltaX) && deltaY < 0) {
+        // Swipe up
+        aside.classList.remove("active");
+    } else if (Math.abs(deltaY) > Math.abs(deltaX) && deltaY > 0) {
+        // Swipe down
+    }
+
+    aside.style.right = ''; // Reset right style after swipe ends
+}
+
+document.addEventListener('touchstart', touchStart);
+document.addEventListener('touchmove', touchMove);
+document.addEventListener('touchend', touchEnd);
 
 const calendarWrapper = document.querySelector(".calendar__wrapper");
 const calendarClose = document.querySelector(".calendar-close");
@@ -237,4 +294,14 @@ selectOption.forEach(item => {
     item.addEventListener("click", () => {
         selectParent.classList.remove("active")
     })
+})
+
+
+const containersColunms = document.querySelectorAll(".team-span__number-gol");
+
+containersColunms.forEach(item => {
+    const items = item.children.length;
+    const columns = Math.ceil(items / 2);
+
+    item.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
 })
