@@ -271,6 +271,37 @@
   color: #FF4848 !important;
 }
 
+/**********************/
+.match-comand-left__image {
+  position: relative;
+}
+.match-comand-left__flag {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: -6px;
+  top: -3px;
+}
+.match-comand-left__comand {
+  width: 32px;
+  height: 32px;
+}
+
+.match-comand-right__image {
+  position: relative;
+}
+.match-comand-right__flag {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  right: -6px;
+  top: -3px;
+}
+.match-comand-right__comand {
+  width: 32px;
+  height: 32px;
+}
+
 .header {
   padding: 16px 0px;
 }

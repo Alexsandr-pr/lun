@@ -306,3 +306,57 @@
         color:#FF4848 !important;
     }
 }
+
+/**********************/
+
+
+.match-comand-left {
+
+    // .match-comand-left__image
+
+    &__image {
+        position: relative;
+    }
+
+    // .match-comand-left__flag
+
+    &__flag {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        left: -6px;
+        top: -3px;
+    }
+
+    // .match-comand-left__comand
+
+    &__comand {
+        width: 32px;
+        height: 32px;
+    }
+}
+.match-comand-right {
+
+    // .match-comand-right__image
+
+    &__image {
+        position: relative;
+    }
+
+    // .match-comand-right__flag
+
+    &__flag {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        right: -6px;
+        top: -3px;
+    }
+
+    // .match-comand-right__comand
+
+    &__comand {
+        width: 32px;
+        height: 32px;
+    }
+}
