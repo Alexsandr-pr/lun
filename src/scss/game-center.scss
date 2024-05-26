@@ -494,9 +494,11 @@ background:  #018000;
     border-radius:8px;
     background-color: #0A2B1D;
 }
+
+
 .pole__content {
     position: relative;
-    height: 760px;
+    height: 700px;
     &::after {
         top: 71px;
         height: 2px;
@@ -517,9 +519,7 @@ background:  #018000;
     }
 }
 .pole {
-
     // .pole__rectanle-top
-
     &__rectanle-top {
         position: absolute;
         left: 50%;

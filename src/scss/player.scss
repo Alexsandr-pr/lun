@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
     &__name {
         text-align: center;
         font-size: 10px;
@@ -76,4 +77,11 @@
     &__bg {
         fill: #FF4848;
     }
+}
+
+
+.player-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
