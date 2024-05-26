@@ -253,7 +253,8 @@ calendarWrapper.addEventListener("click", (e) => {
 })
 
 
-const buttonsOff = document.querySelectorAll("[data-off]");
+try {
+    const buttonsOff = document.querySelectorAll("[data-off]");
 
 buttonsOff.forEach(item => {
     item.addEventListener("click", () => {
@@ -278,11 +279,15 @@ changeActive("[data-border]");
 changeActive(".button-green")
 
 
+} catch(e) {
+
+}
+ 
 
 
 
-
-const selectButton = document.querySelector(".header-select__button");
+try {
+    const selectButton = document.querySelector(".header-select__button");
 const selectParent = document.querySelector(".header-select")
 
 selectButton.addEventListener("click", () => {
@@ -295,13 +300,31 @@ selectOption.forEach(item => {
         selectParent.classList.remove("active")
     })
 })
+} catch(e) {}
 
 
-const containersColunms = document.querySelectorAll(".team-span__number-gol");
+try {
+    const containersColunms = document.querySelectorAll(".team-span__number-gol");
 
-containersColunms.forEach(item => {
-    const items = item.children.length;
-    const columns = Math.ceil(items / 2);
+    containersColunms.forEach(item => {
+        const items = item.children.length;
+        const columns = Math.ceil(items / 2);
+    
+        item.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
+    })
+    
+} catch(e) {
 
-    item.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
-})
+}
+
+
+const blockStatic = document.querySelector(".static-block").children;
+
+for(let i = 0; i < blockStatic.length; i++) {
+    const block = blockStatic[i];
+
+    block.addEventListener("click", () => {
+        const parent = block.parentElement;
+        parent.classList.toggle("_active")
+    })
+}

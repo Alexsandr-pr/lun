@@ -3,7 +3,8 @@
 @import "index-home";
 @import "header";
 @import "reclama";
-
+@import "game-center";
+@import "player";
 
 *,
 *::before,
@@ -45,7 +46,13 @@ body {
     font-weight: 700;
     font-family: "Roboto";
     background-color: #115E2A;
-    background-image: url("@img/bg.webp");
+    background-size:cover;
+    @media(min-width:991.98px){
+        background-image: url("@img/bg.webp");
+    }
+    @media(max-width:991.98px){
+        background-image: url("@img/bg-mobile.webp");
+    }
     &::-webkit-scrollbar {
         width: 16px;
         background-color: #fff;
