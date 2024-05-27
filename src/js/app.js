@@ -798,7 +798,6 @@ function pushPlayers(playersArray, key, index) {
     }
     let color = index === 0 ? "#115E2A" : "#FF4848"
     
-
     for(let i = 0; i < playersArray.length; i++) {
         const player = playersArray[i];
 
