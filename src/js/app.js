@@ -18,6 +18,9 @@ accordion();
 
 
 
+
+
+
 try {   
     const dasnboardBlock = document.querySelectorAll(".dashboard-block__list");
     const modalDashboard = document.querySelector(".modals__wrapper");
@@ -46,116 +49,35 @@ try {
 
 }
 
-try {
 
-    const createDiv = () => {
-        const div = document.createElement("div");
-        
-        div.innerHTML = `
-                <div class="element-setka"></div>
-        `; 
-        return div;
-    }
-
-    const createTopSvg = (height) => {
-            const div = document.createElement("div");
-            div.innerHTML = `
-                    <div style="height: ${height}px;" class="svg-dashboard-top">
-
-                    </div>
-            `;
-            return div;
-    }
-    const createBottomSvg = (height) => {
-        const div = document.createElement("div");
-        div.innerHTML = `
-                <div style="height: ${height}px;" class="svg-dashboard-bottom">
-
-                </div>
-        `;
-        return div;
-        }
-
-        const createLastSvgWidth = () => {
-            const div = document.createElement("div");
-            div.innerHTML = `
-                    <div  class="svg-dashboard-last"></div>
-            `;
-            return div; 
-        }
-
-        const createLastSvgHeight = () => {
-            const div = document.createElement("div");
-            div.innerHTML = `
-                    <div  class="element-setka-last"></div>
-            `;
-            return div; 
-        }
-    
+const contentWrapper = document.querySelector(".dashboard__body-content");
+const dashboardTable = document.querySelectorAll(".dashboard__table");
 
 
-
-    function addBorder() {
-        const dasnboardTable = document.querySelectorAll(".dashboard-table__items");
-        //const dashboardItemBlock = document.querySelectorAll(".dashboard-block__item");
-        dasnboardTable.forEach((item, i) => {
-            const array = item.querySelectorAll(".dashboard-block"); 
-            const arrayHeight = [];
-
-
-            const offset = "102.5";
-            const offset1 = "51.5";
-
-
-            array.forEach((block, index) => {
-                if(i === 0) {
-                    console.log(block)
-                    arrayHeight.push(block.offsetTop);
-                }
-                
-
-                if(i === 1) {
-                    arrayHeight.push(block.offsetTop);
-
-                    block.appendChild(createTopSvg(offset1))
-                    block.appendChild(createBottomSvg(+offset1 + 3))
-                }
-
-                if(i === 2) {
-                    arrayHeight.push(block.offsetTop);
-
-                    block.appendChild(createTopSvg(offset))
-                    block.appendChild(createBottomSvg(+offset + 3))
-                }
-
-                if(i === dasnboardTable.length - 1) {
-                    
-                    block.appendChild(createLastSvgWidth())
-                }
-                
-                if(!(i === dasnboardTable.length - 1)) {
-                    if(i === dasnboardTable.length - 2) {
-                        block.appendChild(createLastSvgHeight())
-                    } else {
-                        block.appendChild(createDiv())
-                    }
-                    
-                }
-
-            })
-
-            const offsetHeight = arrayHeight[1] - arrayHeight[0];
-            console.log(arrayHeight)
-            
-        })
-    }
-    addBorder()
-    
-}catch(e) {
-
+function changeWidthWrapper() {
+    const width = dashboardTable[0].clientWidth * dashboardTable.length;
+    contentWrapper.style.width = `${width}px`;
+    console.log(contentWrapper.style.width)
 }
 
+window.addEventListener("resize", changeWidthWrapper);
 
+changeWidthWrapper()
+
+$(function(){
+    $(".wrapper1").scroll(function(){
+        $(".wrapper2")
+            .scrollLeft($(".wrapper1").scrollLeft());
+    });
+    $(".wrapper2").scroll(function(){
+        $(".wrapper1")
+            .scrollLeft($(".wrapper2").scrollLeft());
+    });
+});
+
+
+import dashboardCreateLine from "./modules/dashboardPaintLines.js";
+dashboardCreateLine()
 
 
 const animItems = document.querySelectorAll("._anim-items");
@@ -292,7 +214,7 @@ function handleSwipe() {
     let deltaY = endY - startY;
     
     if (Math.abs(deltaX) > Math.abs(deltaY) && deltaX > 0) {
-        fromMobile.classList.remove("active")
+        formMobile.classList.remove("active")
         document.body.style.overflow = "";
        
         deleteClass();
@@ -302,7 +224,7 @@ function handleSwipe() {
 
     } else if (Math.abs(deltaY) > Math.abs(deltaX) && deltaY < 0) {
         // Swipe up
-        fromMobile.classList.remove("active")
+        formMobile.classList.remove("active")
         
         
         

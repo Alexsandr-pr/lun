@@ -136,9 +136,12 @@ button {
     // .main-block__aside
 
     &__aside {
-        flex: 0 1 26.398601%; /* 302/1144 */
-        @media(min-width:767.98px){
+        flex: 0 1 17.398601%; /* 302/1144 */
+        @media(min-width:991.98px){
             padding-right: 24px;
+        }
+        @media(min-width:767.98px){
+            padding-right: 12px;
         }
         @media(max-width:767.98px){
             position: fixed;
@@ -182,11 +185,12 @@ button {
     // .main-block__content
 
     &__content {
+        overflow: hidden;
         display: flex;
         flex-direction: column;
         gap: 24px;
         @media(min-width:767.98px){
-            flex: 0 1 72.202797%; /* 826/1144 */
+            flex: 0 1 82.202797%; /* 826/1144 */
         }
         @media(max-width:767.98px){
             width: 100%;
@@ -201,13 +205,16 @@ button {
         @media(max-width:767.98px){
             display: none;
         }
+        img {
+            max-width: 100%;
+        }
     }
 
     // .aside__select
 
     &__select {
         padding: 20px 0px;
-        width: 250px;
+        width: 180px;
         border-bottom: 1px solid #fff;
         display: flex;
         flex-direction: column;
@@ -221,7 +228,7 @@ button {
     // .aside__links
 
     &__links {
-        width: 250px;
+        width: 180px;
         border-bottom: 1px solid #fff;
         padding: 16px 0px;
         @media(max-width:767.98px){
