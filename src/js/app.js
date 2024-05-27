@@ -75,12 +75,19 @@ try {
         `;
         return div;
         }
-        const createLastSvg = () => {
+
+        const createLastSvgWidth = () => {
             const div = document.createElement("div");
             div.innerHTML = `
-                    <div  class="svg-dashboard-last">
-    
-                    </div>
+                    <div  class="svg-dashboard-last"></div>
+            `;
+            return div; 
+        }
+
+        const createLastSvgHeight = () => {
+            const div = document.createElement("div");
+            div.innerHTML = `
+                    <div  class="element-setka-last"></div>
             `;
             return div; 
         }
@@ -94,31 +101,51 @@ try {
         dasnboardTable.forEach((item, i) => {
             const array = item.querySelectorAll(".dashboard-block"); 
             const arrayHeight = [];
-            const offset = "103.5"
-            const offset1 = "51.5"
+
+
+            const offset = "102.5";
+            const offset1 = "51.5";
+
 
             array.forEach((block, index) => {
+                if(i === 0) {
+                    console.log(block)
+                    arrayHeight.push(block.offsetTop);
+                }
+                
+
                 if(i === 1) {
                     arrayHeight.push(block.offsetTop);
+
                     block.appendChild(createTopSvg(offset1))
                     block.appendChild(createBottomSvg(+offset1 + 3))
                 }
+
                 if(i === 2) {
                     arrayHeight.push(block.offsetTop);
+
                     block.appendChild(createTopSvg(offset))
                     block.appendChild(createBottomSvg(+offset + 3))
                 }
+
                 if(i === dasnboardTable.length - 1) {
-                    block.appendChild(createLastSvg())
+                    
+                    block.appendChild(createLastSvgWidth())
                 }
                 
                 if(!(i === dasnboardTable.length - 1)) {
-                    block.appendChild(createDiv())
+                    if(i === dasnboardTable.length - 2) {
+                        block.appendChild(createLastSvgHeight())
+                    } else {
+                        block.appendChild(createDiv())
+                    }
+                    
                 }
 
             })
+
             const offsetHeight = arrayHeight[1] - arrayHeight[0];
-            console.log(offsetHeight)
+            console.log(arrayHeight)
             
         })
     }

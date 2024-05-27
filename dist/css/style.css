@@ -1294,12 +1294,40 @@ input[type=search]::-webkit-search-cancel-button {
 }
 
 .svg-dashboard-last {
-  width: 16px;
+  width: 12px;
   height: 1px;
   position: absolute;
   background-color: #115E2A;
-  left: -16px;
+  left: -12px;
   top: calc(50% - 0.5px);
+}
+
+.element-setka-last {
+  right: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  width: 1px;
+  height: 44px;
+  background-color: #115E2A;
+}
+.element-setka-last::after {
+  content: "";
+  width: 12px;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  background-color: #115E2A;
+  right: 0;
+}
+.element-setka-last::before {
+  content: "";
+  width: 12px;
+  height: 1px;
+  position: absolute;
+  background-color: #115E2A;
+  right: 0;
+  bottom: 0;
 }
 
 .svg-dashboard-bottom {
