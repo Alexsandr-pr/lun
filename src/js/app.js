@@ -17,6 +17,120 @@ accordion();
 //da.init();
 
 
+
+try {   
+    const dasnboardBlock = document.querySelectorAll(".dashboard-block__list");
+    const modalDashboard = document.querySelector(".modals__wrapper");
+    const modalsCloseButton = document.querySelector(".modals__close");
+
+    dasnboardBlock.forEach(item => {
+        item.addEventListener("click", () => {
+            console.log("click")
+            modalDashboard.classList.add("active")
+        })
+    })
+    modalDashboard.addEventListener("click", (e) => {
+        if(e.target.classList.contains("modals__wrapper")) {
+            modalDashboard.classList.remove("active")
+        }
+    })
+    modalsCloseButton.addEventListener("click", (e) => {
+        
+            modalDashboard.classList.remove("active")
+        
+    })
+
+
+
+}catch(e) {
+
+}
+
+try {
+
+    const createDiv = () => {
+        const div = document.createElement("div");
+        
+        div.innerHTML = `
+                <div class="element-setka"></div>
+        `; 
+        return div;
+    }
+
+    const createTopSvg = (height) => {
+            const div = document.createElement("div");
+            div.innerHTML = `
+                    <div style="height: ${height}px;" class="svg-dashboard-top">
+
+                    </div>
+            `;
+            return div;
+    }
+    const createBottomSvg = (height) => {
+        const div = document.createElement("div");
+        div.innerHTML = `
+                <div style="height: ${height}px;" class="svg-dashboard-bottom">
+
+                </div>
+        `;
+        return div;
+        }
+        const createLastSvg = () => {
+            const div = document.createElement("div");
+            div.innerHTML = `
+                    <div  class="svg-dashboard-last">
+    
+                    </div>
+            `;
+            return div; 
+        }
+    
+
+
+
+    function addBorder() {
+        const dasnboardTable = document.querySelectorAll(".dashboard-table__items");
+        //const dashboardItemBlock = document.querySelectorAll(".dashboard-block__item");
+        dasnboardTable.forEach((item, i) => {
+            const array = item.querySelectorAll(".dashboard-block"); 
+            const arrayHeight = [];
+            const offset = "103.5"
+            const offset1 = "51.5"
+
+            array.forEach((block, index) => {
+                if(i === 1) {
+                    arrayHeight.push(block.offsetTop);
+                    block.appendChild(createTopSvg(offset1))
+                    block.appendChild(createBottomSvg(+offset1 + 3))
+                }
+                if(i === 2) {
+                    arrayHeight.push(block.offsetTop);
+                    block.appendChild(createTopSvg(offset))
+                    block.appendChild(createBottomSvg(+offset + 3))
+                }
+                if(i === dasnboardTable.length - 1) {
+                    block.appendChild(createLastSvg())
+                }
+                
+                if(!(i === dasnboardTable.length - 1)) {
+                    block.appendChild(createDiv())
+                }
+
+            })
+            const offsetHeight = arrayHeight[1] - arrayHeight[0];
+            console.log(offsetHeight)
+            
+        })
+    }
+    addBorder()
+    
+}catch(e) {
+
+}
+
+
+
+
 const animItems = document.querySelectorAll("._anim-items");
 
 if(animItems.length > 0) {
@@ -131,7 +245,7 @@ function deleteClass() {
 	document.body.style.overflow = "";
 	buttonBurger.classList.remove("_active")
 }
-/*
+
 let startX, startY, endX, endY;
 
 document.addEventListener('touchstart', function(e) {
@@ -169,63 +283,9 @@ function handleSwipe() {
         // Swipe down
     }
 }
-*/
 
 
-let startX;
-let startY;
-let endX;
-let endY;
-let isSwiping = false;
 
-
-function touchStart(event) {
-    startX = event.touches[0].clientX;
-    startY = event.touches[0].clientY;
-    isSwiping = true;
-}
-
-function touchMove(event) {
-    if (!isSwiping) return;
-    endX = event.touches[0].clientX;
-    endY = event.touches[0].clientY;
-
-    let deltaX = endX - startX;
-    let deltaY = endY - startY;
-
-    if (Math.abs(deltaX) > Math.abs(deltaY) && deltaX < 0) {
-        // Swipe left - dynamically update 'right' property
-        let newRight = Math.min(0, -120 + (deltaX / window.innerWidth) * 120) + '%';
-        aside.style.right = newRight;
-    }
-}
-
-function touchEnd(event) {
-    isSwiping = false;
-    let deltaX = endX - startX;
-    let deltaY = endY - startY;
-
-    if (Math.abs(deltaX) > Math.abs(deltaY) && deltaX > 0) {
-        // Swipe right
-        aside.classList.remove("active");
-        document.body.style.overflow = "";
-        deleteClass();
-    } else if (Math.abs(deltaX) > Math.abs(deltaY) && deltaX < 0) {
-        // Swipe left
-        aside.classList.add("active");
-    } else if (Math.abs(deltaY) > Math.abs(deltaX) && deltaY < 0) {
-        // Swipe up
-        aside.classList.remove("active");
-    } else if (Math.abs(deltaY) > Math.abs(deltaX) && deltaY > 0) {
-        // Swipe down
-    }
-
-    aside.style.right = ''; // Reset right style after swipe ends
-}
-
-document.addEventListener('touchstart', touchStart);
-document.addEventListener('touchmove', touchMove);
-document.addEventListener('touchend', touchEnd);
 
 const calendarWrapper = document.querySelector(".calendar__wrapper");
 const calendarClose = document.querySelector(".calendar-close");
@@ -334,7 +394,8 @@ try {
     
 }
 
-
+try {
+    
     const linups =  [
         {
             "CompNum": 1,
@@ -848,3 +909,9 @@ linups.forEach(({players}, index) => {
     }
 
 })
+
+}catch(e) {
+
+}
+
+
