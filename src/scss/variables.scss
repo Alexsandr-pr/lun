@@ -79,6 +79,12 @@
     min-width: 260px;
     .comand__text {
         width: 220px; 
+        @media(max-width:487.98px){
+            width: 130px;
+        }
+    }
+    @media(max-width:487.98px){
+        min-width: 140px;
     }
 }
 

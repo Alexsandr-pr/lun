@@ -187,17 +187,14 @@
     // .dashboard-block__item
 
     &__item {
-
         padding: 4px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         background:  #115E2A;
         &:nth-child(1) {
-            
             border-radius:4px 4px 0px 0px;
         }
-
         &:nth-child(2) {
             
             border-radius:0px 0px 4px 4px ;
