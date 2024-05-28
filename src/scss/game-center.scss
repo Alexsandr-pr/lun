@@ -400,53 +400,6 @@ background:  #018000;
 
     &__comand-name {
     }
-
-    // .result-item__list
-
-    &__list {
-        display: flex;
-        gap: 8px;
-        @media(max-width:487.98px){
-            gap: 2px;
-        }
-    }
-
-    // .result-item__block
-
-    &__block {
-        width: 24px;
-        height: 24px;
-        padding: 2px;
-        color: #0A2B1D;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 10px;
-        text-align: center;
-        text-transform: uppercase;
-        border-radius: 2px;
-    }
-
-    // .result-item__block-win
-
-    &__block-win {
-        background:  #EEFFA5;
-    }
-
-    // .result-item__block-loss
-
-    &__block-loss {
-        background-color: #FF4848;
-    }
-
-    // .result-item__block-draw
-
-
-    &__block-draw {
-        background: rgba(255, 255, 255, 0.50);
-    }
-
-
     // .result-item__info
 
     &__info {

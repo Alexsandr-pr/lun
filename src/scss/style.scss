@@ -7,6 +7,8 @@
 @import "player";
 @import "dashboard";
 @import "modals-dashboard";
+@import "table";
+@import "variables";
 *,
 *::before,
 *::after {
@@ -78,6 +80,12 @@ button {
     
     background-color: inherit;
 }
+
+table, td, th, tr {
+    border:none;
+    border-collapse:collapse;
+}
+
 /*****************/
 [class*=_container] {
     overflow: hidden;
@@ -136,12 +144,14 @@ button {
     // .main-block__aside
 
     &__aside {
-        flex: 0 1 17.398601%; /* 302/1144 */
+        flex: 0 1 22.398601%; /* 302/1144 */
         @media(min-width:991.98px){
             padding-right: 24px;
         }
-        @media(min-width:767.98px){
-            padding-right: 12px;
+        @media(max-width:991.98px){
+            @media(min-width:767.98px){
+                padding-right: 12px;
+            }
         }
         @media(max-width:767.98px){
             position: fixed;
@@ -190,7 +200,7 @@ button {
         flex-direction: column;
         gap: 24px;
         @media(min-width:767.98px){
-            flex: 0 1 82.202797%; /* 826/1144 */
+            flex: 0 1 76.202797%; /* 826/1144 */
         }
         @media(max-width:767.98px){
             width: 100%;
@@ -214,7 +224,7 @@ button {
 
     &__select {
         padding: 20px 0px;
-        width: 180px;
+        width: 250px;
         border-bottom: 1px solid #fff;
         display: flex;
         flex-direction: column;
@@ -228,7 +238,7 @@ button {
     // .aside__links
 
     &__links {
-        width: 180px;
+        width: 250px;
         border-bottom: 1px solid #fff;
         padding: 16px 0px;
         @media(max-width:767.98px){

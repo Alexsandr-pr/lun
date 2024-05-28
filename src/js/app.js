@@ -5,7 +5,13 @@ flsFunctions.isWebp();
 import burgerMenu from "./ui/burger.js";
 burgerMenu();
 
+import tableActivation from "./modules/tableFunction.js";
 
+try {
+    tableActivation()
+}catch(e) {
+
+}
 import  accordion  from "./ui/accordion.js";
 accordion();
 

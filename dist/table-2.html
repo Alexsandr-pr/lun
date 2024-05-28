@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+	 <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="path/to/air-datepicker.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="path/to/locales/datepicker.en.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@2.2.3/dist/css/datepicker.min.css">
+	<title>Главная</title>
+</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+    <div class="header__container">
+        <div class="header__logo">
+            <a href="#">
+                <img src="img/header/logo_white.webp" alt="Logo">
+            </a>
+        </div>
+        <div class="header__form">
+            <svg class="ham ham3 active" viewBox="0 0 100 100" width="40" >
+                <path
+                      class="line top"
+                      d="m 70,33 h -40 c -11.092231,0 11.883874,13.496726 -3.420361,12.956839 -0.962502,-2.089471 -2.222071,-3.282996 -4.545687,-3.282996 -2.323616,0 -5.113897,2.622752 -5.113897,7.071068 0,4.448316 2.080609,7.007933 5.555839,7.007933 2.401943,0 2.96769,-1.283974 4.166879,-3.282995 2.209342,0.273823 4.031294,1.642466 5.857227,-0.252538 v -13.005715 16.288404 h 7.653568" />
+                <path
+                      class="line middle"
+                      d="m 70,50 h -40 c -5.6862,0 -8.534259,5.373483 -8.534259,11.551069 0,7.187738 3.499166,10.922274 13.131984,10.922274 11.021777,0 7.022787,-15.773343 15.531095,-15.773343 3.268142,0 5.177031,-2.159429 5.177031,-6.7 0,-4.540571 -1.766442,-7.33533 -5.087851,-7.326157 -3.321409,0.0092 -5.771288,2.789632 -5.771288,7.326157 0,4.536525 2.478983,6.805271 5.771288,6.7" />
+                <path
+                      class="line bottom"
+                      d="m 70,67 h -40 c 0,0 -3.680675,0.737051 -3.660714,-3.517857 0.02541,-5.415597 3.391687,-10.357143 10.982142,-10.357143 4.048418,0 17.88928,0.178572 23.482143,0.178572 0,2.563604 2.451177,3.403635 4.642857,3.392857 2.19168,-0.01078 4.373905,-1.369814 4.375,-3.392857 0.0011,-2.023043 -1.924401,-2.589191 -4.553571,-4.107143 -2.62917,-1.517952 -4.196429,-1.799562 -4.196429,-3.660714 0,-1.861153 2.442181,-3.118811 4.196429,-3.035715 1.754248,0.0831 4.375,0.890841 4.375,3.125 2.628634,0 6.160714,0.267857 6.160714,0.267857 l -0.178571,-2.946428 10.178571,0 -10.178571,0 v 6.696428 l 8.928571,0 -8.928571,0 v 7.142858 l 10.178571,0 -10.178571,0" />
+              </svg>
+            <form  action="#">
+                <label class="header__search" for="search">
+                    <img width="24" height="24" class="header__image-search" src="img/header/search.webp" alt="search">
+                    <input autocomplete="off" class="header__search-input" id="search" type="search" placeholder="Search">
+                </label>
+            </form>
+            <div class="header__search-block">
+                <p class="header__search-title">Solicitudes recientes</p>
+                <ul  class="search__list">
+                    <li class="search__item">
+                        <p>Copa de la Liga</p>
+                    </li>
+                    <li class="search__item">
+                        <p>Prim. B Nacional</p>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <div class="header__buttons">
+            <button class="header__button-search">
+                <img width="24" height="24" src="img/header/search.webp" alt="search">
+            </button>
+            <button class="header__button-menu icon-menu">
+                <svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="40" onclick="this.classList.toggle('active')">
+                    <path
+                          class="line top"
+                          d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
+                    <path
+                          class="line middle"
+                          d="m 70,50 h -40" />
+                    <path
+                          class="line bottom"
+                          d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
+                  </svg>
+            </button>
+        </div>
+    </div>
+</header>
+			<main class="main">
+				
+				<div class="main__block main-block">
+					<div class="main-block__container">
+						<div class="main-block__body">
+							<aside class="main-block__aside aside">
+    <div class="aside__image-top">
+        <img src="img/main/aside/image-top.png" alt="">
+    </div>
+    <div class="aside__menu">
+        <div class="aside__select select">
+            <div data-spollers  class="select__block active">
+                <button data-spoller  class="select__button ">
+                    Destacado
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M6 9L12 15L18 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <div  style="max-height: max-content;" data-spollers-content class="">
+                    <ul  class="select__list">
+                        <li class="select__item">
+                            <a href="index-home.html">Copa de la Liga</a>
+                        </li>
+                        <li class="select__item">
+                            <a href="game-center.html">Prim. B Nacional</a>
+                        </li>
+                        <li class="select__item">
+                            <a href="dashboard.html">Copa Argentina</a>
+                        </li>
+                        <li class="select__item">
+                            <a href="table.html">Libertadores</a>
+                        </li>
+                        <li class="select__item">
+                            <button>Champions</button>
+                        </li>
+                        <li class="select__item">
+                            <button>Elim. Conmebol</button>
+                        </li>
+                        <li class="select__item">
+                            <button>Ranking Titulos</button>
+                        </li>
+                        <li class="select__item">
+                            <button>Ranking Copas Int</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-spollers class="select__block">
+                <button data-spoller class="select__button">
+                    Argentina
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M6 9L12 15L18 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <div data-spollers-content class="">
+                    <ul   class="select__list">
+                        <li class="select__item">
+                            <button>Copa de la Liga</button>
+                        </li>
+                        <li class="select__item">
+                            <button>Prim. B Nacional</button>
+                        </li>
+                        <li class="select__item">
+                            <button>Copa Argentina</button>
+                        </li>
+                        <li class="select__item">
+                            <button>Libertadores</button>
+                        </li>
+                        <li class="select__item">
+                            <button>Champions</button>
+                        </li>
+                        <li class="select__item">
+                            <button>Elim. Conmebol</button>
+                        </li>
+                        <li class="select__item">
+                            <button>Ranking Titulos</button>
+                        </li>
+                        <li class="select__item">
+                            <button>Ranking Copas Int</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-spollers class="select__block">
+                <button data-spoller class="select__button">
+                    Copas Int.
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M6 9L12 15L18 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <div data-spollers-content class="">
+                    <ul   class="select__list">
+                        <li class="select__item">
+                            <button>Copa de la Liga</button>
+                        </li>
+                        <li class="select__item">
+                            <button>Prim. B Nacional</button>
+                        </li>
+                        <li class="select__item">
+                            <button>Copa Argentina</button>
+                        </li>
+                        <li class="select__item">
+                            <button>Libertadores</button>
+                        </li>
+                        <li class="select__item">
+                            <button>Champions</button>
+                        </li>
+                        <li class="select__item">
+                            <button>Elim. Conmebol</button>
+                        </li>
+                        <li class="select__item">
+                            <button>Ranking Titulos</button>
+                        </li>
+                        <li class="select__item">
+                            <button>Ranking Copas Int</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-spollers class="select__block">
+                <button data-spoller class="select__button">
+                    Ligas
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M6 9L12 15L18 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <div data-spollers-content class="">
+                    <ul   class="select__list">
+                        <li class="select__item">
+                            <button>Copa de la Liga</button>
+                        </li>
+                        <li class="select__item">
+                            <button>Prim. B Nacional</button>
+                        </li>
+                        <li class="select__item">
+                            <button>Copa Argentina</button>
+                        </li>
+                        <li class="select__item">
+                            <button>Libertadores</button>
+                        </li>
+                        <li class="select__item">
+                            <button>Champions</button>
+                        </li>
+                        <li class="select__item">
+                            <button>Elim. Conmebol</button>
+                        </li>
+                        <li class="select__item">
+                            <button>Ranking Titulos</button>
+                        </li>
+                        <li class="select__item">
+                            <button>Ranking Copas Int</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div  data-spollers class="select__block">
+                <button data-spoller class="select__button">
+                    Selecciones
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M6 9L12 15L18 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <div data-spollers-content class="">
+                    <ul   class="select__list">
+                        <li class="select__item">
+                            <button>Copa de la Liga</button>
+                        </li>
+                        <li class="select__item">
+                            <button>Prim. B Nacional</button>
+                        </li>
+                        <li class="select__item">
+                            <button>Copa Argentina</button>
+                        </li>
+                        <li class="select__item">
+                            <button>Libertadores</button>
+                        </li>
+                        <li class="select__item">
+                            <button>Champions</button>
+                        </li>
+                        <li class="select__item">
+                            <button>Elim. Conmebol</button>
+                        </li>
+                        <li class="select__item">
+                            <button>Ranking Titulos</button>
+                        </li>
+                        <li class="select__item">
+                            <button>Ranking Copas Int</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <ul class="aside__links links-aside">
+            <li class="links-aside__item">
+                <button class="links-aside__button">
+                    COMUNIDAD
+                </button>
+            </li>
+            <li class="links-aside__item">
+                <button class="links-aside__button calendar-active">
+                    CALENDARIO
+                </button>
+            </li>
+            <li class="links-aside__item">
+                <button class="links-aside__button">
+                    CONTACTO
+                </button>
+            </li>
+        </ul>
+        <div class="aside__bottom">
+            <a href="/">Legal - Privacidad</a>
+        </div>
+    </div>
+    
+    
+</aside>
+							<div class="main-block__content main-content">
+
+                                <div class="table">
+
+                                    <div class="table__items">
+                                        <div class="table__left">
+                                            <h3 class="table__title main-title">game season 2024</h3>
+
+                                            
+                                                <div class="table__body table-body">
+
+                                                    <div class="table-body__header">
+                                                        <h3 class="title-16">zona a standings</h3>
+                                                    </div>
+                                                    <div class="table__wrapper">
+                                                        <div class="table-block__body">
+                                                            <table class="table-block" >
+                                                                <thead>
+                                                                    <tr class="table-block__row">
+                                                                        <td class="table-block__col-number">#</td>
+                                                                        <td class="table-block__col-team">Team</td>
+                                                                        <td class="table-block__col table-block__col-no-opacity">PT</td>
+                                                                        <td class="table-block__col">PJ</td>
+                                                                        <td class="table-block__col">PG</td>
+                                                                        <td class="table-block__col">PE</td>
+                                                                        <td class="table-block__col">PP</td>
+                                                                        <td class="table-block__col">GF</td>
+                                                                        <td class="table-block__col">GC</td>
+                                                                        <td class="table-block__col">DIF</td>
+                                                                        <td class="table-block__col table-block__col-result" >STANDINGS</td>
+                                                                    </tr>
+                                                                </thead>                                                   
+                                                                <tr  class="table-block__row">
+                                                                    <td class="table-block__col-number">1</td>
+                                                                    <td class="table-block__col-team"> 
+                                                                        <div class="comand-average comand">
+                                                                            <img alt="teams" src="img/teams/columbus.webp" class="comand__image"/>
+                                                                            <p class="comand__text"> Columbus Crew</p>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="table-block__col table-block__col-no-opacity">222</td>
+                                                                    <td class="table-block__col">114</td>
+                                                                    <td class="table-block__col">22</td>
+                                                                    <td class="table-block__col">6</td>
+                                                                    <td class="table-block__col">1</td>
+                                                                    <td class="table-block__col">26</td>
+                                                                    <td class="table-block__col">10</td>
+                                                                    <td class="table-block__col">+116</td>
+                                                                    <td class="table-block__col-result">
+                                                                        <ul class="table-block__list result-list result-list-average">
+                                                                            <li class="result-list__block result-list__block-draw">
+                                                                                d
+                                                                            </li>
+                                                                            <li class="result-list__block result-list__block-draw">
+                                                                                d
+                                                                            </li>
+                                                                            <li class="result-list__block result-list__block-loss">
+                                                                                l
+                                                                            </li>
+                                                                            <li class="result-list__block result-list__block-draw">
+                                                                                d
+                                                                            </li>
+                                                                            <li class="result-list__block result-list__block-win">
+                                                                                w
+                                                                            </li>
+                                                                            <li class="result-list__block result-list__block-win">
+                                                                                w
+                                                                            </li>
+                                                                        </ul>
+                                                                    </td>
+                                                                </tr> 
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    
+
+                                                    <div class="table-body__bottom table-bottom">
+                                                        <ul class="table-bottom__list">
+                                                            <li class="table-bottom__item table-info table-info-green">
+                                                                <span class="table-info__span"></span>
+                                                                <p class="table-info__text"> Los 4 primeros  de cada zona clasifican a la Fase Final</p>
+                                                            </li>
+                                                            <li class="table-bottom__item table-info table-info-yellow">
+                                                                <span class="table-info__span"></span>
+                                                                <p class="table-info__text">Puestos de classification a Libertadores por Tabla Anual</p>
+                                                            </li>
+                                                            <li class="table-bottom__item table-info table-info-yellow">
+                                                                <span class="table-info__span"></span>
+                                                                <p class="table-info__text">Puestos de classification a Sudamericanapor Tabla Anual</p>
+                                                            </li>
+                                                            <li class="table-bottom__item table-info table-info-red">
+                                                                <span class="table-info__span"></span>
+                                                                <p class="table-info__text">El ultimo de la Tabla Anual desciende a la Primera Nacional. Si ya desciende por promedios, lo hace el siguiente equipo de la tabla</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                           
+                                            
+                                        </div>
+                                        
+                                        <div class="table__right table-right">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="calendar__wrapper">
+					<div id="input" class="calendar__body">
+						<button class="calendar-close">
+							<img src="img/Vector.png" alt="close">
+						</button>
+					</div>
+				</div>
+
+                
+                
+			</main>
+			
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/air-datepicker@2.2.3/dist/js/datepicker.min.js"></script>
+		<script src="js/app.min.js"></script>
+	</body>
+</html>
