@@ -70,6 +70,18 @@
         font-size: 12px;
     }
 }
+.table-block__col-team-w-130 {
+    min-width: 130px;
+    
+}
+
+.table-block__col-team-w-260 {
+    min-width: 260px;
+    .comand__text {
+        width: 220px; 
+    }
+}
+
 
 .comand {
     display: flex;
@@ -80,5 +92,10 @@
         font-family: Roboto;
         font-weight: 400;
         line-height: 1.2; /* 14.4px */
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; 
     }
 }
+
+
