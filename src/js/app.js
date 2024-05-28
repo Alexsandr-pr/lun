@@ -27,68 +27,14 @@ accordion();
 
 
 
-try {   
-    const dasnboardBlock = document.querySelectorAll(".dashboard-block__list");
-    const modalDashboard = document.querySelector(".modals__wrapper");
-    const modalsCloseButton = document.querySelector(".modals__close");
-
-    dasnboardBlock.forEach(item => {
-        item.addEventListener("click", () => {
-            console.log("click")
-            modalDashboard.classList.add("active")
-        })
-    })
-    modalDashboard.addEventListener("click", (e) => {
-        if(e.target.classList.contains("modals__wrapper")) {
-            modalDashboard.classList.remove("active")
-        }
-    })
-    modalsCloseButton.addEventListener("click", (e) => {
-        
-            modalDashboard.classList.remove("active")
-        
-    })
-
-
-
-}catch(e) {
-
-}
-
-
-try {
-    const contentWrapper = document.querySelector(".dashboard__body-content");
-    const dashboardTable = document.querySelectorAll(".dashboard__table");
-
-
-    function changeWidthWrapper() {
-        const width = dashboardTable[0].clientWidth * dashboardTable.length;
-        contentWrapper.style.width = `${width}px`;
-        console.log(contentWrapper.style.width)
-    }
-
-    window.addEventListener("resize", changeWidthWrapper);
-
-    changeWidthWrapper()
-
-    
-    $(function(){
-        $(".wrapper1").scroll(function(){
-            $(".wrapper2")
-                .scrollLeft($(".wrapper1").scrollLeft());
-        });
-        $(".wrapper2").scroll(function(){
-            $(".wrapper1")
-                .scrollLeft($(".wrapper2").scrollLeft());
-        });
-    });
-} catch(e) {
-
-}
-
+import modal from "./modules/modals.js";
+import addWrapperPageDashboard from "./modules/addWrapperPageDashboard.js";
 import dashboardCreateLine from "./modules/dashboardPaintLines.js";
+
 try {
-    dashboardCreateLine()
+    dashboardCreateLine();
+    addWrapperPageDashboard();
+    modal();
 } catch(e) {
 
 }

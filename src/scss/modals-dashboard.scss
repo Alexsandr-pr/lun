@@ -18,6 +18,7 @@
     &__body {
         width: 328px;
         padding: 12px;
+        transition: all 0.6s ease 0s;
         border-radius: 8px;
         margin: 16px;
         background:  #FFF;
@@ -58,13 +59,20 @@
 }
 
 .modals__wrapper {
-    top: -120%;
+    visibility: hidden;
     opacity: 0;
     transition: all 0.6s ease 0s;
 }
+.modals__body {
+    transform: translateY(-120%);
+}
 .modals__wrapper.active {
     top: 0;
+    visibility: visible;
     opacity: 1;
+    .modals__body {
+        transform: translateY(0);
+    }
 }
 
 .comand-modal {
