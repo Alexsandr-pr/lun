@@ -130,7 +130,17 @@
   display: block;
 }
 
+.dashboard-block {
+  position: relative;
+}
+.dashboard-block .label-win {
+  position: absolute;
+  left: 50%;
+  top: -9px;
+  transform: translate(-50%);
+}
 .dashboard-block__list {
+  transition: all 0.3s ease 0s;
   border-radius: 4px;
 }
 .dashboard-block__list:nth-child(1) {
@@ -138,6 +148,11 @@
 }
 .dashboard-block__list:nth-child(2) {
   margin-top: 4px;
+}
+@media (hover: hover) {
+  .dashboard-block__list:hover {
+    cursor: pointer;
+  }
 }
 .dashboard-block__item {
   padding: 4px;
@@ -173,8 +188,8 @@
   top: 50%;
   transform: translateY(-50%);
   position: absolute;
-  width: 1px;
-  height: 44px;
+  width: 0.9px;
+  height: 45px;
   background-color: #115E2A;
 }
 @media (max-width: 991.98px) {
@@ -185,7 +200,7 @@
 .element-setka::after {
   content: "";
   width: 8px;
-  height: 1px;
+  height: 0.9px;
   position: absolute;
   top: 0;
   background-color: #115E2A;
@@ -199,7 +214,7 @@
 .element-setka::before {
   content: "";
   width: 8px;
-  height: 1px;
+  height: 0.9px;
   position: absolute;
   background-color: #115E2A;
   right: 0;
@@ -212,9 +227,9 @@
 }
 
 .svg-dashboard-top {
-  width: 1px;
+  width: 0.9px;
   left: -8px;
-  bottom: 50%;
+  bottom: calc(50% - 0.5px);
   position: absolute;
   background-color: #115E2A;
 }
@@ -226,7 +241,7 @@
 .svg-dashboard-top::after {
   content: "";
   width: 9px;
-  height: 1px;
+  height: 0.9px;
   position: absolute;
   top: 0;
   background-color: #115E2A;
@@ -240,7 +255,7 @@
 .svg-dashboard-top::before {
   content: "";
   width: 8px;
-  height: 1px;
+  height: 0.9px;
   position: absolute;
   background-color: #115E2A;
   left: 0;
@@ -254,7 +269,7 @@
 
 .svg-dashboard-last {
   width: 12px;
-  height: 1px;
+  height: 0.9px;
   position: absolute;
   background-color: #115E2A;
   left: -12px;
@@ -276,7 +291,7 @@
   top: 50%;
   transform: translateY(-50%);
   position: absolute;
-  width: 1px;
+  width: 0.9px;
   height: 44px;
   background-color: #115E2A;
 }
@@ -288,7 +303,7 @@
 .element-setka-last::after {
   content: "";
   width: 12px;
-  height: 1px;
+  height: 0.9px;
   position: absolute;
   top: 0;
   background-color: #115E2A;
@@ -302,7 +317,7 @@
 .element-setka-last::before {
   content: "";
   width: 12px;
-  height: 1px;
+  height: 0.9px;
   position: absolute;
   background-color: #115E2A;
   right: 0;
@@ -315,7 +330,7 @@
 }
 
 .svg-dashboard-bottom {
-  width: 1px;
+  width: 0.9px;
   left: -8px;
   top: calc(48% - 2px);
   position: absolute;
@@ -329,7 +344,7 @@
 .svg-dashboard-bottom::before {
   content: "";
   width: 9px;
-  height: 1px;
+  height: 0.9px;
   position: absolute;
   background-color: #115E2A;
   right: 0;

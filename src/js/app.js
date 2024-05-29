@@ -180,8 +180,6 @@ function handleSwipe() {
         // Swipe up
         formMobile.classList.remove("active")
         
-        
-        
     } else if (Math.abs(deltaY) > Math.abs(deltaX) && deltaY > 0) {
         // Swipe down
     }
@@ -301,3 +299,37 @@ import addBorderToScrollTable from "./modules/addBorderToScrollTable.js";
 addBorderToScrollTable(".table-block-scroll")
 
 
+
+
+const gameTabs = document.querySelectorAll(".game-tabs");
+
+gameTabs.forEach(block => {
+    const elementsItems = block.querySelectorAll(".game-tabs__button");
+    const activeLine = block.querySelector(".game-tabs__span");
+
+    function changeWidthLine() {
+        const elementWidth = elementsItems[0].clientWidth;
+        activeLine.style.width = `${elementWidth}px`;
+    }
+
+    changeWidthLine();
+    window.addEventListener("resize", changeWidthLine);
+
+    elementsItems.forEach((button, index) => {
+        button.addEventListener("click", () => {
+            elementsItems.forEach(item => item.classList.remove("active"));
+            button.classList.add("active");
+            switch(elementsItems.length) {
+                case 2:
+                    return  activeLine.style.left = `${50 * index}%`;
+                case 3:
+                    return  activeLine.style.left = `${33.33333 * index}%`;
+                case 4:
+                    return activeLine.style.left = `${25 * index}%`;
+                default:
+                    return activeLine.style.left = `${0 * index}%`;
+            }
+        })
+    })
+    
+})

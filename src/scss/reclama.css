@@ -1,0 +1,53 @@
+.reclama-block-1__body {
+  border-radius: 8px;
+  background: #0A2B1D;
+  color: #FFF;
+  line-height: 1.2; /* 12px */
+  padding: 9px 12px;
+}
+.reclama-block-1__label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Roboto;
+  gap: 8px;
+  font-size: 10px;
+  font-weight: 400;
+}
+.reclama-block-1__label:not(:last-child) {
+  margin-bottom: 6px;
+}
+.reclama-block-1__title {
+  text-align: center;
+  font-family: "Roboto Condensed";
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.reclama-block-1__title:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.reclama-button {
+  border-radius: 4px;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto Condensed";
+  font-size: 14px;
+  padding: 7.5px 12px;
+  width: 100%;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+  background: #115E2A;
+}
+@media (hover: hover) {
+  .reclama-button:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #018000;
+  }
+}/*# sourceMappingURL=reclama.css.map */

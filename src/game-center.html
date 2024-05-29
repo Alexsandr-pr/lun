@@ -14,9 +14,28 @@
 							@@include('html/aside.html',{})
 							<div class="main-block__content main-content">
 
-                                <div class="game-center__triggers game-tabs">
+                                <ul class="breadcrumbs">
+                                    <li class="breadcrumbs__item">
+                                        <a class="breadcrumbs__link" href="#">
+                                            Copa de LaLiga
+                                        </a>
+                                    </li>
+                                    <li class="breadcrumbs__item">
+                                        <a class="breadcrumbs__link" href="#">
+                                            Copa de LaLiga Prof
+                                        </a>
+                                    </li>
+                                    <li class="breadcrumbs__item _active">
+                                        <a class="breadcrumbs__link" href="#">
+                                            Fixture y tablas
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <div class="game-center__triggers game-tabs game-tabs-2">
                                     <button class="game-tabs__button active">VISTA PREVIA</button>
                                     <button class="game-tabs__button">LINAUPS</button>
+                                    <span class="game-tabs__span"></span>
                                 </div>  
 
 								<div class="game__info game-info">
@@ -52,7 +71,7 @@
                                         </div>
                                         <div class="static-game__content static-content">
                                             <div class="static-content__top static-block ">
-                                                <div class="static-block__item static-block-left">
+                                                <div class="static-block__item static-block-left button">
                                                     <span>1</span>
                                                     <span>65%</span>
                                                 </div>
@@ -84,8 +103,7 @@
                                             </div>
                                         </div>
                                         
-                                            <button class="bottom-info__button">Apostar ahora</button>
-                                        
+                                        <button class="bottom-info__button button">Apostar ahora</button>
                                     </div>
                                     
                                 </div>

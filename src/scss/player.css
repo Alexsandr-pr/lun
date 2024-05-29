@@ -1,0 +1,54 @@
+.player {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.player__name {
+  text-align: center;
+  font-size: 10px;
+  font-weight: 400;
+}
+.player__name:not(:last-child) {
+  margin-bottom: 2px;
+}
+.player__block {
+  position: relative;
+}
+.player__number {
+  font-size: 10px;
+  text-align: center;
+  font-weight: 700;
+  bottom: 9px;
+  transform: translate(-50%);
+  left: 50%;
+  position: absolute;
+}
+.player__minute {
+  position: absolute;
+  width: 12px;
+  font-size: 7px;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 12px;
+  border: 1.5px solid #fff;
+  border-radius: 50%;
+  background: #0A2B1D;
+}
+
+.player.top__bg {
+  fill: #115E2A;
+}
+
+.player.bottom__bg {
+  fill: #FF4848;
+}
+
+.player-block {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}/*# sourceMappingURL=player.css.map */

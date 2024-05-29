@@ -68,8 +68,8 @@ function dashboardCreateLine() {
                         nextBlocks.forEach((block, index) => {
                             console.log(block, index)
                             
-                            block.appendChild(createTopSvg(nextOffset, "svg-dashboard-bottom"));
-                            block.appendChild(createTopSvg(nextOffset + 4, "svg-dashboard-top"));
+                            block.appendChild(createTopSvg(nextOffset + 3, "svg-dashboard-bottom"));
+                            block.appendChild(createTopSvg(nextOffset + 2, "svg-dashboard-top"));
                         });
                     }
                 }
