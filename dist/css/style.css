@@ -1675,9 +1675,6 @@ input[type=search]::-webkit-search-cancel-button {
   border-right: 1px solid #60756C;
 }
 .table-block__col-team {
-  transition: all 0.3s ease 0s;
-  min-width: 100%;
-  padding: 4px 4px 4px 3px;
   border-right: 1px solid #60756C;
 }
 .table-block__col-result {
@@ -1732,43 +1729,81 @@ input[type=search]::-webkit-search-cancel-button {
     min-width: 25px;
   }
 }
-.table-block .table-block__row td:nth-child(1)::after {
-  top: 0;
-  left: 0;
-  background: #0A2B1D;
-  content: "";
-  width: 100%;
+
+.table-block__col-team .comand {
+  transition: all 0.3s ease 0s;
+  min-width: 100%;
   height: 100%;
-  position: absolute;
+  position: relative;
+  display: flex;
+  justify-content: start;
+  z-index: 3;
+  position: relative;
+  gap: 2px;
+  background: #2e4b3e;
+}
+.table-block__col-team .comand .comand__image-block {
+  padding: 4px;
+}
+
+.comand__image {
+  position: relative;
+  z-index: 2;
+}
+
+.table-block .table-block__row:nth-child(even) td:nth-child(2) .comand,
+.table-block .table-block__row:nth-child(even) td:nth-child(2) .comand__image-block {
+  background: #224034;
+}
+
+.table-block .table-block__row:nth-child(odd) td:nth-child(2) .comand,
+.table-block .table-block__row:nth-child(odd) td:nth-child(2) .comand__image-block {
+  background: #2e4b3e;
 }
 
 .table-block .table-block__row:nth-child(even) td span {
-  background: rgba(255, 255, 255, 0.05);
+  background: #224034;
 }
 
 .table-block .table-block__row:nth-child(odd) td span {
-  background: rgba(255, 255, 255, 0.1);
+  background: #2e4b3e;
 }
 
 .table-block .table-block__row td:nth-child(1) {
   position: sticky;
   left: 0;
-  z-index: 1;
+  z-index: 4;
 }
 
-.table-block .table-block__row td:nth-child(2) .comand__image {
+.table-block .table-block__row td:nth-child(2) .comand__image-block {
   position: sticky;
-  left: 28px;
+  left: 25px;
   z-index: 1;
 }
 
 .table-block .table-block__row-top td:nth-child(1) {
   position: sticky;
   left: 0;
-  z-index: 1;
+  z-index: 4;
 }
 .table-block .table-block__row-top td:nth-child(1) span {
   background: #0A2B1D;
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-width: 28px;
+  height: 24px;
+  padding: 3px 4px;
+}
+@media (max-width: 487.98px) {
+  .table-block .table-block__row-top td:nth-child(1) span {
+    min-width: 25px;
+  }
 }
 
 /************************************/
