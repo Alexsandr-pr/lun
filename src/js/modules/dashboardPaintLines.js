@@ -66,8 +66,6 @@ function dashboardCreateLine() {
                         const nextOffset = offsets[i];
                         
                         nextBlocks.forEach((block, index) => {
-                            console.log(block, index)
-                            
                             block.appendChild(createTopSvg(nextOffset + 3, "svg-dashboard-bottom"));
                             block.appendChild(createTopSvg(nextOffset + 2, "svg-dashboard-top"));
                         });

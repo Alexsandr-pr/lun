@@ -42,23 +42,6 @@
   border-radius: 8px;
   background: #0A2B1D;
 }
-.static-game__header {
-  border-bottom: 1px solid #60756C;
-  padding: 8px 12px;
-  border-radius: 8px 8px 0px 0px;
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  align-items: center;
-  font-family: "Roboto Condensed";
-  font-weight: 700;
-  text-transform: uppercase;
-}
-@media (max-width: 767.98px) {
-  .static-game__header {
-    font-size: 14px;
-  }
-}
 .static-game__body {
   padding: 4px 0px;
 }
@@ -204,32 +187,12 @@
 }
 
 /**************game-result***************/
-.game-result {
-  background: #0A2B1D;
-  border-radius: 8px;
-}
-.game-result__top {
-  padding: 8px 12px;
-  font-family: "Roboto Condensed";
-  font-weight: 700;
-  text-transform: uppercase;
-  border-radius: 8px 8px 0px 0px;
-  border-bottom: 1px solid #60756C;
-  background: #0A2B1D;
-}
 .game-result__list {
   padding: 12px;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-.game-result__bottom {
-  border-top: 1px solid #60756C;
-  display: flex;
-  justify-content: center;
-  padding: 11.5px 12px;
-}
-
 .game-result__bottom-button {
   gap: 4px;
   font-family: "Roboto Condensed";
@@ -400,4 +363,9 @@
 }
 .pole__block-comand-bottom {
   bottom: 0;
+}
+/***********************************/
+.teams-list {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=game-center.css.map */

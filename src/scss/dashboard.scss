@@ -4,7 +4,7 @@
 
     overflow: hidden;
     &__title {
-        padding: 24px 0px;
+        margin-bottom: 24px;
         text-align: center;
         font-family: "Roboto Condensed";
         font-size: 20px;
@@ -15,6 +15,7 @@
     // .dashboard__body
 
     &__body { 
+        border-radius:8px;
         max-height: fit-content;
 
         &::-webkit-scrollbar {
@@ -39,7 +40,7 @@
 
     &__table {
         @media(min-width:991.98px){
-            flex: 0 0 210px;
+            flex: 0 0 217.5px;
         }
         display: block; 
         &:nth-child(1) {

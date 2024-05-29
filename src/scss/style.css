@@ -274,36 +274,6 @@
 }
 
 /**********************/
-.match-comand-left__image {
-  position: relative;
-}
-.match-comand-left__flag {
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  left: -6px;
-  top: -3px;
-}
-.match-comand-left__comand {
-  width: 32px;
-  height: 32px;
-}
-
-.match-comand-right__image {
-  position: relative;
-}
-.match-comand-right__flag {
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  right: -6px;
-  top: -3px;
-}
-.match-comand-right__comand {
-  width: 32px;
-  height: 32px;
-}
-
 .header {
   padding: 16px 0px;
 }
@@ -592,42 +562,6 @@ input[type=search]::-webkit-search-cancel-button {
   }
 }
 
-/***************game-tabs*************************/
-.game-center__triggers {
-  grid-template-columns: repeat(2, 1fr);
-  display: grid;
-}
-
-.game-tabs__button {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10.5px;
-  font-weight: 700;
-  border-bottom: 1px solid #0A2B1D;
-}
-@media (max-width: 991.98px) {
-  .game-tabs__button {
-    font-size: 14px;
-  }
-}
-@media (max-width: 767.98px) {
-  .game-tabs__button {
-    padding: 9.5px;
-    font-size: 12px;
-  }
-}
-@media (max-width: 487.98px) {
-  .game-tabs__button {
-    font-size: 11px;
-  }
-}
-.game-tabs__button.active {
-  color: #6FAA54;
-  border-bottom: 1px solid #6FAA54;
-}
-
 /**************game-info*******************/
 .game-info__list {
   padding: 12px;
@@ -671,23 +605,6 @@ input[type=search]::-webkit-search-cancel-button {
 .static-game {
   border-radius: 8px;
   background: #0A2B1D;
-}
-.static-game__header {
-  border-bottom: 1px solid #60756C;
-  padding: 8px 12px;
-  border-radius: 8px 8px 0px 0px;
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  align-items: center;
-  font-family: "Roboto Condensed";
-  font-weight: 700;
-  text-transform: uppercase;
-}
-@media (max-width: 767.98px) {
-  .static-game__header {
-    font-size: 14px;
-  }
 }
 .static-game__body {
   padding: 4px 0px;
@@ -834,32 +751,12 @@ input[type=search]::-webkit-search-cancel-button {
 }
 
 /**************game-result***************/
-.game-result {
-  background: #0A2B1D;
-  border-radius: 8px;
-}
-.game-result__top {
-  padding: 8px 12px;
-  font-family: "Roboto Condensed";
-  font-weight: 700;
-  text-transform: uppercase;
-  border-radius: 8px 8px 0px 0px;
-  border-bottom: 1px solid #60756C;
-  background: #0A2B1D;
-}
 .game-result__list {
   padding: 12px;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-.game-result__bottom {
-  border-top: 1px solid #60756C;
-  display: flex;
-  justify-content: center;
-  padding: 11.5px 12px;
-}
-
 .game-result__bottom-button {
   gap: 4px;
   font-family: "Roboto Condensed";
@@ -1090,7 +987,7 @@ input[type=search]::-webkit-search-cancel-button {
   overflow: hidden;
 }
 .dashboard__title {
-  padding: 24px 0px;
+  margin-bottom: 24px;
   text-align: center;
   font-family: "Roboto Condensed";
   font-size: 20px;
@@ -1098,6 +995,7 @@ input[type=search]::-webkit-search-cancel-button {
   text-transform: uppercase;
 }
 .dashboard__body {
+  border-radius: 8px;
   max-height: -moz-fit-content;
   max-height: fit-content;
   display: flex;
@@ -1123,7 +1021,7 @@ input[type=search]::-webkit-search-cancel-button {
 }
 @media (min-width: 991.98px) {
   .dashboard__table {
-    flex: 0 0 210px;
+    flex: 0 0 217.5px;
   }
 }
 .dashboard__table:nth-child(1) {
@@ -1218,6 +1116,15 @@ input[type=search]::-webkit-search-cancel-button {
   display: block;
 }
 
+.dashboard-block {
+  position: relative;
+}
+.dashboard-block .label-win {
+  position: absolute;
+  left: 50%;
+  top: -9px;
+  transform: translate(-50%);
+}
 .dashboard-block__list {
   transition: all 0.3s ease 0s;
   border-radius: 4px;
@@ -1267,8 +1174,8 @@ input[type=search]::-webkit-search-cancel-button {
   top: 50%;
   transform: translateY(-50%);
   position: absolute;
-  width: 1px;
-  height: 44px;
+  width: 0.9px;
+  height: 45px;
   background-color: #115E2A;
 }
 @media (max-width: 991.98px) {
@@ -1279,7 +1186,7 @@ input[type=search]::-webkit-search-cancel-button {
 .element-setka::after {
   content: "";
   width: 8px;
-  height: 1px;
+  height: 0.9px;
   position: absolute;
   top: 0;
   background-color: #115E2A;
@@ -1293,7 +1200,7 @@ input[type=search]::-webkit-search-cancel-button {
 .element-setka::before {
   content: "";
   width: 8px;
-  height: 1px;
+  height: 0.9px;
   position: absolute;
   background-color: #115E2A;
   right: 0;
@@ -1306,9 +1213,9 @@ input[type=search]::-webkit-search-cancel-button {
 }
 
 .svg-dashboard-top {
-  width: 1px;
+  width: 0.9px;
   left: -8px;
-  bottom: 50%;
+  bottom: calc(50% - 0.5px);
   position: absolute;
   background-color: #115E2A;
 }
@@ -1320,7 +1227,7 @@ input[type=search]::-webkit-search-cancel-button {
 .svg-dashboard-top::after {
   content: "";
   width: 9px;
-  height: 1px;
+  height: 0.9px;
   position: absolute;
   top: 0;
   background-color: #115E2A;
@@ -1334,7 +1241,7 @@ input[type=search]::-webkit-search-cancel-button {
 .svg-dashboard-top::before {
   content: "";
   width: 8px;
-  height: 1px;
+  height: 0.9px;
   position: absolute;
   background-color: #115E2A;
   left: 0;
@@ -1348,7 +1255,7 @@ input[type=search]::-webkit-search-cancel-button {
 
 .svg-dashboard-last {
   width: 12px;
-  height: 1px;
+  height: 0.9px;
   position: absolute;
   background-color: #115E2A;
   left: -12px;
@@ -1370,7 +1277,7 @@ input[type=search]::-webkit-search-cancel-button {
   top: 50%;
   transform: translateY(-50%);
   position: absolute;
-  width: 1px;
+  width: 0.9px;
   height: 44px;
   background-color: #115E2A;
 }
@@ -1382,7 +1289,7 @@ input[type=search]::-webkit-search-cancel-button {
 .element-setka-last::after {
   content: "";
   width: 12px;
-  height: 1px;
+  height: 0.9px;
   position: absolute;
   top: 0;
   background-color: #115E2A;
@@ -1396,7 +1303,7 @@ input[type=search]::-webkit-search-cancel-button {
 .element-setka-last::before {
   content: "";
   width: 12px;
-  height: 1px;
+  height: 0.9px;
   position: absolute;
   background-color: #115E2A;
   right: 0;
@@ -1409,7 +1316,7 @@ input[type=search]::-webkit-search-cancel-button {
 }
 
 .svg-dashboard-bottom {
-  width: 1px;
+  width: 0.9px;
   left: -8px;
   top: calc(48% - 2px);
   position: absolute;
@@ -1423,7 +1330,7 @@ input[type=search]::-webkit-search-cancel-button {
 .svg-dashboard-bottom::before {
   content: "";
   width: 9px;
-  height: 1px;
+  height: 0.9px;
   position: absolute;
   background-color: #115E2A;
   right: 0;
@@ -1563,7 +1470,7 @@ input[type=search]::-webkit-search-cancel-button {
 }
 
 .table__title {
-  padding: 16px 0px;
+  margin-bottom: 16px;
 }
 .table__items {
   display: flex;
@@ -1867,7 +1774,6 @@ input[type=search]::-webkit-search-cancel-button {
 
 /************************************/
 .main-title {
-  color: #FFF;
   text-align: center;
   font-family: "Roboto Condensed";
   font-size: 20px;
@@ -1876,13 +1782,92 @@ input[type=search]::-webkit-search-cancel-button {
   text-transform: uppercase;
 }
 
+.title-24 {
+  gap: 2px;
+  font-family: "Roboto Condensed";
+  font-size: 24px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
 .title-16 {
-  color: #FFF;
   font-family: "Roboto Condensed";
   font-size: 16px;
   font-weight: 700;
   line-height: 1.2; /* 19.2px */
   text-transform: uppercase;
+}
+
+/***************game-tabs*************************/
+.game-tabs {
+  position: relative;
+}
+
+.game-tabs-2 {
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+}
+
+.game-tabs-4 {
+  transition: all 0.3s ease 0s;
+  grid-template-columns: repeat(4, 1fr);
+  display: grid;
+}
+
+.game-tabs__span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  transition: all 0.3s ease 0s;
+  background: #6FAA54;
+}
+
+.game-tabs__button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10.5px;
+  font-weight: 700;
+  transition: all 0.3s ease 0s;
+  border-bottom: 1px solid #0A2B1D;
+}
+@media (max-width: 991.98px) {
+  .game-tabs__button {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767.98px) {
+  .game-tabs__button {
+    padding: 9.5px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 487.98px) {
+  .game-tabs__button {
+    font-size: 11px;
+  }
+}
+.game-tabs__button.active {
+  transition: all 0.3s ease 0s;
+  color: #6FAA54;
+}
+@media (hover: hover) {
+  .game-tabs__button.active:hover {
+    cursor: inherit;
+    color: #6FAA54;
+  }
+}
+@media (hover: hover) {
+  .game-tabs__button:hover {
+    cursor: pointer;
+    color: #81c2a6;
+  }
 }
 
 .result-list {
@@ -2089,6 +2074,135 @@ input[type=search]::-webkit-search-cancel-button {
   }
 }
 
+/*****************************************/
+.flex-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/************************************/
+.content-block {
+  background: #0A2B1D;
+  border-radius: 8px;
+}
+.content-block__header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 8px 12px;
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 8px 8px 0px 0px;
+  border-bottom: 1px solid #60756C;
+  background: #0A2B1D;
+}
+@media (max-width: 767.98px) {
+  .content-block__header {
+    font-size: 14px;
+  }
+}
+.content-block__bottom {
+  border-top: 1px solid #60756C;
+  display: flex;
+  justify-content: center;
+  padding: 11.5px 12px;
+}
+
+/**********************************/
+.rates__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px 10px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+}
+@media (max-width: 487.98px) {
+  .rates__title {
+    font-size: 10px;
+  }
+}
+.rates__body {
+  border-top: 1px solid #60756C;
+  border-bottom: 1px solid #60756C;
+  padding: 8px 12px;
+}
+.rates__content {
+  display: flex;
+  border-radius: 8px;
+}
+.rates__element {
+  padding: 7px 8px;
+  font-family: "Roboto Condensed";
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.rates__element:first-child {
+  text-align: left;
+  border-radius: 8px 0px 0px 8px;
+  background: #6FAA54;
+}
+.rates__element:last-child {
+  text-align: right;
+  border-radius: 0px 8px 8px 0px;
+  background: #018000;
+}
+
+.rates__item:last-child .rates__body {
+  border-bottom: 0px;
+}
+
+.rates__item:nth-child(1) .rates__element:first-child {
+  width: 65%;
+}
+.rates__item:nth-child(1) .rates__element:last-child {
+  width: 35%;
+}
+
+.rates__item:nth-child(2) .rates__element:first-child {
+  width: 80%;
+}
+.rates__item:nth-child(2) .rates__element:last-child {
+  width: 20%;
+}
+
+.rates__item:nth-child(3) .rates__element:first-child {
+  width: 35%;
+}
+.rates__item:nth-child(3) .rates__element:last-child {
+  width: 65%;
+}
+
+.rates__item:nth-child(4) .rates__element:first-child {
+  width: 50%;
+}
+.rates__item:nth-child(4) .rates__element:last-child {
+  width: 50%;
+}
+
+/******************************************/
+.block-image {
+  position: relative;
+}
+.block-image-32 .block-image__flag {
+  width: 16px;
+  right: -4px;
+  top: -4px;
+  height: 16px;
+  position: absolute;
+}
+.block-image-32 .block-image__block,
+.block-image-32 .block-image__teams {
+  width: 32px;
+  height: 32px;
+}
+
+/********************************************/
 *,
 *::before,
 *::after {
@@ -2222,17 +2336,24 @@ table, td, th, tr {
 .breadcrumbs {
   display: flex;
   align-items: center;
-  overflow: auto;
 }
 .breadcrumbs__item {
   padding-left: 8px;
   display: flex;
   align-items: center;
+  position: relative;
   gap: 8px;
 }
 .breadcrumbs__item:not(:last-child)::after {
-  display: block;
-  content: url("@img/icon/chevron.svg");
+  display: flex;
+  width: 12px;
+  height: 12px;
+  align-items: center;
+  justify-content: center;
+  content: url("@img/icon/chevron.webp");
+}
+.breadcrumbs__item:last-child {
+  color: #6FAA54;
 }
 .breadcrumbs__link {
   overflow: hidden;
@@ -2365,6 +2486,11 @@ table, td, th, tr {
     width: 210px;
   }
 }
+@media (max-width: 767.98px) {
+  .aside__select {
+    width: 100%;
+  }
+}
 .aside__links {
   width: 250px;
   border-bottom: 1px solid #fff;
@@ -2378,6 +2504,11 @@ table, td, th, tr {
 @media (max-width: 1100.98px) {
   .aside__links {
     width: 210px;
+  }
+}
+@media (max-width: 767.98px) {
+  .aside__links {
+    width: 100%;
   }
 }
 .aside__bottom {

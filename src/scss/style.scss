@@ -125,19 +125,28 @@ table, td, th, tr {
 .breadcrumbs {
     display: flex;
     align-items: center;
-    overflow: auto;
+
     // .breadcrumbs__item
 
     &__item {
         padding-left: 8px;
         display: flex;
         align-items: center;
+        position: relative;
         gap: 8px;
         &:not(:last-child) {
             &::after {
-                display: block;
-                content:url("@img/icon/chevron.svg");
+                display: flex;
+                width: 12px;
+                height: 12px;
+                align-items: center;
+                justify-content: center;
+                content:url("@img/icon/chevron.webp");
             }
+        }
+
+        &:last-child {
+            color: #6FAA54;
         }
     }
     // .breadcrumbs__link
@@ -281,6 +290,9 @@ table, td, th, tr {
         @media(max-width:1100.98px){
             width: 210px;
         }
+        @media(max-width:767.98px){
+            width: 100%;
+        }
     }
 
     // .aside__links
@@ -294,6 +306,9 @@ table, td, th, tr {
         }
         @media(max-width:1100.98px){
             width: 210px;
+        }
+        @media(max-width:767.98px){
+            width: 100%;
         }
     }
 

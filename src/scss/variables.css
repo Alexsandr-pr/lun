@@ -297,4 +297,216 @@
   .button:hover .fill-container::after {
     transform: translateY(0);
   }
-}/*# sourceMappingURL=variables.css.map */
+}
+
+/*****************************************/
+.flex-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.flex-content-16 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/************************************/
+.content-block {
+  background: #0A2B1D;
+  border-radius: 8px;
+}
+.content-block__header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 8px 12px;
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 8px 8px 0px 0px;
+  border-bottom: 1px solid #60756C;
+  background: #0A2B1D;
+}
+@media (max-width: 767.98px) {
+  .content-block__header {
+    font-size: 14px;
+  }
+}
+.content-block__bottom {
+  border-top: 1px solid #60756C;
+  display: flex;
+  justify-content: center;
+  padding: 11.5px 12px;
+}
+
+/**********************************/
+.rates__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px 10px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+}
+@media (max-width: 487.98px) {
+  .rates__title {
+    font-size: 10px;
+  }
+}
+.rates__body {
+  border-top: 1px solid #60756C;
+  border-bottom: 1px solid #60756C;
+  padding: 8px 12px;
+}
+.rates__content {
+  display: flex;
+  border-radius: 8px;
+}
+.rates__element {
+  padding: 7px 8px;
+  font-family: "Roboto Condensed";
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.rates__element:first-child {
+  text-align: left;
+  border-radius: 8px 0px 0px 8px;
+  background: #6FAA54;
+}
+.rates__element:last-child {
+  text-align: right;
+  border-radius: 0px 8px 8px 0px;
+  background: #018000;
+}
+
+.rates__item:last-child .rates__body {
+  border-bottom: 0px;
+}
+
+.rates__item:nth-child(1) .rates__element:first-child {
+  width: 65%;
+}
+.rates__item:nth-child(1) .rates__element:last-child {
+  width: 35%;
+}
+
+.rates__item:nth-child(2) .rates__element:first-child {
+  width: 80%;
+}
+.rates__item:nth-child(2) .rates__element:last-child {
+  width: 20%;
+}
+
+.rates__item:nth-child(3) .rates__element:first-child {
+  width: 35%;
+}
+.rates__item:nth-child(3) .rates__element:last-child {
+  width: 65%;
+}
+
+.rates__item:nth-child(4) .rates__element:first-child {
+  width: 50%;
+}
+.rates__item:nth-child(4) .rates__element:last-child {
+  width: 50%;
+}
+
+/******************************************/
+.block-image {
+  position: relative;
+}
+.block-image__flag {
+  position: absolute;
+}
+.block-image-32 .block-image__flag {
+  width: 16px;
+  height: 16px;
+  top: -4px;
+}
+@media (max-width: 767.98px) {
+  .block-image-32 .block-image__flag {
+    width: 14px;
+    height: 14px;
+    top: -3px;
+  }
+}
+.block-image-32 .block-image__flag-right {
+  right: -4px;
+}
+@media (max-width: 767.98px) {
+  .block-image-32 .block-image__flag-right {
+    right: -3px;
+  }
+}
+.block-image-32 .block-image__flag-left {
+  left: -4px;
+}
+@media (max-width: 767.98px) {
+  .block-image-32 .block-image__flag-left {
+    left: -3px;
+  }
+}
+.block-image-32 .block-image__block,
+.block-image-32 .block-image__teams {
+  width: 32px;
+  height: 32px;
+}
+@media (max-width: 767.98px) {
+  .block-image-32 .block-image__block,
+  .block-image-32 .block-image__teams {
+    width: 24px;
+    width: 24px;
+  }
+}
+.block-image-32 .block-image__number-player {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #018000;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.team-player__block {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.team-player__name {
+  color: #FFF;
+}
+
+.team-player-name {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+}
+.team-player__block-32 .team-player-name__comand-name {
+  font-size: 14px;
+  font-weight: 400;
+}
+@media (max-width: 767.98px) {
+  .team-player__block-32 .team-player-name__comand-name {
+    font-size: 11px;
+  }
+}
+.team-player__block-32 .team-player-name__player-name {
+  font-size: 16px;
+}
+@media (max-width: 767.98px) {
+  .team-player__block-32 .team-player-name__player-name {
+    font-size: 14px;
+  }
+}
+
+/********************************************//*# sourceMappingURL=variables.css.map */

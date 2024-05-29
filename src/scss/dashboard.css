@@ -2,7 +2,7 @@
   overflow: hidden;
 }
 .dashboard__title {
-  padding: 24px 0px;
+  margin-bottom: 24px;
   text-align: center;
   font-family: "Roboto Condensed";
   font-size: 20px;
@@ -10,6 +10,7 @@
   text-transform: uppercase;
 }
 .dashboard__body {
+  border-radius: 8px;
   max-height: -moz-fit-content;
   max-height: fit-content;
   display: flex;
@@ -35,7 +36,7 @@
 }
 @media (min-width: 991.98px) {
   .dashboard__table {
-    flex: 0 0 210px;
+    flex: 0 0 217.5px;
   }
 }
 .dashboard__table:nth-child(1) {
