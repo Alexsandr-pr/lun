@@ -1651,28 +1651,13 @@ input[type=search]::-webkit-search-cancel-button {
   transition: all 0.3s ease 0s;
 }
 .table-block__row:nth-child(even) {
-  background: rgba(255, 255, 255, 0.05);
+  background: #163629;
 }
 .table-block__row:nth-child(odd) {
-  background: rgba(255, 255, 255, 0.1);
+  background: #234134;
 }
 .table-block__row._active {
   background-color: #6FAA54;
-}
-@media (hover: hover) {
-  .table-block__row._active:hover {
-    cursor: pointer;
-    background-color: #6FAA54;
-  }
-}
-@media (hover: hover) {
-  .table-block__row:hover {
-    cursor: pointer;
-    background-color: #284919;
-  }
-}
-.table-block__col-number {
-  border-right: 1px solid #60756C;
 }
 .table-block__col-team {
   border-right: 1px solid #60756C;
@@ -1707,7 +1692,7 @@ input[type=search]::-webkit-search-cancel-button {
   height: 4px;
 }
 
-.table-block .table-block__row td:nth-child(1) span {
+.table-block-sticky-2 .table-block__row td:nth-child(1) span {
   position: relative;
   z-index: 3;
   width: 100%;
@@ -1718,10 +1703,11 @@ input[type=search]::-webkit-search-cancel-button {
   text-align: center;
   min-width: 28px;
   height: 24px;
+  border-right: 1px solid #60756C;
   padding: 3px 4px;
 }
 @media (max-width: 487.98px) {
-  .table-block .table-block__row td:nth-child(1) span {
+  .table-block-sticky-2 .table-block__row td:nth-child(1) span {
     min-width: 25px;
   }
 }
@@ -1749,40 +1735,40 @@ input[type=search]::-webkit-search-cancel-button {
 
 .table-block .table-block__row:nth-child(even) td:nth-child(2) .comand,
 .table-block .table-block__row:nth-child(even) td:nth-child(2) .comand__image-block {
-  background: #224034;
+  background: #163629;
 }
 
 .table-block .table-block__row:nth-child(odd) td:nth-child(2) .comand,
 .table-block .table-block__row:nth-child(odd) td:nth-child(2) .comand__image-block {
-  background: #2e4b3e;
+  background: #234134;
 }
 
-.table-block .table-block__row:nth-child(even) td span {
-  background: #224034;
+.table-block-sticky-2 .table-block__row:nth-child(even) td span {
+  background: #163629;
 }
 
-.table-block .table-block__row:nth-child(odd) td span {
-  background: #2e4b3e;
+.table-block-sticky-2 .table-block__row:nth-child(odd) td span {
+  background: #234134;
 }
 
-.table-block .table-block__row td:nth-child(1) {
+.table-block-sticky-2 .table-block__row td:nth-child(1) {
   position: sticky;
   left: 0;
   z-index: 4;
 }
 
-.table-block .table-block__row td:nth-child(2) .comand__image-block {
+.table-block-sticky-2 .table-block__row td:nth-child(2) .comand__image-block {
   position: sticky;
   left: 25px;
   z-index: 1;
 }
 
-.table-block .table-block__row-top td:nth-child(1) {
+.table-block-sticky-2 .table-block__row-top td:nth-child(1) {
   position: sticky;
   left: 0;
   z-index: 4;
 }
-.table-block .table-block__row-top td:nth-child(1) span {
+.table-block-sticky-2 .table-block__row-top td:nth-child(1) span {
   background: #0A2B1D;
   position: relative;
   z-index: 3;
@@ -1797,7 +1783,7 @@ input[type=search]::-webkit-search-cancel-button {
   padding: 3px 4px;
 }
 @media (max-width: 487.98px) {
-  .table-block .table-block__row-top td:nth-child(1) span {
+  .table-block-sticky-2 .table-block__row-top td:nth-child(1) span {
     min-width: 25px;
   }
 }
@@ -1811,6 +1797,27 @@ input[type=search]::-webkit-search-cancel-button {
 }
 .table-block__row._active .table-block__col-number span {
   background-color: #6FAA54 !important;
+}
+
+/**************************************/
+.table-block-sticky-1 .comand__image-block {
+  padding: 4px 4px 4px 8px !important;
+}
+
+.table-block-sticky-1 .table-block__row td:nth-child(1) .comand__image-block {
+  position: sticky;
+  z-index: 1;
+  left: 0;
+}
+
+.table-block-sticky-1 .table-block__row:nth-child(even) td .comand,
+.table-block-sticky-1 .table-block__row:nth-child(even) td .comand__image-block {
+  background: #163629;
+}
+
+.table-block-sticky-1 .table-block__row:nth-child(odd) td .comand,
+.table-block-sticky-1 .table-block__row:nth-child(odd) td .comand__image-block {
+  background: #234134;
 }
 
 /************************************/
