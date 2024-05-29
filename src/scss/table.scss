@@ -184,12 +184,6 @@
     }
 }
 
-.table-block__row._active {
-    .table-block__col-number {
-        color:#fff;
-    }
-}
-
 .table-block-scroll {
     overflow-x: auto;
     max-width: 100%; 
@@ -257,8 +251,6 @@
     }
 }
 
-
-
 .table-block .table-block__row:nth-child(even) td{
     span {
         background: #224034;
@@ -301,6 +293,20 @@
     position: sticky;
     left: 0;
     z-index: 4;
+}
+
+.table-block__row._active {
+    .table-block__col-number {
+        color:#fff;
+    }
+    .comand,
+    .comand__image-block {
+        background-color: #6FAA54 !important;
+    }
+    .table-block__col-number span{
+        background-color: #6FAA54 !important;
+
+    }
 }
 
 

@@ -1693,10 +1693,6 @@ input[type=search]::-webkit-search-cancel-button {
   font-weight: 400;
 }
 
-.table-block__row._active .table-block__col-number {
-  color: #fff;
-}
-
 .table-block-scroll {
   overflow-x: auto;
   max-width: 100%;
@@ -1804,6 +1800,17 @@ input[type=search]::-webkit-search-cancel-button {
   .table-block .table-block__row-top td:nth-child(1) span {
     min-width: 25px;
   }
+}
+
+.table-block__row._active .table-block__col-number {
+  color: #fff;
+}
+.table-block__row._active .comand,
+.table-block__row._active .comand__image-block {
+  background-color: #6FAA54 !important;
+}
+.table-block__row._active .table-block__col-number span {
+  background-color: #6FAA54 !important;
 }
 
 /************************************/
