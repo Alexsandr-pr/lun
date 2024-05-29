@@ -4,9 +4,13 @@ function addWrapperPageDashboard() {
 
 
     function changeWidthWrapper() {
-        const width = dashboardTable[0].clientWidth * dashboardTable.length;
-        contentWrapper.style.width = `${width}px`;
-        console.log(contentWrapper.style.width)
+        try {
+            const width = dashboardTable[0].clientWidth * dashboardTable.length;
+            contentWrapper.style.width = `${width}px`;
+            console.log(contentWrapper.style.width)
+        } catch(e) {
+
+        }
     }
 
     window.addEventListener("resize", changeWidthWrapper);

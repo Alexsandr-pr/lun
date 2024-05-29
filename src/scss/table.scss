@@ -335,6 +335,21 @@
 
 
 
+.table-block-sticky-2 {
+    transition: all 0.3s ease 0s;
+}
+.comand__image-block {
+    transition: all 0.3s ease 0s;
+}
+.table-block-sticky-2._active {
+    .comand__image-block {
+        border-right: 1px solid  #60756C;
+    }
+}
+
+
+
+
 
 /************************************/
 
