@@ -307,6 +307,10 @@ gameTabs.forEach(block => {
     const elementsItems = block.querySelectorAll(".game-tabs__button");
     const activeLine = block.querySelector(".game-tabs__span");
 
+
+    const dataContent = document.querySelectorAll("[data-tabs-content]");
+
+
     function changeWidthLine() {
         const elementWidth = elementsItems[0].clientWidth;
         activeLine.style.width = `${elementWidth}px`;
@@ -315,10 +319,19 @@ gameTabs.forEach(block => {
     changeWidthLine();
     window.addEventListener("resize", changeWidthLine);
 
+    function deleteActiveClass() {
+        elementsItems.forEach(item => item.classList.remove("active"));
+        dataContent.forEach(item => item.classList.remove("active"));
+    }
+
+
     elementsItems.forEach((button, index) => {
         button.addEventListener("click", () => {
-            elementsItems.forEach(item => item.classList.remove("active"));
+            deleteActiveClass();
+            console.log(dataContent)
+            dataContent[index].classList.add("active")
             button.classList.add("active");
+
             switch(elementsItems.length) {
                 case 2:
                     return  activeLine.style.left = `${50 * index}%`;
@@ -332,4 +345,6 @@ gameTabs.forEach(block => {
         })
     })
     
+
+
 })
