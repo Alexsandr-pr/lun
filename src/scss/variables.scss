@@ -97,6 +97,15 @@
     }
 }
 
+.game-tabs__button-image {
+    padding: 4px;
+
+}
+
+
+
+
+/**************************************/
 .result-list {
     display: flex;
     gap: 8px;
@@ -519,7 +528,12 @@
         @media(max-width:767.98px){
             width: 24px;
             height: 24px;
+            img {
+                width: 24px;
+            height: 24px;
+            }
         }
+
     }
     .block-image__number-player {
         width: 32px;
@@ -547,7 +561,10 @@
     &__block {
         display: flex;
         align-items: center;
-        gap: 4px;
+        gap: 8px;
+        @media(max-width:767.98px){
+            gap: 4px;
+        }
     }
 
     // .team-player__name
