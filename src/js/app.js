@@ -918,18 +918,14 @@ const data = [
     }
 ]
 
-const contentPole = document.querySelector(".pole-body__top");
-    
 function pushPlayersPole(data){
     data.forEach((item, index) => {
         const players = item.Players;
         players.forEach((player, i) => {
             cteatePlayer(player, index);
-            
         })
     })
 }
-
 
 class PlayerCreate {
     constructor(playerName, color, playerNumber, playerMinute, positionX, positionY, positionComand) {
@@ -949,29 +945,14 @@ class PlayerCreate {
         if(this.positionComand === 0){
             div.style.cssText = `
                 left: calc(${this.positionX}% - 39px);
-                top: calc(${this.positionY}% - 50px);
+                top: calc(${this.positionY}% - ${this.positionY === 0 ? "20px" : "50px"});
             `
         }else {
             div.style.cssText = `
                 left: calc(${this.positionX}% - 39px);
-                bottom: calc(${this.positionY}% - 50px);
+                bottom: calc(${this.positionY}% - ${this.positionY === 0 ? "20px" : "50px"});
             `
         }
-
-        if(this.positionY === 0){
-            if(this.positionComand === 0){
-                div.style.cssText = `
-                    left: calc(${this.positionX}% - 39px);
-                    top: calc(${this.positionY}% - 20px);
-                `
-            }else {
-                div.style.cssText = `
-                    left: calc(${this.positionX}% - 39px);
-                    bottom: calc(${this.positionY}% - 20px);
-                `
-            }
-        }
-
 
         div.innerHTML = `
                 <p class="player__name">${this.playerName}</p>
@@ -991,8 +972,6 @@ class PlayerCreate {
 }
 
 const bodyRectangle = document.querySelectorAll("[data-pole]");
-
-
 
 function cteatePlayer(player, indexComand) {
     let color = indexComand === 0 ? "#115E2A" : "#FF4848"

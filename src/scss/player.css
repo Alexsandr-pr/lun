@@ -1,13 +1,19 @@
 .player {
+  z-index: 5;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: absolute;
+  width: 78px;
+  height: 50px;
 }
 .player__name {
   text-align: center;
   font-size: 10px;
   font-weight: 400;
+  white-space: wrap;
+  max-width: 40px;
 }
 .player__name:not(:last-child) {
   margin-bottom: 2px;
