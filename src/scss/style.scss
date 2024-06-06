@@ -1,5 +1,6 @@
 
 @import '../../node_modules/air-datepicker/air-datepicker.css';
+
 @import "index-home";
 @import "header";
 @import "reclama";
@@ -9,6 +10,7 @@
 @import "modals-dashboard";
 @import "table";
 @import "variables";
+
 *,
 *::before,
 *::after {
@@ -85,6 +87,13 @@ table, td, th, tr {
     border:none;
     border-collapse:collapse;
 }
+
+.block-rrr {
+    height: 200px;
+    width: 100%;
+    background-color:red;
+}
+
 
 /*****************/
 [class*=_container] {
@@ -321,6 +330,14 @@ table, td, th, tr {
         text-transform: uppercase;
     }
 }
+
+
+.match-block__time {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
 .select {
 
 

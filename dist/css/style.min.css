@@ -40,7 +40,6 @@
 .match-block__time {
   min-height: 100%;
   justify-content: center;
-  padding: 4px 10px;
   width: 100px;
   display: flex;
   font-size: 10px;
@@ -50,7 +49,7 @@
 }
 @media (max-width: 767.98px) {
   .match-block__time {
-    width: 48px;
+    width: 80px;
   }
 }
 @media (max-width: 767.98px) {
@@ -71,6 +70,11 @@
   gap: 4px;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 487.98px) {
+  .match-block__team {
+    padding: 8px 0px;
+  }
 }
 
 .match-comand {
@@ -212,12 +216,16 @@
   }
 }
 .team-span__block {
+  color: #fff;
   display: flex;
   align-items: center;
   gap: 4px;
 }
 .team-span__block:not(:last-child) {
   margin-bottom: 4px;
+}
+.team-span__block.red {
+  color: #FF4848 !important;
 }
 .team-span__number {
   display: flex;
@@ -257,6 +265,13 @@
   .canal__final {
     font-size: 11px;
   }
+}
+
+.canal__text {
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.2; /* 13.2px */
 }
 
 .canal__time-red {
@@ -2532,6 +2547,12 @@ table, td, th, tr {
   border-collapse: collapse;
 }
 
+.block-rrr {
+  height: 200px;
+  width: 100%;
+  background-color: red;
+}
+
 /*****************/
 [class*=_container] {
   overflow: hidden;
@@ -2752,6 +2773,12 @@ table, td, th, tr {
   font-family: "Roboto Condensed";
   font-size: 14px;
   text-transform: uppercase;
+}
+
+.match-block__time {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
 }
 
 .select__button {
