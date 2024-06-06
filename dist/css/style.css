@@ -42,6 +42,7 @@
   justify-content: center;
   width: 100px;
   display: flex;
+  padding: 4px 0px;
   font-size: 10px;
   flex-direction: column;
   border-right: #60756C 1px solid;
