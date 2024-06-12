@@ -1847,6 +1847,7 @@ input[type=search]::-webkit-search-cancel-button {
 }
 
 .table-block-sticky-2 .table-block__row-top td:nth-child(1) {
+  border-radius: 8px !important;
   position: sticky;
   left: 0;
   z-index: 4;
@@ -1869,6 +1870,16 @@ input[type=search]::-webkit-search-cancel-button {
   .table-block-sticky-2 .table-block__row-top td:nth-child(1) span {
     min-width: 25px;
   }
+}
+
+.table-block tr:last-child td:first-child {
+  border-radius: 0px 0px 0px 8px;
+}
+.table-block tr:last-child td:first-child span,
+.table-block tr:last-child td:first-child .comand__image-block,
+.table-block tr:last-child td:first-child .table-block__col-team,
+.table-block tr:last-child td:first-child .comand {
+  border-radius: 0px 0px 0px 8px;
 }
 
 .table-block__row._active .table-block__col-number {
