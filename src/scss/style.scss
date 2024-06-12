@@ -1,4 +1,6 @@
 
+
+
 @import '../../node_modules/air-datepicker/air-datepicker.css';
 
 @import "index-home";
@@ -183,6 +185,67 @@ table, td, th, tr {
 .breadcrumbs__item._active {
     color: #6FAA54;
 }
+/***********************************/
+.dashboard__layout {
+    width: 100%;
+    
+}
+.dashboard__layout-left {
+    display: inline-flex;
+    width: 57.209302%; /* 492/860 */
+    margin-right: 24px;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.dashboard__layout-right {
+    display: inline-flex;
+    gap: 16px;
+    flex-direction: column;
+    width: 39.54023%; /* 344/870 */
+}
+
+.table .item-event__left p{
+    padding-left: 0;
+    &::after {
+        content:none;
+    }
+    
+}
+
+/******************************************/
+
+.slider-buttons {
+    display: flex;
+    gap: 8px;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.slider-button {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    padding: 11px 12px;
+    border-radius:  4px;
+    border: 1px solid  #FFF;
+    transition: all 0.3s ease 0s;
+    &.active {
+        border-color: transparent;
+        background:  #018000;
+    }
+    @media(hover:hover) {
+        &:hover {
+            cursor: pointer;
+            background:  #018000;
+        }
+    }
+    @media(max-width:767.98px){
+        padding: 9.5px 12px;
+        font-size: 11px;
+    }
+}
+
 
 /****************************/
 
