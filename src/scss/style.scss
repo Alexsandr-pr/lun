@@ -12,6 +12,7 @@
 @import "modals-dashboard";
 @import "table";
 @import "variables";
+@import "counter-page";
 
 *,
 *::before,
@@ -188,7 +189,6 @@ table, td, th, tr {
 /***********************************/
 .dashboard__layout {
     width: 100%;
-    
 }
 .dashboard__layout-left {
     display: inline-flex;
@@ -196,6 +196,12 @@ table, td, th, tr {
     margin-right: 24px;
     flex-direction: column;
     gap: 16px;
+    .table {
+        min-width: 100%;
+    }
+    @media(max-width:1200px){
+        width: 100%;
+    }
 }
 
 .dashboard__layout-right {
@@ -203,8 +209,15 @@ table, td, th, tr {
     gap: 16px;
     flex-direction: column;
     width: 39.54023%; /* 344/870 */
+    @media(max-width:1200px){
+        display: none;
+    }
 }
-
+.table {
+    flex-direction: column;
+    gap: 16px;
+    display: flex;
+}
 .table .item-event__left p{
     padding-left: 0;
     &::after {
@@ -510,6 +523,27 @@ table, td, th, tr {
     gap: 12px;
     @media(max-width:640.98px){
         gap: 8px;
+    }
+}
+.main-content__item.border {
+    .item-event__left {
+        font-size: 16px;
+    }
+    border: #60756C 1px solid;
+    border-radius: 8px;
+    .item-event__button {
+        height: 32px;
+    }
+    .match-comand__text {
+        font-size: 12px;
+    }
+    .match-block__team {
+        padding: 4px 2px;
+    }
+    .team-span__number {
+        span {
+            font-size: 14px;
+        }
     }
 }
 

@@ -2,9 +2,12 @@
 
     // .table__title
 
-    padding: 16px;
-    border-radius: 8px;
-    background:  #0A2B1D;
+    
+    @media(min-width:1200px){
+        padding: 16px;
+        border-radius: 8px;
+        background:  #0A2B1D;
+    }
     &__title {
         margin-bottom: 16px;
     }

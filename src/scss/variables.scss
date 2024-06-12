@@ -17,6 +17,9 @@
     justify-content: center;
     font-weight: 500;
     text-transform: uppercase;
+    @media(max-width:367.98px){
+        text-align: left;
+    }
 }
 
 .title-16 {
@@ -530,10 +533,9 @@
             height: 24px;
             img {
                 width: 24px;
-            height: 24px;
+                height: 24px;
             }
         }
-
     }
     .block-image__number-player {
         width: 32px;
@@ -553,6 +555,31 @@
         }
     }
 }
+
+.block-image-16 {
+
+    .block-image__flag {
+        width: 8px;
+        height: 8px;
+        top: -1px;
+    }
+
+    .block-image__block,
+    .block-image__teams {
+        width: 16px;
+        height: 16px;
+    }
+    .block-image__flag-right {
+        right: -1px;
+    }
+
+    .block-image__flag-left {
+        left: -1px;
+    }
+
+}
+
+
 
 .team-player {
 
