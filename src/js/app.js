@@ -17,10 +17,6 @@ const da = new DynamicAdapt("max");
 da.init();
 
 
-
-
-
-
 import modal from "./modules/modals.js";
 import addWrapperPageDashboard from "./modules/addWrapperPageDashboard.js";
 import dashboardCreateLine from "./modules/dashboardPaintLines.js";
@@ -45,7 +41,7 @@ if(animItems.length > 0) {
             const offsetHeight = offset(animItem).top;
             const elementHeight = animItem.scrollHeight;
             const animNumber = 4;
-
+            
             let startAnim = window.innerHeight - elementHeight/animNumber;
             if(window.innerHeight > elementHeight) {
                 startAnim = window.innerHeight - elementHeight/animNumber;

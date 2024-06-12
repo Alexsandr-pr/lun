@@ -12,7 +12,6 @@ function addBorderToScrollTable(selector) {
             tableBorders.forEach((border, i) => {
                 const target = border.querySelector('.comand__text'); 
 
-
                 border.addEventListener("scroll", () => {
                     const rect = target.getBoundingClientRect();
                     if(!state) {
@@ -27,7 +26,7 @@ function addBorderToScrollTable(selector) {
                 })
             });
         } catch(e) {
-            console.log(e)
+
         }
     }
     observerLeftTarget();

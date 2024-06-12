@@ -1,0 +1,53 @@
+.match-block__team-league {
+    display: flex;
+    flex-direction: column;
+    padding: 7px 8px;
+    &:not(:last-child) {
+        border-bottom:1px solid #60756C;
+    }
+}
+
+.match-block__team-league-left,
+.match-block__team-league-right {
+    text-transform: uppercase;
+    gap: 3px;
+    display: flex;
+    align-items: center;
+    img {
+        display: block;
+        width: 12px;
+        height: 12px;
+    }
+    .match-comand__text {
+        display: block;
+        margin-top: 2.5px;
+        width:  40px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 12px;
+        font-weight: 400;
+    }
+}
+.match-block__team-league-right {
+    text-align: right;
+}
+.match-block__team-league-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.match-block__team-league-bottom {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 4px;
+    font-weight: 400;
+}
+
+.team-span__tire-red {
+    color:#FF4848 !important;
+    text-align: center;
+    font-size: 14px;
+} 

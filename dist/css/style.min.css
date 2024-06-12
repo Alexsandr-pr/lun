@@ -1942,6 +1942,25 @@ input[type=search]::-webkit-search-cancel-button {
   text-transform: uppercase;
 }
 
+.title-18 {
+  text-align: center;
+  font-family: "Roboto Condensed";
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.block-info-table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+.block-info-table .table-info {
+  padding: 4px;
+}
+
 /***************game-tabs*************************/
 .game-tabs {
   position: relative;
@@ -2531,6 +2550,64 @@ input[type=search]::-webkit-search-cancel-button {
   }
 }
 
+.match-block__team-league {
+  display: flex;
+  flex-direction: column;
+  padding: 7px 8px;
+}
+.match-block__team-league:not(:last-child) {
+  border-bottom: 1px solid #60756C;
+}
+
+.match-block__team-league-left,
+.match-block__team-league-right {
+  text-transform: uppercase;
+  gap: 3px;
+  display: flex;
+  align-items: center;
+}
+.match-block__team-league-left img,
+.match-block__team-league-right img {
+  display: block;
+  width: 12px;
+  height: 12px;
+}
+.match-block__team-league-left .match-comand__text,
+.match-block__team-league-right .match-comand__text {
+  display: block;
+  margin-top: 2.5px;
+  width: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.match-block__team-league-right {
+  text-align: right;
+}
+
+.match-block__team-league-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.match-block__team-league-bottom {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 4px;
+  font-weight: 400;
+}
+
+.team-span__tire-red {
+  color: #FF4848 !important;
+  text-align: center;
+  font-size: 14px;
+}
+
 *,
 *::before,
 *::after {
@@ -2626,6 +2703,13 @@ table, td, th, tr {
   background-color: red;
 }
 
+.block-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 8px;
+  row-gap: 12px;
+}
+
 /*****************/
 [class*=_container] {
   overflow: hidden;
@@ -2663,6 +2747,10 @@ table, td, th, tr {
 }
 
 /*******************************/
+.item-event__left {
+  text-transform: uppercase;
+}
+
 .breadcrumbs {
   display: flex;
   align-items: center;
@@ -2718,6 +2806,13 @@ table, td, th, tr {
   width: 100%;
 }
 
+@media (max-width: 1200px) {
+  .dashboard__layout-column {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .dashboard__layout-left {
   display: inline-flex;
   width: 57.209302%; /* 492/860 */
@@ -2742,6 +2837,12 @@ table, td, th, tr {
 }
 @media (max-width: 1200px) {
   .dashboard__layout-right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .dashboard__layout-right-none {
     display: none;
   }
 }
