@@ -105,6 +105,9 @@ table, td, th, tr {
     grid-template-columns: repeat(2,1fr);
     column-gap: 8px;
     row-gap: 12px;
+    @media(max-width:487.98px){
+        grid-template-columns: repeat(1,1fr);
+    }
 }
 
 /*****************/
