@@ -1,23 +1,132 @@
-.button-bottom-green {
-    display: flex;
-    align-items: center;
-    color:#6FAA54 !important;
-    text-decoration: none !important;
-    text-transform: uppercase;
+
+.item-event__button {
+    .chevron {
+        transition: all 0.3s ease 0s;
+    }
+}
+.item-event.active {
+    .chevron {
+        transform: rotateX(180deg);
+    }
+    .item-event__button{
+        border-bottom:1px solid #60756C;
+    }
+}
+.item-event {
+
+    // .item-event__button
+    border-radius:  8px;
+    background:  #0A2B1D;
+    
+    &__button {
+        padding: 4px 12px;
+        align-items: center;
+        width: 100%;
+        display: flex;
+        gap: 6px;
+    }
+    // .item-event__left
+    &__left {
+        font-size: 14px;
+        flex: 1 1 100%;
+        position: relative;
+        p {
+            position: relative;
+            padding-left: 20px;
+        }
+        p::after {
+            position: absolute;
+            left: 0;
+            transform: translateY(-50%);
+            top: 50%;
+            content: url("@img/main/content/icon/world.webp")
+        }
+        
+    }
+    // .item-event__right
+    &__right {
+        display: flex;
+        gap: 16px;
+    }
+}
+.item-event {
+
     transition: all 0.3s ease 0s;
-    font-size: 14px;
     @media(hover:hover) {
         &:hover {
             cursor: pointer;
-            color:#6FAA54;
         }
     }
-    @media(max-width:640.98px){
-        font-size: 12px;
+    &__content {
+    }
+
+    // .item-event__bottom
+
+    &__bottom {
+        padding: 7px 10px;
+        border-top: 1px solid #60756C;
+        display: flex;
+        justify-content: center;
+    }
+
+    // .item-event__bottom-button
+
+    &__bottom-button {
+        color:  #FFF;
+        font-family: "Roboto Condensed";
+        text-decoration-line: underline;
+        text-transform: uppercase;
+        transition: all 0.3s ease 0s;
+        @media(hover:hover) {
+            &:hover {
+                cursor: pointer;
+                color:#6FAA54;
+            }
+        }
+        @media(max-width:640.98px){
+            font-size: 12px;
+        }
     }
 }
 
 
+
+/*****************Button On Off and trigger Chevron**********************/
+.icons-menu {
+    // .icons-menu__button
+    &__button {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+
+
+/***********Border bloks**************************/
+.main-content__item.border {
+    .item-event__left {
+        font-size: 16px;
+    }
+    border: #60756C 1px solid;
+    border-radius: 8px;
+    .item-event__button {
+        height: 32px;
+    }
+    .match-comand__text {
+        font-size: 12px;
+    }
+    .match-block__team {
+        padding: 4px 2px;
+    }
+    .team-span__number {
+        span {
+            font-size: 14px;
+        }
+    }
+}
+
+
+/*************************************/
 
 
 .match-block__item {
@@ -135,29 +244,7 @@
     justify-content: end;
     flex: 0 1 40%;
 }
-
-
-
-.main-content__header {
-    &:not(:last-child){
-        margin-bottom:12px;
-        @media(max-width:487.98px){
-            margin-bottom: 8px;
-        }
-    }
-}
-.main-content__breadcrumbs {
-    color: rgba(255, 255, 255, 0.50);
-    font-size: 14px;
-    font-weight: 700;
-    @media(max-width:487.98px){
-        font-size: 11px;
-    }
-}
-
-
-/***************/
-
+/*******************************/
 .cof-team {
     border-top: #60756C 1px solid;
     padding: 5px 12px;
@@ -175,8 +262,6 @@
         justify-content: center;
     }
 }
-
-
 /*******************************/
 
 .match-foot {
@@ -322,6 +407,4 @@
 }
 
 /**********************/
-
-
 

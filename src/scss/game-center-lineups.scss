@@ -1,0 +1,157 @@
+.list-icon-teams {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    // .list-icon-teams__block
+    @media(max-width:991.98px){
+        gap: 8px;
+    }
+    @media(max-width:767.98px){
+        gap: 4px;
+    }
+    &__block {
+        width: 16px;
+        height: 16px;
+        opacity: 0;
+        visibility: hidden;
+        img {
+            width: 16px;
+            height: 16px;
+            @media(max-width:487.98px){
+                width: 14px;
+                height: 14px;
+            }
+        }
+    }
+}
+.list-icon-teams__block._active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+.label-block {
+
+    // .label-block__text
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 6px;
+    &__text {
+        text-align: right;
+        font-size: 11px;
+        font-weight: 400;
+    }
+
+    // .label-block__image
+
+    &__image {
+    }
+}
+
+
+.teams-item {
+
+    // .teams-item__info
+
+    &__info {
+        white-space: nowrap;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        gap: 2px;
+    }
+
+    // .teams-item__height
+
+    &__height {
+        text-align: right;
+        font-size: 14px;
+        font-weight: 400;
+        @media(max-width:767.98px){
+            font-size: 11px;
+        }
+    }
+
+    // .teams-item__years
+
+    &__years {
+        text-align: right;
+        font-size: 16px;
+        @media(max-width:767.98px){
+            font-size: 14px;
+        }
+    }
+}
+
+
+
+.teams-list {
+    padding: 8px 12px;
+    // .teams-list__item
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    &__item {
+    }
+}
+
+.teams-item {
+    // .teams-item__right
+
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 23px;
+        @media(max-width:767.98px){
+            gap: 13px;
+        }
+        @media(max-width:487.98px){
+            gap: 10px;
+        }
+    }
+
+    // .teams-item__list
+
+    &__list {
+    }
+
+    // .teams-item__info
+
+    &__info {
+    }
+
+    // .teams-item__height
+
+    &__height {
+    }
+
+    // .teams-item__years
+
+    &__years {
+    }
+}
+
+.teams-list__item-border {
+    padding: 8px 0px;
+    border-top:1px solid rgba(255, 255, 255, 0.20);
+    border-bottom:1px solid rgba(255, 255, 255, 0.20);
+}
+.teams-item__footer-text {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.team-player-name__name-red {
+    font-size: 11px !important;
+    color: #FF4848;
+}
+
+.team-player-name__name-yellow {
+    font-size: 11px !important;
+    color: #FFC61A;
+}

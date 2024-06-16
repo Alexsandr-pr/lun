@@ -1,0 +1,73 @@
+
+
+
+.game-result {
+
+    // .game-result__top
+    
+    &__top {
+        
+    }
+
+    // .game-result__list
+
+    &__list {
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    // .game-result__item
+
+    &__item {
+    }
+
+    // .game-result__bottom
+
+    &__bottom {
+        
+    }
+}
+.result-item {
+
+    // .result-item__position
+    display: grid;
+    align-items: center;
+    gap: 10px;
+    @media(min-width:500.98px){
+        grid-template-columns: 0.5fr 1.1fr 1.1fr 0.3fr;
+        @media(max-width:991.98px){
+            grid-template-columns: 0.2fr 1.2fr 1.2fr 0.3fr;
+        }
+    }
+
+    @media(max-width:500.98px){
+        display: flex;
+        justify-content: space-between;
+        gap: 6px;
+    }
+    &__position {
+        text-align: left;
+        font-weight: 700;
+        @media(max-width:991.98px){
+            font-size: 14px;
+        }
+    }
+
+    // .result-item__comand-name
+
+    &__comand-name {
+    }
+    // .result-item__info
+
+    &__info {
+        text-align: right;
+        font-weight: 700;
+        @media(max-width:991.98px){
+            font-size: 14px;
+        }
+    }
+
+
+}

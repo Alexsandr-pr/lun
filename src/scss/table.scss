@@ -245,11 +245,6 @@
 }
 
 
-.comand__image {
-    position: relative;
-    z-index: 2;
-}
-
 .table-block .table-block__row:nth-child(even) td:nth-child(2) {
     .comand,
     .comand__image-block {
@@ -379,22 +374,20 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.table-right {
+.table-block__col-team-w-130 {
+    min-width: 130px;
+    
 }
-
+.table-block__col-team-w-260 {
+    min-width: 260px;
+    .comand__text {
+        width: 220px; 
+        @media(max-width:487.98px){
+            width: 130px;
+        }
+    }
+    @media(max-width:487.98px){
+        min-width: 140px;
+    }
+}
 

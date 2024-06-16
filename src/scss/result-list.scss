@@ -1,0 +1,38 @@
+.result-list {
+    display: flex;
+    gap: 8px;
+    @media(max-width:487.98px){
+        gap: 2px;
+    }
+}
+.result-list__block {
+    width: 24px;
+    height: 24px;
+    padding: 2px;
+    color: #0A2B1D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 2px;
+}
+.result-list-average {
+    gap: 2px !important;
+}
+.result-list-average .result-list__block{
+    width: 16px;
+    height: 16px;
+}
+
+
+.result-list__block-win {
+    background:  #EEFFA5;
+}
+.result-list__block-loss {
+    background-color: #FF4848;
+}
+.result-list__block-draw {
+    background: rgba(255, 255, 255, 0.50);
+}
