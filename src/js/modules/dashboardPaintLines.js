@@ -1,7 +1,7 @@
 
 
 function dashboardCreateLine() {
-    
+        
 
         const createDiv = (clazz) => {
             const div = document.createElement("div");
@@ -24,6 +24,7 @@ function dashboardCreateLine() {
                 }
             }
         }
+
         function createOffsets(dasboardTable) {
             const offsets = [];
         
@@ -75,9 +76,7 @@ function dashboardCreateLine() {
                 blocksTable.forEach(block => {
                     createLeftSvg(block, i, dasnboardTable)
                 })
-                
             }
-    
         }
         addBorder()
     

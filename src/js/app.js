@@ -23,7 +23,6 @@ import dashboardCreateLine from "./modules/dashboardPaintLines.js";
 
 try {
     dashboardCreateLine();
-    
     modal();
 } catch(e) {}
 try {
@@ -262,10 +261,8 @@ try {
     const containersColunms = document.querySelectorAll(".team-span__number-gol");
 
     containersColunms.forEach(item => {
-        const items = item.children.length;
-        const columns = Math.ceil(items / 2);
-    
-        item.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
+        
+        item.style.gridTemplateColumns = `repeat(${Math.ceil(item.children.length / 2)}, 1fr)`;
     })
     
 } catch(e) {

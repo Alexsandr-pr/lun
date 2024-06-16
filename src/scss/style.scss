@@ -5,16 +5,8 @@
 
 @import "index-home";
 @import "header";
-@import "reclama";
-@import "game-center";
-@import "player";
-@import "dashboard";
-@import "modals-dashboard";
-@import "table";
 @import "variables";
-@import "counter-page";
-@import "league-match-block";
-
+@import "reclama";
 
 *,
 *::before,
@@ -71,7 +63,6 @@ body {
     
     &::-webkit-scrollbar-thumb {
         background: #6FAA54;
-        
     }
 }
 button,
@@ -149,7 +140,6 @@ table, td, th, tr {
     text-transform: uppercase;
 }
 
-
 .breadcrumbs {
     display: flex;
     align-items: center;
@@ -202,6 +192,7 @@ table, td, th, tr {
 .breadcrumbs__item._active {
     color: #6FAA54;
 }
+
 /***********************************/
 .dashboard__layout {
     width: 100%;
@@ -251,7 +242,6 @@ table, td, th, tr {
     &::after {
         content:none;
     }
-    
 }
 
 /******************************************/
@@ -293,10 +283,6 @@ table, td, th, tr {
 
 .main-block {
 
-    // .main-block__container
-
-    &__container {
-    }
 
     // .main-block__body
 
@@ -553,6 +539,7 @@ table, td, th, tr {
         gap: 8px;
     }
 }
+
 .main-content__item.border {
     .item-event__left {
         font-size: 16px;
