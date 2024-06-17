@@ -12,134 +12,132 @@ accordion();
 //import tabs from "./ui/tabs.js";
 //tabs(triggerClass, contentClass);
 
-import DynamicAdapt from "./modules/dynamicadapt.js";
-const da = new DynamicAdapt("max");
-da.init();
-
-
-import modal from "./modules/modals.js";
+import addBorderToScrollTable from "./modules/addBorderToScrollTable.js"
 import addWrapperPageDashboard from "./modules/addWrapperPageDashboard.js";
 import dashboardCreateLine from "./modules/dashboardPaintLines.js";
 
 try {
-    dashboardCreateLine();
-    modal();
-} catch(e) {}
-try {
-    addWrapperPageDashboard();
-}catch(e) {}
-
-
-
-//Animation
-try {
-    const animItems = document.querySelectorAll("._anim-items");
-
-    if(animItems.length > 0) {
-
-        window.addEventListener("scroll" , animOmScroll );
-        function animOmScroll() {
-            for(let index = 0; index < animItems.length; index++) {
-                const animItem = animItems[index];
-                const offsetHeight = offset(animItem).top;
-                const elementHeight = animItem.scrollHeight;
-                const animNumber = 4;
-                
-                let startAnim = window.innerHeight - elementHeight/animNumber;
-                if(window.innerHeight > elementHeight) {
-                    startAnim = window.innerHeight - elementHeight/animNumber;
-                }
-
-                if((scrollY > offsetHeight - startAnim) && scrollY < (offsetHeight + elementHeight)) {
-                    animItem.classList.add("_start-anim");
-                } 
-                
-            }
-        }
-
-        function offset(el) {
-            const rect = el.getBoundingClientRect(),
-            scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-            scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            return {top: rect.top + scrollTop, left: rect.left + scrollLeft};
-        }
-
-        setTimeout(()=> {
-            animOmScroll();
-        }, 300);
-    }
+    dashboardCreateLine()
+    addWrapperPageDashboard()
+    addBorderToScrollTable(".table-block-scroll")
 } catch(e) {
 
 }
 
 
-// Modals Calendar
-try {
-    $(document).ready(function(){
-        $('#input').datepicker({
-            inline: true,
-            language: {
-                daysMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
-                months: [
-                    'January', 'February', 'March', 'April', 'May', 'June',
-                    'July', 'August', 'September', 'October', 'November', 'December'
-                ],
-                today: 'Today',
-                clear: 'Clear',
-                dateFormat: 'yyyy-mm-dd',
-                firstDay: 0
-            },
+
+const activeAnimation = () => {
+    try {
+        const animItems = document.querySelectorAll("._anim-items");
+    
+        if(animItems.length > 0) {
+    
+            window.addEventListener("scroll" , animOmScroll );
+            function animOmScroll() {
+                for(let index = 0; index < animItems.length; index++) {
+                    const animItem = animItems[index];
+                    const offsetHeight = offset(animItem).top;
+                    const elementHeight = animItem.scrollHeight;
+                    const animNumber = 4;
+                    
+                    let startAnim = window.innerHeight - elementHeight/animNumber;
+                    if(window.innerHeight > elementHeight) {
+                        startAnim = window.innerHeight - elementHeight/animNumber;
+                    }
+    
+                    if((scrollY > offsetHeight - startAnim) && scrollY < (offsetHeight + elementHeight)) {
+                        animItem.classList.add("_start-anim");
+                    } 
+                    
+                }
+            }
+    
+            function offset(el) {
+                const rect = el.getBoundingClientRect(),
+                scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+                scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                return {top: rect.top + scrollTop, left: rect.left + scrollLeft};
+            }
+    
+            setTimeout(()=> {
+                animOmScroll();
+            }, 300);
+        }
+    } catch(e) {
+    
+    }
+    
+}
+//Animation
+
+const activeCalendar = () => {
+    try {
+        $(document).ready(function(){
+            $('#input').datepicker({
+                inline: true,
+                language: {
+                    daysMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+                    months: [
+                        'January', 'February', 'March', 'April', 'May', 'June',
+                        'July', 'August', 'September', 'October', 'November', 'December'
+                    ],
+                    today: 'Today',
+                    clear: 'Clear',
+                    dateFormat: 'yyyy-mm-dd',
+                    firstDay: 0
+                },
+            });
         });
-    });
-    const calendarWrapper = document.querySelector(".calendar__wrapper");
-    const calendarClose = document.querySelector(".calendar-close");
-    const calendarActive = document.querySelector(".calendar-active");
-    
-    calendarActive.addEventListener("click", () => {
-        calendarActive.classList.add("active");
-        calendarWrapper.style.display = "flex";
-        document.body.style.overflow = "hidden";
-        deleteClass()
-    })
-    
-    calendarClose.addEventListener("click", () => {
-        calendarActive.classList.remove("active");
-        calendarWrapper.style.display = "none";
-        document.body.style.overflow = "";
-    })
-    
-    calendarWrapper.addEventListener("click", (e) => {
-        if(e.target.classList.contains("calendar__wrapper")) {
+        const calendarWrapper = document.querySelector(".calendar__wrapper");
+        const calendarClose = document.querySelector(".calendar-close");
+        const calendarActive = document.querySelector(".calendar-active");
+        
+        calendarActive.addEventListener("click", () => {
+            calendarActive.classList.add("active");
+            calendarWrapper.style.display = "flex";
+            document.body.style.overflow = "hidden";
+            deleteClass()
+        })
+        
+        calendarClose.addEventListener("click", () => {
             calendarActive.classList.remove("active");
             calendarWrapper.style.display = "none";
             document.body.style.overflow = "";
-        }
-    })
-} catch(e) {
-
+        })
+        
+        calendarWrapper.addEventListener("click", (e) => {
+            if(e.target.classList.contains("calendar__wrapper")) {
+                calendarActive.classList.remove("active");
+                calendarWrapper.style.display = "none";
+                document.body.style.overflow = "";
+            }
+        })
+    } catch(e) {
+    
+    }
 }
-
+// Modals Calendar
 
 
 
 // импорт модуля форм
-//import forms from "./modules/forms.js";
-//forms();
 
 
-
-window.addEventListener("resize", () => {
-    const triggers = document.querySelectorAll("[data-spoller]");   
-    triggers.forEach(item => {
-        const parent = item.parentElement;
-        const content = item.nextElementSibling;
-        if(parent.classList.contains("active")) {
-            content.style.maxHeight = content.scrollHeight + "px";
-        }
+const activeSpollersResize = () => {
+    window.addEventListener("resize", () => {
+        const triggers = document.querySelectorAll("[data-spoller]");   
+        triggers.forEach(item => {
+            const parent = item.parentElement;
+            const content = item.nextElementSibling;
+            if(parent.classList.contains("active")) {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        })
     })
-})
+}
 
-
+const headerFunctionSwipe = () => {
+    
     const search = document.querySelector(".header__search-input");
     const searchBlock =  document.querySelector(".header__search-block");
 
@@ -164,12 +162,6 @@ window.addEventListener("resize", () => {
         formMobile.classList.remove("active")
         document.body.style.overflow = "";
     })
-
-
-
-
-
-
 
     const aside = document.querySelector(".aside")
     const ham7 = document.querySelector(".ham7")
@@ -217,142 +209,157 @@ window.addEventListener("resize", () => {
             // Swipe down
         }
     }
+}
 
 
 
-
-
-
-// Blocks tabs icons button off/on
-try {
-    const buttonsOff = document.querySelectorAll("[data-off]");
-
-    buttonsOff.forEach(item => {
-        item.addEventListener("click", () => {
-            item.classList.toggle("active")
-        })
-    })
-
-
-    function changeActive(selector) {
-        const buttonsBorders = document.querySelectorAll(selector);
-        
-        buttonsBorders.forEach(item => {
-
-            item.addEventListener("click", (e) => {
-                buttonsBorders.forEach(item => item.classList.remove("active"));
-                e.target.classList.add("active")
+const activeFunctionOffOn = () => {
+    try {
+        const buttonsOff = document.querySelectorAll("[data-off]");
+    
+        buttonsOff.forEach(item => {
+            item.addEventListener("click", () => {
+                item.classList.toggle("active")
             })
         })
+    
+    
+        function changeActive(selector) {
+            const buttonsBorders = document.querySelectorAll(selector);
+            
+            buttonsBorders.forEach(item => {
+    
+                item.addEventListener("click", (e) => {
+                    buttonsBorders.forEach(item => item.classList.remove("active"));
+                    e.target.classList.add("active")
+                })
+            })
+        }
+    
+        changeActive("[data-border]");
+        changeActive(".button-green")
+    
+    
+    } catch(e) {
+    
     }
-
-    changeActive("[data-border]");
-    changeActive(".button-green")
-
-
-} catch(e) {
-
 }
 
-//Select Home page top block
-try {
-    const selectButton = document.querySelector(".header-select__button");
-    const selectParent = document.querySelector(".header-select")
+// Blocks tabs icons button off/on
 
-    selectButton.addEventListener("click", () => {
-        selectParent.classList.toggle("active")
-    })
-
-    const selectOption = document.querySelectorAll(".header-select__option");
-    selectOption.forEach(item => {
-        item.addEventListener("click", () => {
-            selectParent.classList.remove("active")
+const activeSelectHomeHeaderBlock = () => {
+    try {
+        const selectButton = document.querySelector(".header-select__button");
+        const selectParent = document.querySelector(".header-select")
+    
+        selectButton.addEventListener("click", () => {
+            selectParent.classList.toggle("active")
         })
-    })
-} catch(e) {}
+    
+        const selectOption = document.querySelectorAll(".header-select__option");
+        selectOption.forEach(item => {
+            item.addEventListener("click", () => {
+                selectParent.classList.remove("active")
+            })
+        })
+    } catch(e) {}
+}
+//Select Home page top block
 
 //Gols blocks
-try {
-    const containersColunms = document.querySelectorAll(".team-span__number-gol");
-
-    containersColunms.forEach(item => {
-        
-        item.style.gridTemplateColumns = `repeat(${Math.ceil(item.children.length / 2)}, 1fr)`;
-    })
+const addGols = () => {
+    try {
+        const containersColunms = document.querySelectorAll(".team-span__number-gol");
     
-} catch(e) {
-
-}
-
-try {
-
-    const staticParent = document.querySelector(".static-game__block");
-    const blockStatic = document.querySelector(".static-block").children;
-
-    for(let i = 0; i < blockStatic.length; i++) {
-        const block = blockStatic[i];
-        block.addEventListener("click", () => {
-            staticParent.classList.toggle("_active")
-        })
-    }
-}catch(e) {
-}
-
-
-
-
-
-
-import addBorderToScrollTable from "./modules/addBorderToScrollTable.js";
-addBorderToScrollTable(".table-block-scroll")
-
-
-
-
-const gameTabs = document.querySelectorAll(".game-tabs");
-
-gameTabs.forEach(block => {
-    const elementsItems = block.querySelectorAll(".game-tabs__button");
-    const activeLine = block.querySelector(".game-tabs__span");
-
-
-    const dataContent = document.querySelectorAll("[data-tabs-content]");
-
-
-    function changeWidthLine() {
-        const elementWidth = elementsItems[0].clientWidth;
-        activeLine.style.width = `${elementWidth}px`;
-    }
-
-    changeWidthLine();
-    window.addEventListener("resize", changeWidthLine);
-
-    function deleteActiveClass() {
-        elementsItems.forEach(item => item.classList.remove("active"));
-        dataContent.forEach(item => item.classList.remove("active"));
-    }
-
-
-    elementsItems.forEach((button, index) => {
-        button.addEventListener("click", () => {
-            deleteActiveClass();
-
-            dataContent[index].classList.add("active");
-
-            button.classList.add("active");
+        containersColunms.forEach(item => {
             
-            switch(elementsItems.length) {
-                case 2:
+            item.style.gridTemplateColumns = `repeat(${Math.ceil(item.children.length / 2)}, 1fr)`;
+        })
+        
+    } catch(e) {
+    
+    }
+}
 
-                    return  activeLine.style.left = `${50 * index}%`;
-                case 3:
-                    return  activeLine.style.left = `${33.33333 * index}%`;
-                case 4:
-                    return activeLine.style.left = `${25 * index}%`;
-                default:
-                    return activeLine.style.left = `${0 * index}%`;
-            }
+
+const activeTabstriggers = () => {
+    const gameTabs = document.querySelectorAll(".game-tabs");
+
+    gameTabs.forEach(block => {
+        const elementsItems = block.querySelectorAll(".game-tabs__button");
+        const activeLine = block.querySelector(".game-tabs__span");
+    
+    
+        const dataContent = document.querySelectorAll("[data-tabs-content]");
+    
+    
+        function changeWidthLine() {
+            const elementWidth = elementsItems[0].clientWidth;
+            activeLine.style.width = `${elementWidth}px`;
+        }
+    
+        changeWidthLine();
+        window.addEventListener("resize", changeWidthLine);
+    
+        function deleteActiveClass() {
+            elementsItems.forEach(item => item.classList.remove("active"));
+            dataContent.forEach(item => item.classList.remove("active"));
+        }
+    
+    
+        elementsItems.forEach((button, index) => {
+            button.addEventListener("click", () => {
+                deleteActiveClass();
+    
+                dataContent[index].classList.add("active");
+    
+                button.classList.add("active");
+                
+                switch(elementsItems.length) {
+                    case 2:
+    
+                        return  activeLine.style.left = `${50 * index}%`;
+                    case 3:
+                        return  activeLine.style.left = `${33.33333 * index}%`;
+                    case 4:
+                        return activeLine.style.left = `${25 * index}%`;
+                    default:
+                        return activeLine.style.left = `${0 * index}%`;
+                }
+            })
         })
     })
-})
+}
+
+
+/**All Pages */
+
+activeAnimation();
+activeCalendar();
+headerFunctionSwipe();
+activeSpollersResize();
+activeTabstriggers();
+
+import DynamicAdapt from "./modules/dynamicadapt.js";
+const da = new DynamicAdapt("max");
+da.init();
+/*****************Home Function************** */
+addGols();
+activeSelectHomeHeaderBlock();
+activeFunctionOffOn();
+
+
+
+/*****************Game center function************** */
+
+
+
+/*****************Dashboard function************** */
+
+
+
+
+
+
+
 

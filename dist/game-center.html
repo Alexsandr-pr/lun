@@ -1757,6 +1757,22 @@
                 pushPlayersPole(data)
 
 
+                const activeStaticGameCenter = () => {
+                    try {
+
+                        const staticParent = document.querySelector(".static-game__block");
+                        const blockStatic = document.querySelector(".static-block").children;
+
+                        for(let i = 0; i < blockStatic.length; i++) {
+                            const block = blockStatic[i];
+                            block.addEventListener("click", () => {
+                                staticParent.classList.toggle("_active")
+                            })
+                        }
+                    }catch(e) {
+                    }
+                }
+                activeStaticGameCenter();
         </script>
 		<script src="https://cdn.jsdelivr.net/npm/air-datepicker@2.2.3/dist/js/datepicker.min.js"></script>
 		<script src="js/app.min.js"></script>
