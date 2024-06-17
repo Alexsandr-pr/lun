@@ -5,9 +5,24 @@
     grid-template-columns: repeat(2, 1fr);
     display: grid;
 }
+.game-tabs-3 {
+    transition: all 0.3s ease 0s;
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+}
 .game-tabs-4 {
     transition: all 0.3s ease 0s;
     grid-template-columns: repeat(4, 1fr);
+    display: grid;
+}
+.game-tabs-5 {
+    transition: all 0.3s ease 0s;
+    grid-template-columns: repeat(5, 1fr);
+    display: grid;
+}
+.game-tabs-6 {
+    transition: all 0.3s ease 0s;
+    grid-template-columns: repeat(6, 1fr);
     display: grid;
 }
 
@@ -67,4 +82,12 @@
 .game-tabs__button-image {
     padding: 4px;
 
+}
+
+[data-tabs-content] {
+    display: none;
+}
+[data-tabs-content]._active {
+    display: flex;
+    width: 100%;
 }

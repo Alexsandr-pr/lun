@@ -373,10 +373,20 @@
 /************************************/
 
 
-
+.table-block__col-team-w-100 {
+    .table-block__col-team {
+        max-width: 100%;
+        .comand__text {
+            text-overflow: ellipsis;
+            max-width: 74px;
+        }
+    }
+    .table-block__col {
+        padding: 4px 1px;
+    }
+}
 .table-block__col-team-w-130 {
     min-width: 130px;
-    
 }
 .table-block__col-team-w-260 {
     min-width: 260px;
@@ -390,4 +400,68 @@
         min-width: 140px;
     }
 }
+
+
+
+.count-block {
+
+    // .count-block__item
+    display: flex;
+    align-items: center;
+    gap: 2.5px;
+    &__item {
+        display: flex;
+        width: 20px;
+        border-radius:  4px;
+        border: 1px solid  #EEFFA5;
+        background:  #FFF;
+        height: 24px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color:  #0A2B1D;
+        font-family: Roboto;
+        font-size: 14px;
+        @media(max-width:487.98px){
+            width: 18px;
+            height: 20px;
+        }
+        @media(max-width:357.98px){
+            width: 16px;
+            height: 18px;
+        }
+    }
+}
+.count-block-span {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+}
+.count-element {
+    .count-element__items {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        .match-block__team-league-top {
+            padding: 6px 8px ;
+            @media(max-width:357.98px){
+                padding: 6px 4px;
+            }
+        }
+        .match-block__team-league-top:nth-child(odd) {
+            border-right: #60756C 1px solid;
+        }
+        .match-block__team-league-top:not(:nth-last-child(-n + 2) ){
+            border-bottom:1px solid #60756C;
+        }
+    }
+
+    
+
+    .match-block__team-league-top {
+        @media(max-width:357.98px){
+            gap: 3px;
+        }
+    }
+}
+
 

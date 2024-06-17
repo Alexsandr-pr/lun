@@ -1,7 +1,22 @@
 
 
-function dashboardCreateLine() {
+function dashboardCreateLine(element) {
         
+        const arrayChildren = element.querySelectorAll(".dashboard__table");
+        let number ;
+        if(arrayChildren.length === 3) {
+            number = 33;
+        }
+        if(arrayChildren.length === 2) {
+            number = 50;
+        }
+        arrayChildren.forEach(item => {
+            
+                item.style.cssText = `
+                flex: 0 1 ${number}%;
+            `
+            
+        })
 
         const createDiv = (clazz) => {
             const div = document.createElement("div");
@@ -43,9 +58,9 @@ function dashboardCreateLine() {
         }
     
         function addBorder() {
-            const dasnboardTable = document.querySelectorAll(".dashboard-table__items");
+            const dasnboardTable = element.querySelectorAll(".dashboard-table__items");
             const offsets =  createOffsets(dasnboardTable)
-            
+            console.log(offsets)
             for(let i = 0; i < dasnboardTable.length; i++){
     
                 const table = dasnboardTable[i];

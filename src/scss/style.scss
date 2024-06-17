@@ -131,11 +131,13 @@
 /************Layout Dashboard Page**********************/
 .dashboard__layout {
     width: 100%;
+    
 }
 .dashboard__layout-column {
     @media(max-width:1200px){
         display: flex;
         flex-direction: column;
+        gap: 24px;
     }
 }
 
@@ -313,27 +315,50 @@
     // .bottom-info__button
 
     &__button {
-        padding: 12px;
-        font-family: "Roboto Condensed";
-        font-size: 14px;
-        text-transform: uppercase;
-        border-radius: 8px;
-        color:#018000;
-        transition: all 0.3s ease 0s;
-        background: #fff;
-        @media(hover:hover) {
-            &:hover {
-            cursor: pointer;
-            background:#018000;
-            color:#fff;
-            }
-        }
-        @media(max-width:767.98px){
-            width: 100%;
-        }
+
     }
 }
 
+.bottom-info__button {
+    padding: 12px;
+    font-family: "Roboto Condensed";
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    color:#018000;
+    transition: all 0.3s ease 0s;
+    background: #fff;
+    @media(hover:hover) {
+        &:hover {
+            cursor: pointer;
+            background:#018000;
+            color:#fff;
+        }
+    }
+    @media(max-width:767.98px){
+        width: 100%;
+    }
+    &.disabled {
+        opacity: 0.3;
+    }
+    &.button-min {
+        border-radius: 4px;
+        padding: 6.5px 12px;
+    }
+}
+.bottom-info__white {
+    background:none;
+    color:#fff;
+    border: 1px solid #FFF;
+
+    &.disabled {
+        opacity: 0.3;
+    }
+    &.button-min {
+        border-radius: 4px;
+        padding: 6.5px 12px;
+    }
+}
 
 .info-item {
 

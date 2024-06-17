@@ -9,15 +9,14 @@ burgerMenu();
 import  accordion  from "./ui/accordion.js";
 accordion();
 
-//import tabs from "./ui/tabs.js";
-//tabs(triggerClass, contentClass);
+import tabs from "./ui/tabs.js";
+tabs(".game-tabs__button", "[data-tabs-content]")
 
 import addBorderToScrollTable from "./modules/addBorderToScrollTable.js"
 import addWrapperPageDashboard from "./modules/addWrapperPageDashboard.js";
 import dashboardCreateLine from "./modules/dashboardPaintLines.js";
 
 try {
-    dashboardCreateLine()
     addWrapperPageDashboard()
     addBorderToScrollTable(".table-block-scroll")
 } catch(e) {
@@ -281,6 +280,28 @@ const addGols = () => {
     }
 }
 
+function activateLinesPaint() {
+    
+    const elementsDashboard = document.querySelectorAll(".dashboard__body");
+
+
+
+
+
+    elementsDashboard.forEach((element) =>{
+
+        const parentElement = element.closest('[data-tabs-content]');
+        
+        if(window.getComputedStyle(parentElement).display === 'flex') {
+
+            if(!element.classList.contains("activation")) {
+                dashboardCreateLine(element);
+                element.classList.add("activation");
+            }
+        }
+    })
+}
+activateLinesPaint()
 
 const activeTabstriggers = () => {
     const gameTabs = document.querySelectorAll(".game-tabs");
@@ -289,10 +310,8 @@ const activeTabstriggers = () => {
         const elementsItems = block.querySelectorAll(".game-tabs__button");
         const activeLine = block.querySelector(".game-tabs__span");
     
-    
-        const dataContent = document.querySelectorAll("[data-tabs-content]");
-    
-    
+        //const dataContent = document.querySelectorAll("[data-tabs-content]");
+
         function changeWidthLine() {
             const elementWidth = elementsItems[0].clientWidth;
             activeLine.style.width = `${elementWidth}px`;
@@ -303,7 +322,7 @@ const activeTabstriggers = () => {
     
         function deleteActiveClass() {
             elementsItems.forEach(item => item.classList.remove("active"));
-            dataContent.forEach(item => item.classList.remove("active"));
+            //dataContent.forEach(item => item.classList.remove("active"));
         }
     
     
@@ -311,21 +330,13 @@ const activeTabstriggers = () => {
             button.addEventListener("click", () => {
                 deleteActiveClass();
     
-                dataContent[index].classList.add("active");
+                //dataContent[index].classList.add("active");
     
                 button.classList.add("active");
                 
-                switch(elementsItems.length) {
-                    case 2:
-    
-                        return  activeLine.style.left = `${50 * index}%`;
-                    case 3:
-                        return  activeLine.style.left = `${33.33333 * index}%`;
-                    case 4:
-                        return activeLine.style.left = `${25 * index}%`;
-                    default:
-                        return activeLine.style.left = `${0 * index}%`;
-                }
+                activeLine.style.left = `${(Math.ceil(100 / elementsItems.length)) * index}%`;
+                activateLinesPaint() 
+                
             })
         })
     })
