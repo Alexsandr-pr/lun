@@ -1,0 +1,121 @@
+.list-icon-teams {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+@media (max-width: 991.98px) {
+  .list-icon-teams {
+    gap: 8px;
+  }
+}
+@media (max-width: 767.98px) {
+  .list-icon-teams {
+    gap: 4px;
+  }
+}
+.list-icon-teams__block {
+  width: 16px;
+  height: 16px;
+  opacity: 0;
+  visibility: hidden;
+}
+.list-icon-teams__block img {
+  width: 16px;
+  height: 16px;
+}
+@media (max-width: 487.98px) {
+  .list-icon-teams__block img {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.list-icon-teams__block._active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.label-block {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 6px;
+}
+.label-block__text {
+  text-align: right;
+  font-size: 11px;
+  font-weight: 400;
+}
+.teams-item__info {
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  gap: 2px;
+}
+.teams-item__height {
+  text-align: right;
+  font-size: 14px;
+  font-weight: 400;
+}
+@media (max-width: 767.98px) {
+  .teams-item__height {
+    font-size: 11px;
+  }
+}
+.teams-item__years {
+  text-align: right;
+  font-size: 16px;
+}
+@media (max-width: 767.98px) {
+  .teams-item__years {
+    font-size: 14px;
+  }
+}
+
+.teams-list {
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.teams-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.teams-item__right {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+@media (max-width: 767.98px) {
+  .teams-item__right {
+    gap: 13px;
+  }
+}
+@media (max-width: 487.98px) {
+  .teams-item__right {
+    gap: 10px;
+  }
+}
+.teams-list__item-border {
+  padding: 8px 0px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.teams-item__footer-text {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.team-player-name__name-red {
+  font-size: 11px !important;
+  color: #FF4848;
+}
+
+.team-player-name__name-yellow {
+  font-size: 11px !important;
+  color: #FFC61A;
+}/*# sourceMappingURL=game-center-lineups.css.map */

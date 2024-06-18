@@ -7,6 +7,14 @@
   text-transform: uppercase;
 }
 
+.title-14 {
+  color: #FFF;
+  font-family: "Roboto Condensed";
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
 .title-24 {
   gap: 2px;
   font-family: "Roboto Condensed";
@@ -18,6 +26,11 @@
   font-weight: 500;
   text-transform: uppercase;
 }
+@media (max-width: 367.98px) {
+  .title-24 {
+    text-align: left;
+  }
+}
 
 .title-16 {
   font-family: "Roboto Condensed";
@@ -27,122 +40,39 @@
   text-transform: uppercase;
 }
 
-/***************game-tabs*************************/
-.game-tabs {
-  position: relative;
-}
-
-.game-tabs-2 {
-  grid-template-columns: repeat(2, 1fr);
-  display: grid;
-}
-
-.game-tabs-4 {
-  transition: all 0.3s ease 0s;
-  grid-template-columns: repeat(4, 1fr);
-  display: grid;
-}
-
-.game-tabs__span {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 1px;
-  transition: all 0.3s ease 0s;
-  background: #6FAA54;
-}
-
-.game-tabs__button {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10.5px;
-  font-weight: 700;
-  transition: all 0.3s ease 0s;
-  border-bottom: 1px solid #0A2B1D;
-}
-@media (max-width: 991.98px) {
-  .game-tabs__button {
-    font-size: 14px;
-  }
-}
-@media (max-width: 767.98px) {
-  .game-tabs__button {
-    padding: 9.5px;
-    font-size: 12px;
-  }
+.text-14 {
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2; /* 16.8px */
 }
 @media (max-width: 487.98px) {
-  .game-tabs__button {
+  .text-14 {
     font-size: 11px;
   }
 }
-.game-tabs__button.active {
-  transition: all 0.3s ease 0s;
-  color: #6FAA54;
-}
-@media (hover: hover) {
-  .game-tabs__button.active:hover {
-    cursor: inherit;
-    color: #6FAA54;
-  }
-}
-@media (hover: hover) {
-  .game-tabs__button:hover {
-    cursor: pointer;
-    color: #81c2a6;
-  }
-}
 
-.game-tabs__button-image {
-  padding: 4px;
-}
-
-/**************************************/
-.result-list {
-  display: flex;
-  gap: 8px;
-}
-@media (max-width: 487.98px) {
-  .result-list {
-    gap: 2px;
-  }
-}
-
-.result-list__block {
-  width: 24px;
-  height: 24px;
-  padding: 2px;
-  color: #0A2B1D;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 10px;
+.title-18 {
   text-align: center;
+  font-family: "Roboto Condensed";
+  font-size: 18px;
   text-transform: uppercase;
-  border-radius: 2px;
 }
 
-.result-list-average {
-  gap: 2px !important;
+.color-red {
+  color: #FF4848 !important;
 }
 
-.result-list-average .result-list__block {
-  width: 16px;
-  height: 16px;
+.color-yellow {
+  color: #FFC61A !important;
 }
 
-.result-list__block-win {
-  background: #EEFFA5;
-}
-
-.result-list__block-loss {
-  background-color: #FF4848;
-}
-
-.result-list__block-draw {
-  background: rgba(255, 255, 255, 0.5);
+.table {
+  flex-direction: column;
+  display: flex;
+  gap: 16px;
 }
 
 /***********************************************/
@@ -155,27 +85,6 @@
 }
 .comand-average .comand__text {
   font-size: 12px;
-}
-
-.table-block__col-team-w-130 {
-  min-width: 130px;
-}
-
-.table-block__col-team-w-260 {
-  min-width: 260px;
-}
-.table-block__col-team-w-260 .comand__text {
-  width: 220px;
-}
-@media (max-width: 487.98px) {
-  .table-block__col-team-w-260 .comand__text {
-    width: 130px;
-  }
-}
-@media (max-width: 487.98px) {
-  .table-block__col-team-w-260 {
-    min-width: 140px;
-  }
 }
 
 .comand {
@@ -489,6 +398,23 @@
     height: 24px;
     font-size: 11px;
   }
+}
+
+.block-image-16 .block-image__flag {
+  width: 8px;
+  height: 8px;
+  top: -1px;
+}
+.block-image-16 .block-image__block,
+.block-image-16 .block-image__teams {
+  width: 16px;
+  height: 16px;
+}
+.block-image-16 .block-image__flag-right {
+  right: -1px;
+}
+.block-image-16 .block-image__flag-left {
+  left: -1px;
 }
 
 .team-player__block {

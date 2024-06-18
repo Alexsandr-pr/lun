@@ -1,0 +1,32 @@
+.slider-buttons {
+  display: flex;
+  gap: 8px;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.slider-button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  padding: 11px 12px;
+  border-radius: 4px;
+  border: 1px solid #FFF;
+  transition: all 0.3s ease 0s;
+}
+.slider-button.active {
+  border-color: transparent;
+  background: #018000;
+}
+@media (hover: hover) {
+  .slider-button:hover {
+    cursor: pointer;
+    background: #018000;
+  }
+}
+@media (max-width: 767.98px) {
+  .slider-button {
+    padding: 9.5px 12px;
+    font-size: 11px;
+  }
+}/*# sourceMappingURL=slider-buttons.css.map */

@@ -1,0 +1,143 @@
+@media (max-width: 767.98px) {
+  .aside__image-top {
+    display: none;
+  }
+}
+.aside__image-top img {
+  max-width: 100%;
+}
+.aside__select {
+  padding: 20px 0px;
+  width: 250px;
+  border-bottom: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media (max-width: 767.98px) {
+  .aside__select {
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}
+@media (max-width: 1100.98px) {
+  .aside__select {
+    width: 210px;
+  }
+}
+@media (max-width: 767.98px) {
+  .aside__select {
+    width: 100%;
+  }
+}
+.aside__links {
+  width: 250px;
+  border-bottom: 1px solid #fff;
+  padding: 16px 0px;
+}
+@media (max-width: 767.98px) {
+  .aside__links {
+    width: 100%;
+  }
+}
+@media (max-width: 1100.98px) {
+  .aside__links {
+    width: 210px;
+  }
+}
+@media (max-width: 767.98px) {
+  .aside__links {
+    width: 100%;
+  }
+}
+.aside__bottom {
+  padding: 16px 0px;
+  font-family: "Roboto Condensed";
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.select__button {
+  gap: 10px;
+  transition: all 0.3s ease 0s;
+  width: 100%;
+  color: #FFF;
+  font-family: "Roboto Condensed";
+  font-size: 14px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.select__button svg {
+  transition: all 0.3s ease 0s;
+}
+.select__button path {
+  transition: all 0.3s ease 0s;
+}
+@media (hover: hover) {
+  .select__button:hover {
+    cursor: pointer;
+    color: #6FAA54;
+  }
+  .select__button:hover path {
+    stroke: #6FAA54;
+  }
+}
+@media (max-width: 767.98px) {
+  .select__button {
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+  }
+}
+.select__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.select__item {
+  transition: all 0.3s ease 0s;
+  font-size: 14px;
+  font-weight: 400;
+}
+@media (hover: hover) {
+  .select__item:hover {
+    cursor: pointer;
+    color: #6FAA54;
+  }
+}
+
+.select__list {
+  padding: 16px 12px 0px 12px;
+}
+
+.select__block.active .select__button {
+  color: #6FAA54;
+}
+.select__block.active .select__button svg {
+  transform: rotateX(180deg);
+}
+.select__block.active .select__button path {
+  stroke: #6FAA54;
+}
+@media (max-width: 767.98px) {
+  .select__block.active .select__button {
+    border-bottom: 1px dashed #6FAA54;
+  }
+}
+
+.links-aside__button {
+  padding: 8px 0px;
+  font-family: "Roboto Condensed";
+  font-size: 20px;
+  transition: all 0.3s ease 0s;
+  text-transform: uppercase;
+}
+@media (hover: hover) {
+  .links-aside__button:hover {
+    cursor: pointer;
+    color: #018000;
+  }
+}
+.links-aside__button.active {
+  color: #018000;
+}/*# sourceMappingURL=aside.css.map */

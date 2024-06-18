@@ -1,0 +1,46 @@
+.game-result__list {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.result-item {
+  display: grid;
+  align-items: center;
+  gap: 10px;
+}
+@media (min-width: 500.98px) {
+  .result-item {
+    grid-template-columns: 0.5fr 1.1fr 1.1fr 0.3fr;
+  }
+}
+@media (min-width: 500.98px) and (max-width: 991.98px) {
+  .result-item {
+    grid-template-columns: 0.2fr 1.2fr 1.2fr 0.3fr;
+  }
+}
+@media (max-width: 500.98px) {
+  .result-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 6px;
+  }
+}
+.result-item__position {
+  text-align: left;
+  font-weight: 700;
+}
+@media (max-width: 991.98px) {
+  .result-item__position {
+    font-size: 14px;
+  }
+}
+.result-item__info {
+  text-align: right;
+  font-weight: 700;
+}
+@media (max-width: 991.98px) {
+  .result-item__info {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=game-result-list.css.map */

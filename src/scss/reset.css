@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 120%;
+  color: #FFF;
+  line-height: 1;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Roboto";
+  background-color: #115E2A;
+  background-size: cover;
+}
+@media (min-width: 991.98px) {
+  html,
+  body {
+    background-image: url("@img/bg.webp");
+  }
+}
+@media (max-width: 991.98px) {
+  html,
+  body {
+    background-image: url("@img/bg-mobile.webp");
+  }
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 16px;
+  background-color: #fff;
+  height: 100%;
+}
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  background: #6FAA54;
+}
+
+button,
+input {
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+}
+
+button {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  background-color: inherit;
+}
+
+table, td, th, tr {
+  border: none;
+  border-collapse: collapse;
+}/*# sourceMappingURL=reset.css.map */

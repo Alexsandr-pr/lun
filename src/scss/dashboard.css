@@ -1,8 +1,26 @@
 .dashboard {
   overflow: hidden;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+@media (min-width: 991.98px) {
+  .dashboard {
+    background: #0A2B1D;
+  }
+}
+.dashboard .dashboard__buttons {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 991.98px) {
+  .dashboard {
+    padding: 0;
+  }
 }
 .dashboard__title {
-  margin-bottom: 24px;
   text-align: center;
   font-family: "Roboto Condensed";
   font-size: 20px;
@@ -34,11 +52,6 @@
   display: block;
   padding: 8px 12px;
 }
-@media (min-width: 991.98px) {
-  .dashboard__table {
-    flex: 0 0 217.5px;
-  }
-}
 .dashboard__table:nth-child(1) {
   background: rgba(255, 255, 255, 0.1);
 }
@@ -63,21 +76,33 @@
 .dashboard__table:nth-child(8) {
   background: rgba(255, 255, 255, 0.02);
 }
-@media (min-width: 767.98px) and (max-width: 991.98px) {
+@media (max-width: 991.98px) {
   .dashboard__table {
-    flex: 0 0 150px;
-    padding: 12px 6px;
+    padding: 12px 6px !important;
   }
 }
-@media (max-width: 767.98px) {
+@media (min-width: 991.98px) {
   .dashboard__table {
-    flex: 0 0 180px;
-    padding: 12px 6px;
+    flex: 0 1 210px !important;
+  }
+}
+@media (max-width: 991.98px) {
+  .dashboard__table {
+    flex: 0 0 180px !important;
   }
 }
 @media (max-width: 487.98px) {
   .dashboard__table {
-    flex: 0 0 150px;
+    flex: 0 0 150px !important;
+  }
+}
+
+.dashboard__body-three .dashboard-table {
+  flex: 0 1 33.3333% !important;
+}
+@media (max-width: 487.98px) {
+  .dashboard__body-three .dashboard-table {
+    flex: 0 0 150px !important;
   }
 }
 

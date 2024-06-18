@@ -55,11 +55,7 @@
     // .dashboard__table
 
     &__table {
-        @media(min-width:991.98px){
-            flex: 0 1 210px;
-        }
         display: block; 
-
         &:nth-child(1) {
             background: rgba(255, 255, 255, 0.10);
         }
@@ -88,15 +84,28 @@
         padding: 8px 12px;
         
         @media(max-width:991.98px){
-            flex: 0 0 180px !important;
             padding: 12px 6px !important;
+        }
+
+        @media(min-width:991.98px){
+            flex: 0 1 210px !important;
+        }
+        @media(max-width:991.98px){
+            flex: 0 0 180px !important;
         }
         @media(max-width:487.98px){
             flex: 0 0 150px !important;
         }
     }
-
 }
+
+.dashboard__body-three .dashboard-table{
+    flex: 0 1 33.3333% !important;
+    @media(max-width:487.98px){
+        flex: 0 0 150px !important;
+    }
+}
+
 .dashboard__content {
     overflow: hidden;
 }
