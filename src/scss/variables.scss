@@ -56,7 +56,12 @@
     text-transform: uppercase;
 }
 
-
+.color-red {
+    color:  #FF4848 !important;
+}
+.color-yellow {
+    color:  #FFC61A !important;
+}
 .table {
     flex-direction: column;
     display: flex;

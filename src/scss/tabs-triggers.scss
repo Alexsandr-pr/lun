@@ -1,5 +1,8 @@
 .game-tabs {
     position: relative;
+    @media(max-width:330.98px){
+        overflow-x: auto;
+    }
 }
 .game-tabs-2 {
     grid-template-columns: repeat(2, 1fr);
