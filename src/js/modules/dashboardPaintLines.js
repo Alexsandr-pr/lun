@@ -60,7 +60,7 @@ function dashboardCreateLine(element) {
         function addBorder() {
             const dasnboardTable = element.querySelectorAll(".dashboard-table__items");
             const offsets =  createOffsets(dasnboardTable)
-            console.log(offsets)
+            
             for(let i = 0; i < dasnboardTable.length; i++){
     
                 const table = dasnboardTable[i];

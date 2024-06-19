@@ -284,10 +284,6 @@ function activateLinesPaint() {
     
     const elementsDashboard = document.querySelectorAll(".dashboard__body");
 
-
-
-
-
     elementsDashboard.forEach((element) =>{
 
         const parentElement = element.closest('[data-tabs-content]');
@@ -303,46 +299,139 @@ function activateLinesPaint() {
 }
 activateLinesPaint()
 
+function updateGridColumns(block, lengthItem, line) {
+    block.style.cssText = `
+        grid-template-columns: repeat(${lengthItem}, 1fr);
+    `;
+    //const elementWidth = elementsItems[0].clientWidth;
+    //line.style.width = `${elementWidth}px`;
+}
+
+
+// const activeTabstriggers = () => {
+//     const gameTabs = document.querySelectorAll(".game-tabs");
+
+//     gameTabs.forEach(block => {
+//         let elementsItems = block.querySelectorAll(".game-tabs__button");
+//         let itemsLength = elementsItems.length;
+//         const activeLine = block.querySelector(".game-tabs__span");
+        
+//         function changeWidthLine() {
+//             var elementsItems = block.querySelectorAll(".game-tabs__button");
+//             activeLine.style.width = `${elementsItems[0].clientWidth}px`;
+//         }
+
+//         changeWidthLine();
+
+//         function deleteActiveClass() {
+//             elementsItems.forEach(item => item.classList.remove("active"));
+//         }
+
+//         function changeLeftStyle() {
+//             var elementsItems = block.querySelectorAll(".game-tabs__button");
+//             elementsItems.forEach((button, index) => {
+//                 button.addEventListener("click", () => {
+//                     deleteActiveClass();
+//                     button.classList.add("active");
+//                     activeLine.style.left = `${Math.floor((100 / itemsLength)) * index}%`;
+//                     //activateLinesPaint();
+//                 })
+//             })
+//         }
+
+//         changeLeftStyle();
+
+//         function updateWidth(length) {
+//             console.log(length)
+//             updateGridColumns(block, length);
+//             changeWidthLine();
+//         }
+
+
+
+//         updateWidth(itemsLength);
+
+//         const observer = new MutationObserver(() => {
+//             elementsItems = block.querySelectorAll(".game-tabs__button");
+//             itemsLength = elementsItems.length;
+//             updateWidth(itemsLength);
+//         });
+
+//         const config = { childList: true };
+
+//         observer.observe(block, config);
+//     });
+// }
 const activeTabstriggers = () => {
     const gameTabs = document.querySelectorAll(".game-tabs");
 
     gameTabs.forEach(block => {
-        const elementsItems = block.querySelectorAll(".game-tabs__button");
+        let elementsItems = block.querySelectorAll(".game-tabs__button");
+        let itemsLength = elementsItems.length;
         const activeLine = block.querySelector(".game-tabs__span");
-    
-        //const dataContent = document.querySelectorAll("[data-tabs-content]");
 
         function changeWidthLine() {
-            const elementWidth = elementsItems[0].clientWidth;
-            activeLine.style.width = `${elementWidth}px`;
+            var elementsItems = block.querySelectorAll(".game-tabs__button");
+            if (elementsItems.length > 0) {
+                activeLine.style.width = `${elementsItems[0].clientWidth}px`;
+            }
         }
-    
+
         changeWidthLine();
-        window.addEventListener("resize", changeWidthLine);
-    
+
         function deleteActiveClass() {
             elementsItems.forEach(item => item.classList.remove("active"));
-            //dataContent.forEach(item => item.classList.remove("active"));
         }
-    
-    
-        elementsItems.forEach((button, index) => {
-            button.addEventListener("click", () => {
-                deleteActiveClass();
-    
-                //dataContent[index].classList.add("active");
-    
-                button.classList.add("active");
-                
-                activeLine.style.left = `${(Math.ceil(100 / elementsItems.length)) * index}%`;
-                activateLinesPaint() 
-                
-            })
-        })
-    })
+
+        function changeLeftStyle() {
+            elementsItems.forEach((button, index) => {
+                button.addEventListener("click", () => {
+                    deleteActiveClass();
+                    button.classList.add("active");
+                    activeLine.style.left = `${(100 / itemsLength) * index}%`;
+                    // activateLinesPaint();
+                });
+            });
+        }
+
+        changeLeftStyle();
+
+        function updateWidth(length) {
+            console.log(length);
+            updateGridColumns(block, length);
+            changeWidthLine();
+        }
+
+        function updateActiveLinePosition() {
+            elementsItems = block.querySelectorAll(".game-tabs__button");
+            const activeButton = block.querySelector(".game-tabs__button.active");
+            if (activeButton) {
+                const index = Array.from(elementsItems).indexOf(activeButton);
+                activeLine.style.left = `${(100 / itemsLength) * index}%`;
+            } else if (elementsItems.length > 0) {
+                elementsItems[0].classList.add("active");
+                activeLine.style.left = `0%`;
+            }
+        }
+
+        updateWidth(itemsLength);
+
+        const observer = new MutationObserver(() => {
+            elementsItems = block.querySelectorAll(".game-tabs__button");
+            itemsLength = elementsItems.length;
+            updateWidth(itemsLength);
+            updateActiveLinePosition();
+            changeLeftStyle();
+        });
+
+        const config = { childList: true, subtree: true };
+
+        observer.observe(block, config);
+    });
 }
 
-
+document.addEventListener("DOMContentLoaded", activeTabstriggers);
+document.addEventListener("DOMContentLoaded", activeTabstriggers);
 /**All Pages */
 
 activeAnimation();

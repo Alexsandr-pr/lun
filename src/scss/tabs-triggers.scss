@@ -1,4 +1,5 @@
 .game-tabs {
+    display: grid;
     position: relative;
     @media(max-width:330.98px){
         overflow-x: auto;

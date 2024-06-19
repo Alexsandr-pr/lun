@@ -1311,6 +1311,7 @@ input[type=search]::-webkit-search-cancel-button {
 
 /**********************/
 .game-tabs {
+  display: grid;
   position: relative;
 }
 @media (max-width: 330.98px) {
