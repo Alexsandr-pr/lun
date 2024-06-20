@@ -1,47 +1,34 @@
 .main-title {
-    text-align: center;
-    font-family: "Roboto Condensed";
     font-size: 20px;
-    font-weight: 700;
-    line-height: 1.2;
-    text-transform: uppercase;
 }
 .title-14 {
-    color: #FFF;
-    font-family: "Roboto Condensed";
     font-size: 14px;
-    line-height: 1.2; 
-    text-transform: uppercase;
-    
 }
-
 .title-24 {
     gap: 2px;
-    font-family: "Roboto Condensed";
     font-size: 24px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-weight: 500;
-    text-transform: uppercase;
     @media(max-width:367.98px){
         text-align: left;
     }
 }
 
-.title-16 {
+.title-14,
+.main-title,
+.title-24,
+.title-16,
+.title-18,
+.modals__header {
+    line-height: 1.2;
     font-family: "Roboto Condensed";
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.2; /* 19.2px */
     text-transform: uppercase;
 }
 
+.title-16 {
+    font-size: 16px;
+}
+
 .text-14 {
-    color:  #FFF;
-    text-align: center;
-    font-family: Roboto;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.2; /* 16.8px */
@@ -50,12 +37,16 @@
     }
 }
 .title-18 {
-    text-align: center;
-    font-family: "Roboto Condensed";
     font-size: 18px;
-    text-transform: uppercase;
 }
 
+.text-14,
+.title-18,
+.title-24,
+.main-title,
+.rates__title {
+    text-align: center;
+}
 .color-red {
     color:  #FF4848 !important;
 }
@@ -88,9 +79,6 @@
     display: flex;
     align-items: center;
     &__text {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        font-family: Roboto;
         font-weight: 400;
         line-height: 1.2; /* 14.4px */
         white-space: nowrap;
@@ -116,7 +104,6 @@
     z-index: 20;
     padding: 18px 24px;
     // .button-arrow__text
-    transition: all 0.3s ease 0s;
     @media(hover:hover) {
         &:hover {
             .button-arrow__image {
@@ -217,25 +204,27 @@
 
 /*****************************************/
 // flex direction gap24px section column
-
-.flex-content {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
+.flex-content,
 .flex-content-16 {
     display: flex;
     flex-direction: column;
+}
+.flex-content {
+    gap: 24px;
+}
+.flex-content-16 {
     gap: 16px;
 }
 /************************************/
-
+.content-block,
+.rates__content {
+    border-radius:8px;
+}
 .content-block {
 
     // .content-block__header
     background: #0A2B1D;
-    border-radius:8px;
+
     &__header {
         display: flex;
         align-items: center;
@@ -243,7 +232,6 @@
         justify-content: space-between;
         padding: 8px 12px;
         font-family: "Roboto Condensed";
-        font-weight: 700;
         text-transform: uppercase;
         border-radius:8px 8px 0px 0px;
         border-bottom: 1px solid #60756C;
@@ -289,7 +277,6 @@
         align-items: center;
         justify-content: center;
         padding: 1px 10px;
-        text-align: center;
         font-size: 12px;
         font-weight: 400;
         @media(max-width:487.98px){
@@ -308,7 +295,6 @@
     // .rates__content
     &__content {
         display: flex;
-        border-radius: 8px;
     }
 
     // .rates__element
@@ -327,7 +313,6 @@
         }
         font-family: "Roboto Condensed";
         font-size: 14px;
-        font-weight: 700;
         text-transform: uppercase;
     }
 }
@@ -337,46 +322,58 @@
         border-bottom:0px;
     }
 }
-.rates__item:nth-child(1) {
-    .rates__element {
-        &:first-child {
-            width: 65%;
+.rates__item {
+    &:nth-child(1) {
+        .rates__element {
+            &:first-child {
+                width: 65%;
+            }
+            &:last-child {
+                width: 35%;
+            }
         }
-        &:last-child {
-            width: 35%;
+    }
+    &:nth-child(2) {
+        .rates__element {
+            &:first-child {
+                width: 80%;
+            }
+            &:last-child {
+                width: 20%;
+            }
+        }
+    }
+    &:nth-child(3) {
+        .rates__element {
+            &:first-child {
+                width: 35%;
+            }
+            &:last-child {
+                width: 65%;
+            }
+        }
+    }
+    &:nth-child(4) {
+        .rates__element {
+            &:first-child {
+                width: 50%;
+            }
+            &:last-child {
+                width: 50%;
+            }
         }
     }
 }
-.rates__item:nth-child(2) {
-    .rates__element {
-        &:first-child {
-            width: 80%;
-        }
-        &:last-child {
-            width: 20%;
-        }
-    }
+
+
+
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.rates__item:nth-child(3) {
-    .rates__element {
-        &:first-child {
-            width: 35%;
-        }
-        &:last-child {
-            width: 65%;
-        }
-    }
-}
-.rates__item:nth-child(4) {
-    .rates__element {
-        &:first-child {
-            width: 50%;
-        }
-        &:last-child {
-            width: 50%;
-        }
-    }
-}
+
 
 /******************************************/
 
@@ -384,21 +381,9 @@
 .block-image {
     // .block-image__flag
     position: relative;
-
     &__flag {
         position: absolute;
     }
-
-    // .block-image__block
-
-    &__block {
-    }
-
-    // .block-image__teams
-
-    &__teams {
-    }
-
 }
 
 .block-image-32 {
@@ -444,13 +429,11 @@
         width: 32px;
         height: 32px;
         display: flex;
-        color:#fff;
         align-items: center;
         justify-content: center;
         border-radius: 50%;
         background:  #018000;
         font-size: 14px;
-        font-weight: 700;
         @media(max-width:767.98px){
             width: 24px;
             height: 24px;
@@ -500,7 +483,6 @@
     // .team-player__name
 
     &__name {
-        color: #FFF;
         @media(max-width:367.98px){
             max-width: 120px;
             white-space: nowrap;

@@ -15,48 +15,48 @@
 
     &__select {
         padding: 20px 0px;
-        width: 250px;
-        border-bottom: 1px solid #fff;
         display: flex;
         flex-direction: column;
         gap: 16px;
         @media(max-width:767.98px){
-            width: 100%;
             border-top:1px solid rgba(255, 255, 255, 0.20);
-        }
-        @media(max-width:1100.98px){
-            width: 210px;
-        }
-        @media(max-width:767.98px){
-            width: 100%;
         }
     }
 
     // .aside__links
 
     &__links {
-        width: 250px;
-        border-bottom: 1px solid #fff;
         padding: 16px 0px;
-        @media(max-width:767.98px){
-            width: 100%;
-        }
-        @media(max-width:1100.98px){
-            width: 210px;
-        }
-        @media(max-width:767.98px){
-            width: 100%;
-        }
     }
 
     // .aside__bottom
 
     &__bottom {
-        padding: 16px 0px;
-        font-family: "Roboto Condensed";
         font-size: 14px;
-        text-transform: uppercase;
+        padding: 16px 0px;
     }
+}
+.aside__select,
+.aside__links {
+    border-bottom: 1px solid #fff;
+    width: 250px;
+    @media(max-width:767.98px){
+        width: 100%;
+    }
+    @media(max-width:1100.98px){
+        width: 210px;
+    }
+    @media(max-width:767.98px){
+        width: 100%;
+    }
+}
+
+
+.aside__bottom,
+.select__button,
+.links-aside__button {
+    font-family: "Roboto Condensed";
+    text-transform: uppercase;
 }
 
 .select {
@@ -66,12 +66,7 @@
 
     &__button {
         gap: 10px;
-        transition: all 0.3s ease 0s;
         width: 100%;
-        color:  #FFF;
-        font-family: "Roboto Condensed";
-        font-size: 14px;
-        text-transform: uppercase;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -83,7 +78,6 @@
         }
         @media(hover:hover) {
             &:hover {
-                cursor: pointer;
                 color:#6FAA54;
                 path {
                     stroke:#6FAA54;
@@ -139,10 +133,8 @@
 
     &__button {
         padding: 8px 0px;
-        font-family: "Roboto Condensed";
         font-size: 20px;
         transition: all 0.3s ease 0s;
-        text-transform: uppercase;
         @media(hover:hover) {
             &:hover {
                 cursor: pointer;

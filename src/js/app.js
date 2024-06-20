@@ -389,7 +389,7 @@ const activeTabstriggers = () => {
                     deleteActiveClass();
                     button.classList.add("active");
                     activeLine.style.left = `${(100 / itemsLength) * index}%`;
-                    // activateLinesPaint();
+                    activateLinesPaint();
                 });
             });
         }
@@ -457,7 +457,25 @@ activeFunctionOffOn();
 /*****************Dashboard function************** */
 
 
+const inputs = document.querySelectorAll("input[type='number']");
 
+inputs.forEach(input => {
+    input.addEventListener("input", (event) => {
+        const input = event.target;
+        let value = input.value;
+    
+        // Разрешить только цифры и удалить всё остальное
+        value = value.replace(/[^0-9]/g, '');
+    
+        // Ограничить ввод одним знаком
+        if (value.length > 1) {
+            value = value.charAt(0);
+        }
+
+        // Обновить значение input
+        input.value = value;
+    });
+});
 
 
 

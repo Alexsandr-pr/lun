@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/head.html',{
+	"title":"Главная"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/header.html',{})
+			<main class="main">
+				
+				<div class="main__block main-block">
+					<div class="main-block__container">
+						<div class="main-block__body">
+							@@include('html/aside.html',{})
+							<div class="main-block__content main-content">
+                                <h1 class="title-24 flex-center">
+                                    <img width="16" height="16" src="@img/flags/flaf1.svg" alt="image country">
+                                    COPA NACIONALES ARGENTINA
+                                </h1>
+                                <div class="dashboard__layout dashboard__layout-column-16">
+                                    <div class="dashboard__layout-left">
+                                        <div class="table">
+                                            <div class="table__body table-body">
+                                                <div class="table-body__header">
+                                                    <h3 class="title-16">HISTORIAL COPAS NACIONALES </h3>
+                                                </div>
+                                                <div id="table-block-scroll" class="table-block-scroll">
+                                                    <table class="table-block table-block-sticky-2" >
+                                                        <thead>
+                                                            <tr class="table-block__row-top">
+                                                                <td class="table-block__col-number table-block__col-w-15"><span>Ano</span></td>
+                                                                <td class="table-block__col-team table-block__col-w-35">Campeón</td>
+                                                                <td class="table-block__col-team table-block__col-w-35">Subcampeón</td>
+                                                                <td class="table-block__col table-block__col-no-opacity table-block__col-w-15">Ficha</td>
+                                                            </tr>
+                                                        </thead>   
+                                                        <tr class="tr-display-none"></tr>     
+                                                        <tr class="table-block__row">
+                                                            <td colspan="4" class="table-block__col-green-bg">
+                                                                SUPERCOPA
+                                                            </td>
+                                                        </tr>                                           
+                                                        <tr  class="table-block__row"> 
+                                                            <td class="table-block__col-number "><span>2023</span></td>
+                                                            <td class="table-block__col-team table-block__col-w-35"> 
+                                                                <div class="comand-average comand">
+                                                                    <div class="comand__image-block">
+                                                                        <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                    </div>
+                                                                    <p class="comand__text" id="target">River Plate </p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="table-block__col-team table-block__col-w-35"> 
+                                                                <div class="comand-average comand">
+                                                                    <div class="comand__image-block">
+                                                                        <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                    </div>
+                                                                    <p class="comand__text" id="target"> Estudiantes (LP)</p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="table-block__col table-block__col-green">
+                                                                <span class="table-block__col-table-btn">
+                                                                    TABLA
+                                                                    <img src="@img/icon/chevron-right.svg" alt="Chevron">
+                                                                </span>
+                                                            </td>
+                                                            
+                                                        </tr>
+                                                        <tr class="table-block__row">
+                                                            <td colspan="4" class="table-block__col-green-bg">
+                                                                TROFEO DE CAMPEONES
+                                                            </td>
+                                                        </tr>                                           
+                                                        <tr  class="table-block__row"> 
+                                                            <td class="table-block__col-number "><span>2022</span></td>
+                                                            <td class="table-block__col-team table-block__col-w-35"> 
+                                                                <div class="comand-average comand">
+                                                                    <div class="comand__image-block">
+                                                                        <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                    </div>
+                                                                    <p class="comand__text" id="target">Everton</p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="table-block__col-team table-block__col-w-35"> 
+                                                                <div class="comand-average comand">
+                                                                    <div class="comand__image-block">
+                                                                        <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                    </div>
+                                                                    <p class="comand__text" id="target"> Rosario Central</p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="table-block__col table-block__col-green">
+                                                                <span class="table-block__col-table-btn">
+                                                                    TABLA
+                                                                    <img src="@img/icon/chevron-right.svg" alt="Chevron">
+                                                                </span>
+                                                            </td>
+                                                            
+                                                        </tr>
+                                                        <tr class="table-block__row">
+                                                            <td colspan="4" class="table-block__col-green-bg">
+                                                                COPA DE LA LIGA
+                                                            </td>
+                                                        </tr>                                           
+                                                        <tr  class="table-block__row"> 
+                                                            <td class="table-block__col-number "><span>2021</span></td>
+                                                            <td class="table-block__col-team table-block__col-w-35"> 
+                                                                <div class="comand-average comand">
+                                                                    <div class="comand__image-block">
+                                                                        <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                    </div>
+                                                                    <p class="comand__text" id="target">Manchester</p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="table-block__col-team table-block__col-w-35"> 
+                                                                <div class="comand-average comand">
+                                                                    <div class="comand__image-block">
+                                                                        <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                    </div>
+                                                                    <p class="comand__text" id="target">Platense</p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="table-block__col table-block__col-green">
+                                                                <span class="table-block__col-table-btn">
+                                                                    TABLA
+                                                                    <img src="@img/icon/chevron-right.svg" alt="Chevron">
+                                                                </span>
+                                                            </td>
+                                                            
+                                                        </tr>
+                                                        <tr class="table-block__row">
+                                                            <td colspan="4" class="table-block__col-green-bg">
+                                                                COPA ARGENTINA
+                                                            </td>
+                                                        </tr>                                           
+                                                        <tr  class="table-block__row"> 
+                                                            <td class="table-block__col-number "><span>19/20</span></td>
+                                                            <td class="table-block__col-team table-block__col-w-35"> 
+                                                                <div class="comand-average comand">
+                                                                    <div class="comand__image-block">
+                                                                        <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                    </div>
+                                                                    <p class="comand__text" id="target">Real Madrif </p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="table-block__col-team table-block__col-w-35"> 
+                                                                <div class="comand-average comand">
+                                                                    <div class="comand__image-block">
+                                                                        <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                    </div>
+                                                                    <p class="comand__text" id="target">Def u Justicia</p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="table-block__col table-block__col-green">
+                                                                
+                                                            </td>
+                                                            
+                                                        </tr>
+                                                        <tr class="table-block__row">
+                                                            <td colspan="4" class="table-block__col-green-bg">
+                                                                SUPERCOPA
+                                                            </td>
+                                                        </tr>                                           
+                                                        <tr  class="table-block__row"> 
+                                                            <td class="table-block__col-number "><span>2018</span></td>
+                                                            <td class="table-block__col-team table-block__col-w-35"> 
+                                                                <div class="comand-average comand">
+                                                                    <div class="comand__image-block">
+                                                                        <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                    </div>
+                                                                    <p class="comand__text" id="target">Velez</p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="table-block__col-team table-block__col-w-35"> 
+                                                                <div class="comand-average comand">
+                                                                    <div class="comand__image-block">
+                                                                        <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                    </div>
+                                                                    <p class="comand__text" id="target"> Patonato</p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="table-block__col table-block__col-green">
+                                                                
+                                                            </td>
+                                                            
+                                                        </tr>
+                                                        <tr class="table-block__row">
+                                                            <td colspan="4" class="table-block__col-green-bg">
+                                                                SUPERCOPA INTERNATIONAL
+                                                            </td>
+                                                        </tr>                                           
+                                                        <tr  class="table-block__row"> 
+                                                            <td class="table-block__col-number "><span>2017</span></td>
+                                                            <td class="table-block__col-team table-block__col-w-35"> 
+                                                                <div class="comand-average comand">
+                                                                    <div class="comand__image-block">
+                                                                        <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                    </div>
+                                                                    <p class="comand__text" id="target">Tallerec (C) </p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="table-block__col-team table-block__col-w-35"> 
+                                                                <div class="comand-average comand">
+                                                                    <div class="comand__image-block">
+                                                                        <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                    </div>
+                                                                    <p class="comand__text" id="target"> Boca Juniors</p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="table-block__col table-block__col-green">
+                                                               
+                                                            </td>
+                                                            
+                                                        </tr>
+                                                        <tr class="table-block__row">
+                                                            <td colspan="4" class="table-block__col-green-bg">
+                                                                TROFEO DE CAMPEONES
+                                                            </td>
+                                                        </tr>                                           
+                                                        <tr  class="table-block__row"> 
+                                                            <td class="table-block__col-number "><span>2016</span></td>
+                                                            <td class="table-block__col-team table-block__col-w-35"> 
+                                                                <div class="comand-average comand">
+                                                                    <div class="comand__image-block">
+                                                                        <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                    </div>
+                                                                    <p class="comand__text" id="target">Tallerec (C)</p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="table-block__col-team table-block__col-w-35"> 
+                                                                <div class="comand-average comand">
+                                                                    <div class="comand__image-block">
+                                                                        <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                    </div>
+                                                                    <p class="comand__text" id="target">Boca Juniors</p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="table-block__col table-block__col-green">
+                                                               
+                                                            </td>
+                                                            
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>      
+                                    </div>
+                                    <div class="dashboard__layout-right ">
+                                        <div class="table">
+                                            <div class="table__body table-body">
+                                                <div class="table-body__header">
+                                                    <h3 class="title-16">Ranking copas nacionales </h3>
+                                                </div>
+                                                <div class="table-block-scroll">
+                                                    <table class="table-block table-block-sticky-1" >
+                                                        <thead>
+                                                            <tr class="table-block__row-top">
+                                                                <td class="table-block__col-team table-block__col-team-w-260">Equipo</td>
+                                                                <td class="table-block__col table-block__col-no-opacity table-block__col-w-15">Copas</td>
+                                                                
+                                                            </tr>
+                                                        </thead>                                                   
+                                                        <tr class="table-block__row">
+                                                            <td class="table-block__col-team"> 
+                                                                <div class="comand-average comand">
+                                                                    <div class="comand__image-block">
+                                                                        <span>
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </span>
+                                                                    </div>
+                                                                    <p class="comand__text">E. Barco (River Plate)</p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                           
+                                                        </tr>
+                                                        <tr class="table-block__row">
+                                                            <td class="table-block__col-team"> 
+                                                                <div class="comand-average comand">
+                                                                    <div class="comand__image-block">
+                                                                        <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                    </div>
+                                                                    <p class="comand__text">I. Fernandez (River Plate)</p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                           
+                                                        </tr>
+                                                        <tr class="table-block__row">
+                                                            <td class="table-block__col-team"> 
+                                                                <div class="comand-average comand">
+                                                                    <div class="comand__image-block">
+                                                                        <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                    </div>
+                                                                    <p class="comand__text">Real Madrif</p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="table-block__col table-block__col-no-opacity">7</td>
+                                                           
+                                                        </tr>
+                                                        <tr class="table-block__row">
+                                                            <td class="table-block__col-team"> 
+                                                                <div class="comand-average comand">
+                                                                    <div class="comand__image-block">
+                                                                        <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                    </div>
+                                                                    <p class="comand__text">Velez</p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                            
+                                                        </tr>
+                                                        <tr class="table-block__row">
+                                                            <td class="table-block__col-team"> 
+                                                                <div class="comand-average comand">
+                                                                    <div class="comand__image-block">
+                                                                        <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                    </div>
+                                                                    <p class="comand__text">Tallerec (C) </p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                            
+                                                        </tr>
+                                                        <tr class="table-block__row">
+                                                            <td class="table-block__col-team"> 
+                                                                <div class="comand-average comand">
+                                                                    <div class="comand__image-block">
+                                                                        <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                    </div>
+                                                                    <p class="comand__text">Instituto</p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                            
+                                                        </tr>
+                                                        
+                                                        <tr class="table-block__row">
+                                                            <td class="table-block__col-team"> 
+                                                                <div class="comand-average comand">
+                                                                    <div class="comand__image-block">
+                                                                        <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                    </div>
+                                                                    <p class="comand__text"> Banifield</p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                            
+                                                        </tr>
+                                                        <tr class="table-block__row">
+                                                            <td class="table-block__col-team"> 
+                                                                <div class="comand-average comand">
+                                                                    <div class="comand__image-block">
+                                                                        <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                    </div>
+                                                                    <p class="comand__text">Rosario Central </p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                            
+                                                        </tr>
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				
+				
+			</main>
+			@@include('html/calendar.html',{})
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/air-datepicker@2.2.3/dist/js/datepicker.min.js"></script>
+		<script src="js/app.min.js"></script>
+	</body>
+</html>

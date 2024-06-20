@@ -31,11 +31,9 @@
     &__number {
         font-size: 10px;
         text-align: center;
-        font-weight: 700;
         bottom: 9px;
         transform: translate(-50%);
         left: 50%;
-        position: absolute;
     }
 
     // .player__border
@@ -53,20 +51,21 @@
     // .player__minute
 
     &__minute { 
-        position: absolute;
         width: 12px;
         font-size: 7px;
         bottom: 0;
         right: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         height: 12px;
         border: 1.5px solid #fff;
         border-radius: 50%;
         background: #0A2B1D;
     }
 }
+.player__number,
+.player__minute {
+    position: absolute;
+}
+
 
 .player.top {
     // .player__bg
@@ -87,8 +86,6 @@
     display: flex;
     justify-content: space-around;
 }
-/***************************/
-
 /**************pole**********/
 
 .pole__block {
@@ -98,7 +95,6 @@
 
 
 .pole__content {
-    
     position: relative;
 }
 .pole__body {
@@ -111,47 +107,44 @@
 
     // .pole__rectanle-top
     &__rectanle-top {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
         top: -1px;
-        z-index: 2;
     }
 
-    // .pole__rectanle-bottom
-
+    &__rectanle-top,
     &__rectanle-bottom {
         position: absolute;
         left: 50%;
-        z-index: 2;
         transform: translateX(-50%);
+        z-index: 2;
+    }
+    // .pole__rectanle-bottom
+
+    &__rectanle-bottom {
         bottom: -1px;
     }
 }
 
-
+.pole__rectangle-center,
+.pole__rectangle-circle {
+    position: absolute;
+    display: block;
+    z-index: 2;
+}
 
 
 .pole__rectangle-center {
     height: 2px;
     top: calc(50% - 1px);
     width: 100%;
-    position: absolute;
-    z-index: 2;
-    display: block;
     background-color: #115E2A;
 }
 
 .pole__rectangle-circle {
-    position: absolute;
-    z-index: 2;
     height: 2px;
     top: calc(50% - 35px);
     width: 70px;
     height: 70px;
     left:calc(50% - 35px);
-    position: absolute;
-    display: block;
     border-radius:50%;
     border:2px solid #115E2A;
 }
@@ -179,24 +172,6 @@
         background:  #115E2A;
     }
 
-    // .pole__block-comand-top
-
-    &__block-comand-top {
-       
-    }
-    // .pole__block-comand-bottom
-    &__block-comand-bottom {
-        
-    }
-    // .pole__comand-name
-
-    &__comand-name {
-    }
-
-    // .pole__disposition
-
-    &__disposition {
-    }
 }
 
 .pole-body__top,

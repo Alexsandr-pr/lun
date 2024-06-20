@@ -6,19 +6,13 @@
     &__body {
         border-radius: 8px;
         background:  #0A2B1D;
-        color:  #FFF;
         line-height: 1.2; /* 12px */
-
         padding: 9px 12px;
     }
 
     // .reclama-block-1__label
 
     &__label {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: Roboto;
         gap: 8px;
         font-size: 10px;
         font-weight: 400;
@@ -31,30 +25,23 @@
 
     &__title {
         text-align: center;
-        font-family: "Roboto Condensed";
-        font-size: 14px;
         font-weight: 500;
-        text-transform: uppercase;
         &:not(:last-child){
             margin-bottom:8px;
         }
     }
 
 }
-.reclama-button {
-    border-radius:  4px;
-    color:  #FFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.reclama-button,
+.reclama-block-1__title {
+    text-transform: uppercase;
     font-family: "Roboto Condensed";
-    font-size: 14px;
+}
+.reclama-button {
+    border-radius: 4px;
     padding: 7.5px 12px;
     width: 100%;
-    font-weight: 700;
     line-height: 1;
-    text-transform: uppercase;
-    transition: all 0.3s ease 0s;
     background: #115E2A;
     @media(hover:hover) {
         &:hover {

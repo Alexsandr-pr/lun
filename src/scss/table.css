@@ -1,7 +1,7 @@
 @media (min-width: 1200px) {
   .table {
     padding: 16px;
-    border-radius: 8px;
+   scss
     background: #0A2B1D;
   }
 }
@@ -14,7 +14,7 @@
   flex-direction: column;
 }
 .table__body {
-  border-radius: 8px;
+ scss
   background: #0A2B1D;
 }
 

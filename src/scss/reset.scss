@@ -32,9 +32,8 @@ h6 {
 html,
 body {
     height: 100%;
-    line-height: 120%; 
+    line-height: 1; 
     color:  #FFF;
-    line-height: 1;
     font-size: 16px;
     font-weight: 700;
     font-family: "Roboto";
@@ -67,6 +66,12 @@ button {
     user-select: none;
     cursor: pointer;
     background-color: inherit;
+    transition: all 0.3s ease 0s;
+    @media(hover:hover) {
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }
 table, td, th, tr {
     border:none;

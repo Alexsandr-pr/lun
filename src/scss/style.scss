@@ -42,18 +42,71 @@
 @import "champion";
 /*********Reset Styles**************/
 @import "reset";
+
 /*******************************************/
 .block-info-table {
-    display: flex;
     flex-direction: column;
     width: 100%;
-    justify-content: center;
-    align-items: center;
     gap: 4px;
     .table-info  {
         padding: 4px;
     }
 }
+.block-info-table,
+.button-bottom-green,
+.game-result__bottom-button,
+.result-list__block,
+.reclama-block-1__label,
+.reclama-button,
+.modals__wrapper,
+.comand-modal__time,
+.player__minute {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content__items {
+    gap: 12px;
+    @media(max-width:640.98px){
+        gap: 8px;
+    }
+}
+.main-content__items,
+.bottom-info,
+.bottom-info__items,
+.bottom-info__item,
+.dashboard__layout-column-16,
+.match-block__time {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-info__button,
+.info-item__title,
+.bottom-info__title,
+.item-event__left {
+    text-transform: uppercase;
+}
+
+.bottom-info__label,
+.bottom-info__button,
+.info-item__title,
+.button-bottom-green,
+.slider-button,
+.reclama-button,
+.reclama-block-1__title,
+.select__button {
+    font-size: 14px;
+}
+.info-item__title,
+.game-result__bottom-button,
+.bottom-info__button,
+.bottom-info__title {
+    font-family: "Roboto Condensed";
+}
+
+
 
 .block-grid-2 {
     display: grid;
@@ -65,13 +118,9 @@
     }
 }
 .button-bottom-green {
-    display: flex;
-    align-items: center;
     color:#6FAA54 !important;
     text-decoration: none !important;
     text-transform: uppercase;
-    transition: all 0.3s ease 0s;
-    font-size: 14px;
     @media(hover:hover) {
         &:hover {
             cursor: pointer;
@@ -118,60 +167,49 @@
 }
 
 /*******************************/
-.item-event__left {
-    text-transform: uppercase;
-}
+
 
 .match-block__time {
-    display: flex;
-    flex-direction: column;
     gap: 3px;
 }
-
 
 /************Layout Dashboard Page**********************/
 .dashboard__layout {
     width: 100%;
-    
 }
-.dashboard__layout-column {
-    @media(max-width:1200px){
+@media(max-width:1200px){
+    .dashboard__layout {
         display: flex;
         flex-direction: column;
+    }
+    .dashboard__layout-column {
         gap: 24px;
     }
 }
 
-.dashboard__layout-left {
+.dashboard__layout-left,
+.dashboard__layout-right {
     display: inline-flex;
-    width: 57.209302%; /* 492/860 */
-    margin-right: 24px;
     flex-direction: column;
     gap: 16px;
-    
     @media(max-width:1200px){
         width: 100%;
     }
+}
+.dashboard__layout-left {
+    width: 57.209302%; /* 492/860 */
+    margin-right: 24px;
 }
 
 .dashboard__layout-right {
-    display: inline-flex;
-    gap: 16px;
-    flex-direction: column;
     width: 39.54023%; /* 344/870 */
-    @media(max-width:1200px){
-        width: 100%;
-    }
 }
+
 .dashboard__layout-right-none {
     @media(max-width:1200px){
         display: none;
     }
 }
-
-
-
-
 
 /************Main block Layout Home page***********************/
 /****************************/
@@ -249,6 +287,7 @@
         }
     }
 }
+
 /**********************************/
 /**********************************/
 /**********************************/
@@ -256,53 +295,36 @@
 
 
 
-.main-content__items {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    @media(max-width:640.98px){
-        gap: 8px;
-    }
+
+.bottom-info,
+.bottom-info__items {
+    gap: 24px;
 }
 
-
-
 .bottom-info {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    // .bottom-info__title
+    // 
 
     &__title {
-        font-family: "Roboto Condensed";
         font-size: 20px;
-        text-transform: uppercase;
         @media(max-width:487.98px){
             font-size: 14px;
         }
     }
 
-
     // .bottom-info__items
-
     &__items {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
     }
 
     // .bottom-info__item
 
     &__item {
-        display: flex;
-        flex-direction: column;
         gap: 16px;
     }
 
     // .bottom-info__label
 
     &__label {
-        font-size: 14px;
+    
     }
 
     // .bottom-info__buttons
@@ -322,16 +344,10 @@
 
 .bottom-info__button {
     padding: 12px;
-    font-family: "Roboto Condensed";
-    font-size: 14px;
-    text-transform: uppercase;
-    border-radius: 8px;
     color:#018000;
-    transition: all 0.3s ease 0s;
     background: #fff;
     @media(hover:hover) {
         &:hover {
-            cursor: pointer;
             background:#018000;
             color:#fff;
         }
@@ -349,9 +365,7 @@
 }
 .bottom-info__white {
     background:none;
-    color:#fff;
     border: 1px solid #FFF;
-
     &.disabled {
         opacity: 0.3;
     }
@@ -367,9 +381,10 @@
 
     &__block {
         display: flex;
+        align-items: center;
+        justify-content: center;
         padding: 10px 12px;
         border-radius:  8px;
-        align-items: center;
         background:#0A2B1D;
         gap: 16px;
     }
@@ -382,9 +397,7 @@
     // .info-item__title
 
     &__title {
-        font-family: "Roboto Condensed";
-        font-size: 14px;
-        text-transform: uppercase;
+    
         &:not(:last-child){
             margin-bottom:4px;
         }
@@ -402,21 +415,14 @@
 }
 
 
-
-
 /*************************/
-
-
 
 
 
 
 .game-result__bottom-button {
     gap: 4px;
-    font-family: "Roboto Condensed";
     font-size: 14px;
-    display: flex;
-    align-items: center;
 }
 
 
@@ -428,7 +434,6 @@
         padding: 12px;
         border-radius:  8px;
         background: #0A2B1D;
-
     }
 
     // .game-info__item
@@ -438,9 +443,7 @@
         display: grid;
         grid-template-columns:repeat(2, 1fr) ;
         justify-content: space-between;
-        font-family: Roboto;
         align-items: start;
-        font-size: 16px;
         padding: 8px 0px;
         &:nth-child(1) {
             padding: 0px 0px 8px 0px;
@@ -460,7 +463,6 @@
 
     &__left {
         text-align: left;
-        font-weight: 700;
     }
 
     // .game-info__right

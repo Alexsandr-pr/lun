@@ -1,7 +1,4 @@
 
-
-
-
 .main-content__header {
     &:not(:last-child){
         margin-bottom:12px;
@@ -14,26 +11,23 @@
     // .content-header__bottom
     &__bottom {
         padding: 8px 0px;
-        display: flex;
-        justify-content: space-between;
         gap: 8px;
         @media(max-width:640.98px){
             padding: 6px 0px;
         }
     }
 }
+.content-header__bottom,
+.content-header__top {
+    display: flex;
+    justify-content: space-between;
+}
 .content-header {
     padding: 0px 12px;
     // .content-header__top
     border-radius:  8px;
     background:  #0A2B1D;
-    &__top {
-        display: flex;
-        justify-content: space-between;
-    }
-    // .content-header__bottom
-    &__bottom {
-    }
+
 }
 
 .top-header {
@@ -45,9 +39,7 @@
     }
     &__button {
         display: flex;
-        font-family: "Roboto Condensed";
         align-items: center;
-        text-transform: uppercase;
         gap: 8px;
         @media(max-width:640.98px){
             font-size: 14px;
@@ -55,7 +47,6 @@
         path {
             transition: all 0.3s ease 0s;
         }
-        transition: all 0.3s ease 0s;
         @media(hover:hover) {
             &:hover {
                 cursor: pointer;
@@ -66,12 +57,13 @@
             }
         }
     }
-
-    // .top-header__select
-
-    &__select {
-        
-    }
+}
+.top-header__button,
+.header-select__button,
+.header-select__option  {
+    font-family: "Roboto Condensed";
+    text-transform: uppercase;
+    position: relative;
 }
 
 .header-select {
@@ -80,8 +72,6 @@
         position: relative;
     &__button {
         font-size: 20px;
-        font-family: "Roboto Condensed";
-        text-transform: uppercase;
         @media(max-width:640.98px){
             font-size: 14px;
             span {
@@ -91,11 +81,8 @@
         path {
             transition: all 0.3s ease 0s;
         }
-        position: relative;
-        transition: all 0.3s ease 0s;
         @media(hover:hover) {
             &:hover {
-                cursor: pointer;
                 color:#FF4848;
                 path {
                     fill: #FF4848;
@@ -126,12 +113,9 @@
         }
     }
 
-
     &__option {
         white-space: nowrap;
         font-size: 18px;
-        font-family: "Roboto Condensed";
-        text-transform: uppercase;
         @media(max-width:640.98px){
             font-size: 14px;
             span {
@@ -177,11 +161,9 @@
 }
 
 .button-border {
-    transition: all 0.4s ease 0s;
     text-transform: uppercase;
     padding: 10px 12px;
     border-bottom: 1px solid  transparent;
-    
     @media(max-width:640.98px){
         font-size: 11px;
     }
@@ -238,12 +220,10 @@
 }
 
 .button-green {
-    transition: all 0.4s ease 0s;
     border-radius: 8px;
     font-size: 14px;
     background:  #115E2A;
     padding: 6.5px 12px;
-    line-height: 1;
     @media(max-width:640.98px){
         font-size: 11px;
         padding: 2px 12px;
@@ -252,7 +232,6 @@
 .main-content__breadcrumbs {
     color: rgba(255, 255, 255, 0.50);
     font-size: 14px;
-    font-weight: 700;
     @media(max-width:487.98px){
         font-size: 11px;
     }
