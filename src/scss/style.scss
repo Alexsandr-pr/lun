@@ -76,12 +76,13 @@
 .bottom-info,
 .bottom-info__items,
 .bottom-info__item,
-.dashboard__layout-column-16,
 .match-block__time {
     display: flex;
     flex-direction: column;
 }
-
+.dashboard__layout-column-16 {
+    gap: 16px;
+}
 .bottom-info__button,
 .info-item__title,
 .bottom-info__title,
@@ -177,15 +178,18 @@
 .dashboard__layout {
     width: 100%;
 }
-@media(max-width:1200px){
+
     .dashboard__layout {
-        display: flex;
-        flex-direction: column;
+        @media(max-width:1200px) {
+            display: flex;
+            flex-direction: column;
+        }
+        
     }
     .dashboard__layout-column {
         gap: 24px;
     }
-}
+
 
 .dashboard__layout-left,
 .dashboard__layout-right {
@@ -193,7 +197,7 @@
     flex-direction: column;
     gap: 16px;
     @media(max-width:1200px){
-        width: 100%;
+        width: 100% !important;
     }
 }
 .dashboard__layout-left {

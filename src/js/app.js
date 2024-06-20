@@ -427,6 +427,7 @@ const activeTabstriggers = () => {
         const config = { childList: true, subtree: true };
 
         observer.observe(block, config);
+        window.addEventListener("resize", changeWidthLine)
     });
 }
 

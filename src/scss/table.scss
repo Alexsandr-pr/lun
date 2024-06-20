@@ -373,7 +373,11 @@
     }
 }
 
-
+.table-block-sticky-2 {
+    .comand__image-block {
+        border-right: 1px solid  transparent !important;
+    }
+}
 .table-block-sticky-2._active {
     .comand__image-block {
         border-right: 1px solid  #60756C !important;
