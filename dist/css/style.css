@@ -3182,11 +3182,11 @@ input[type=search]::-webkit-search-cancel-button {
 }
 
 .table-block__col-red {
-  color: #FF4848;
+  color: #FF4848 !important;
 }
 
 .table-block__col-yellow {
-  color: #FFC61A;
+  color: #FFC61A !important;
 }
 
 /************************************/
@@ -3312,18 +3312,15 @@ input[type=search]::-webkit-search-cancel-button {
   justify-content: start;
   z-index: 3;
   gap: 2px;
-  background: #2e4b3e;
 }
 .table-block__col-team .comand .comand__image-block {
   padding: 4px;
 }
 
-.table-block .table-block__row:nth-child(even) td:nth-child(2) .comand,
 .table-block .table-block__row:nth-child(even) td:nth-child(2) .comand__image-block {
   background: #163629;
 }
 
-.table-block .table-block__row:nth-child(odd) td:nth-child(2) .comand,
 .table-block .table-block__row:nth-child(odd) td:nth-child(2) .comand__image-block {
   background: #234134;
 }
@@ -3401,11 +3398,9 @@ input[type=search]::-webkit-search-cancel-button {
   z-index: 1;
   left: 0;
 }
-.table-block-sticky-1 .table-block__row:nth-child(even) td .comand,
 .table-block-sticky-1 .table-block__row:nth-child(even) td .comand__image-block {
   background: #163629;
 }
-.table-block-sticky-1 .table-block__row:nth-child(odd) td .comand,
 .table-block-sticky-1 .table-block__row:nth-child(odd) td .comand__image-block {
   background: #234134;
 }

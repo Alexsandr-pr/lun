@@ -103,11 +103,11 @@
     }
 
 .table-block__col-red {
-    color: #FF4848;
+    color: #FF4848 !important;
 }
 
 .table-block__col-yellow {
-    color: #FFC61A;
+    color: #FFC61A !important;
 }
 
 /************************************/
@@ -254,18 +254,16 @@
     .comand__image-block {
         padding: 4px;
     }
-    background: #2e4b3e;
+    
 }
 
 
 .table-block .table-block__row:nth-child(even) td:nth-child(2) {
-    .comand,
     .comand__image-block {
         background: #163629;
     }
 }
 .table-block .table-block__row:nth-child(odd) td:nth-child(2) {
-    .comand,
     .comand__image-block {
         background: #234134;
     }
@@ -360,13 +358,13 @@
         left: 0;
     }
     .table-block__row:nth-child(even) td{
-        .comand,
+        
         .comand__image-block {
             background: #163629;
         }
     }
     .table-block__row:nth-child(odd) td{
-        .comand,
+        
         .comand__image-block {
             background: #234134;
         }
