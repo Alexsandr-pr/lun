@@ -177,6 +177,7 @@
 /************Layout Dashboard Page**********************/
 .dashboard__layout {
     width: 100%;
+    display: flex;
 }
 
     .dashboard__layout {
@@ -477,7 +478,15 @@
     }
 }
 
-
+.team-map {
+    width: 100%;
+    height: 100%;
+    @media(max-width:1200px){
+        iframe {
+            width: 100%;
+        }
+    }
+}
 
 
 

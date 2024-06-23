@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/head.html',{
+	"title":"Главная"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/header.html',{})
+			<main class="main">
+				
+				<div class="main__block main-block">
+					<div class="main-block__container">
+						<div class="main-block__body">
+							@@include('html/aside.html',{})
+							<div class="main-block__content main-content">
+                                <h1 class="title-24 flex-center">
+                                    <img width="16" height="16" src="@img/flags/flaf1.svg" alt="image country">
+                                    CLUB ATLETICO TUCUMAN
+                                </h1>
+
+                                <div class="game-center__triggers game-tabs">
+                                    <button data-tabs-trigger class="game-tabs__button active">SIN CLUBES EXTINTOS</button>
+                                    <button data-tabs-trigger class="game-tabs__button ">INCLUIR CLUBES EXTINTOS</button>
+                                    <span class="game-tabs__span"></span>
+                                </div>
+
+                                <div  data-tabs-content class="flex-content _active">
+                                    
+                                    <div class="dashboard__layout dashboard__layout-column-16">
+                                        <div class="dashboard__layout-left">
+                                            <div class="table">
+                                                <div class="table__body table-body">
+                                                    <div class="table-body__header">
+                                                        <h3 class="title-16">RANKING TITULOS OFICIALES </h3>
+                                                    </div>
+                                                    <div class="table-block-scroll">
+                                                        <table class="table-block table-block-sticky-1" >
+                                                            <thead>
+                                                                <tr class="table-block__row-top">
+                                                                    <td class="table-block__col-team table-block__col-team-w-260">Jugador</td>
+                                                                    <td class="table-block__col table-block__col-no-opacity">Total</td>
+                                                                    <td class="table-block__col">Total</td>
+                                                                    <td class="table-block__col">CNAC</td>
+                                                                    <td class="table-block__col">CNIT</td>
+                                                                    <td class="table-block__col">A/U</td>
+                                                                </tr>
+                                                            </thead>                                                   
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <span>
+                                                                                <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                            </span>
+                                                                        </div>
+                                                                        <p class="comand__text">M. Borja (River Plate) </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">13</td>
+                                                                <td class="table-block__col">35(29/6)</td>
+                                                                <td class="table-block__col">7</td>
+                                                                    <td class="table-block__col">6</td>
+                                                                <td class="table-block__col">6</td>
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text"> A. Martinez (Racing Club)</p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">12</td>
+                                                                <td class="table-block__col">35(29/6)</td>
+                                                                <td class="table-block__col">7</td>
+                                                                    <td class="table-block__col">6</td>
+                                                                <td class="table-block__col">5</td>
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text">Manchester</p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">8</td>
+                                                                <td class="table-block__col">35(29/6)</td>
+                                                                <td class="table-block__col">7</td>
+                                                                <td class="table-block__col">6</td>
+                                                                <td class="table-block__col">5</td>
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text">Real Madrif </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">7</td>
+                                                                <td class="table-block__col">35(29/6)</td>
+                                                                <td class="table-block__col">7</td>
+                                                                <td class="table-block__col">6</td>
+                                                                    <td class="table-block__col">5</td>
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text">Velez </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                                <td class="table-block__col">35(29/6)</td>
+                                                                <td class="table-block__col">7</td>
+                                                                <td class="table-block__col">6</td>
+                                                                    <td class="table-block__col">5</td>
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text">Tallerec (C) </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                                <td class="table-block__col">35(29/6)</td>
+                                                                <td class="table-block__col">7</td>
+                                                                <td class="table-block__col">6</td>
+                                                                    <td class="table-block__col">4</td>
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text">Instituto </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                                <td class="table-block__col">35(29/6)</td>
+                                                                <td class="table-block__col">7</td>
+                                                                <td class="table-block__col">6</td>
+                                                                    <td class="table-block__col">4</td>
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text"> Banifield</p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                                <td class="table-block__col">35(29/6)</td>
+                                                                <td class="table-block__col">7</td>
+                                                                <td class="table-block__col">6</td>
+                                                                    <td class="table-block__col">3</td>
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text">Huracan </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                                <td class="table-block__col">35(29/6)</td>
+                                                                <td class="table-block__col">7</td>
+                                                                <td class="table-block__col">6</td>
+                                                                    <td class="table-block__col">3</td>
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text"> Gimnasia (LP)</p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                                <td class="table-block__col">35(29/6)</td>
+                                                                <td class="table-block__col">7</td>
+                                                                    <td class="table-block__col">6</td>
+                                                                <td class="table-block__col">3</td>
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text"> Rosario Central</p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                                <td class="table-block__col">35(29/6)</td>
+                                                                <td class="table-block__col">7</td>
+                                                                <td class="table-block__col">6</td>
+                                                                <td class="table-block__col">2</td>
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text">Riestra </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                                <td class="table-block__col">35(29/6)</td>
+                                                                <td class="table-block__col">7</td>
+                                                                <td class="table-block__col">6</td>
+                                                                    <td class="table-block__col">1</td>
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text">Atl Tucuman </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                                <td class="table-block__col">35(29/6)</td>
+                                                                <td class="table-block__col">7</td>
+                                                                <td class="table-block__col">6</td>
+                                                                    <td class="table-block__col">1</td>
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text">Ind Rivadavia </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                                <td class="table-block__col">35(29/6)</td>
+                                                                    <td class="table-block__col">7</td>
+                                                                    <td class="table-block__col">6</td>
+                                                                    <td class="table-block__col">0</td>
+                                                            </tr>
+                                                            
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="dashboard__layout-right ">
+                                            <div class="table">
+                                                
+
+                                                <div class="table__body table-body">
+                                                    <div class="table-body__header">
+                                                        <h3 class="title-16">TITULOS TOTALES OFICIAL. DOMINIO </h3>
+                                                    </div>
+                                                    <div class="table-block-scroll">
+                                                        <table class="table-block table-block-sticky-1 "  >
+                                                            <thead>
+                                                                <tr class="table-block__row-top">
+                                                                    <td class="table-block__col-team ">Equipo</td>
+                                                                    
+                                                                    <td class="table-block__col table-block__col-no-opacity" >Ligas</td>
+                                                                    
+                                                                </tr>
+                                                            </thead>      
+                                                            <tr class="table-block__row">
+                                                                <td colspan="2" class="table-block__col-green-bg"> 
+                                                                    DECADA 2020
+                                                                </td>
+                                                            </tr>                                             
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team table-block__col-team-w-100"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <span>
+                                                                                <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                            </span>
+                                                                        </div>
+                                                                        <p class="comand__text">M. Borja (River Plate) </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">13</td>
+                                                                
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team table-block__col-team-w-100"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text"> A. Martinez (Racing Club)</p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">12</td>
+                                                            </tr>
+
+                                                            <tr class="table-block__row">
+                                                                <td colspan="2" class="table-block__col-green-bg"> 
+                                                                    DECADA 2010
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team table-block__col-team-w-100"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text">Real Madrif </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">7</td>
+                                                                
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team table-block__col-team-w-100"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text">Velez </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                               
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team table-block__col-team-w-100"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text">Tallerec (C) </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                                
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team table-block__col-team-w-100"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text">Instituto </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                                
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team table-block__col-team-w-100"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text"> Banifield</p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                               
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team table-block__col-team-w-100"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text">Huracan </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                               
+                                                            </tr>
+
+                                                            <tr class="table-block__row">
+                                                                <td colspan="2" class="table-block__col-green-bg"> 
+                                                                    DECADA 2000
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team table-block__col-team-w-100"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text"> Gimnasia (LP)</p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                                
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team table-block__col-team-w-100"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text"> Rosario Central</p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                               
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team table-block__col-team-w-100"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text">Riestra </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                               
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td colspan="2" class="table-block__col-green-bg"> 
+                                                                    DECADA 1990
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team table-block__col-team-w-100"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text">Atl Tucuman </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                                
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team table-block__col-team-w-100"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text">Ind Rivadavia </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                               
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team table-block__col-team-w-100"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text">Ind Rivadavia </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                               
+                                                            </tr>
+                                                            
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div  data-tabs-content class="flex-content ">
+                                    
+                                    <div class="dashboard__layout dashboard__layout-column-16">
+                                        <div class="dashboard__layout-left">
+                                            <div class="table">
+                                                <h3 class="main-title">COPAS INTERNACIONALES POR PAIS</h3>
+                                                <div class="table__body table-body">
+                                                    <div class="table-body__header">
+                                                        <h3 class="title-16">COPAS INTERNACIONALES DOMINIO DECAD</h3>
+                                                    </div>
+                                                    <div class="table-block-scroll">
+                                                        <table class="table-block table-block-sticky-1 "  >
+                                                            <thead>
+                                                                <tr class="table-block__row-top">
+                                                                    <td class="table-block__col-team ">Detalle</td>
+                                                                    
+                                                                    <td class="table-block__col table-block__col-no-opacity" >Copas</td>
+                                                                    
+                                                                </tr>
+                                                            </thead>    
+                                                            <tr class="table-block__row table-block__row-border">
+                                                                <td class="table-block__col-team "> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <span>
+                                                                                <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                            </span>
+                                                                        </div>
+                                                                        <p class="comand__text">M. Borja (River Plate) </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">29</td>
+                                                                
+                                                            </tr>
+                                                            
+                                                            <tr class="table-block__row">
+                                                                <td colspan="2" class="table-block__col table-block__col-text"> 
+                                                                    <p>Mundial de Clubes (5):</p>
+                                                                    2014, 2016, 2017, 2018, 2022
+                                                                    <p>Intercontinental (3):</p>
+                                                                    1960, 1998, 2002
+                                                                    <p>Champions League (14):</p>
+                                                                    1955/56,
+                                                                    1958/59, 1959/60, 1965/66,
+                                                                    <p> Europa League (2):</p>
+                                                                    1984/85, 1985/86
+                                                                    <p>Supercopa Europa (5):</p>
+                                                                    2002, 2014, 2016, 2017, 2022
+                                                                </td>
+                                                            </tr>                                             
+                                                            <tr class="table-block__row table-block__row-border" >
+                                                                <td class="table-block__col-team "> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <span>
+                                                                                <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                            </span>
+                                                                        </div>
+                                                                        <p class="comand__text">M. Borja (River Plate) </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">29</td>
+                                                                
+                                                            </tr>
+                                                            
+                                                            <tr class="table-block__row">
+                                                                <td colspan="2" class="table-block__col table-block__col-text"> 
+                                                                    <p>Mundial de Clubes (5):</p>
+                                                                    2014, 2016, 2017, 2018, 2022
+                                                                    <p>Intercontinental (3):</p>
+                                                                    1960, 1998, 2002
+                                                                    <p>Champions League (14):</p>
+                                                                    1955/56,
+                                                                    1958/59, 1959/60, 1965/66,
+                                                                    <p> Europa League (2):</p>
+                                                                    1984/85, 1985/86
+                                                                    <p>Supercopa Europa (5):</p>
+                                                                    2002, 2014, 2016, 2017, 2022
+                                                                </td>
+                                                            </tr>   
+                                                            <tr class="table-block__row table-block__row-border">
+                                                                <td class="table-block__col-team "> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <span>
+                                                                                <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                            </span>
+                                                                        </div>
+                                                                        <p class="comand__text">M. Borja (River Plate) </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">29</td>
+                                                                
+                                                            </tr>
+                                                            
+                                                            <tr class="table-block__row">
+                                                                <td colspan="2" class="table-block__col table-block__col-text"> 
+                                                                    <p>Mundial de Clubes (5):</p>
+                                                                    2014, 2016, 2017, 2018, 2022
+                                                                    <p>Intercontinental (3):</p>
+                                                                    1960, 1998, 2002
+                                                                    <p>Champions League (14):</p>
+                                                                    1955/56,
+                                                                    1958/59, 1959/60, 1965/66,
+                                                                    <p> Europa League (2):</p>
+                                                                    1984/85, 1985/86
+                                                                    <p>Supercopa Europa (5):</p>
+                                                                    2002, 2014, 2016, 2017, 2022
+                                                                </td>
+                                                            </tr>   
+                                                            <tr class="table-block__row table-block__row-border">
+                                                                <td class="table-block__col-team "> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <span>
+                                                                                <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                            </span>
+                                                                        </div>
+                                                                        <p class="comand__text">M. Borja (River Plate) </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">29</td>
+                                                                
+                                                            </tr>
+                                                            
+                                                            <tr class="table-block__row">
+                                                                <td colspan="2" class="table-block__col table-block__col-text"> 
+                                                                    <p>Mundial de Clubes (5):</p>
+                                                                    2014, 2016, 2017, 2018, 2022
+                                                                    <p>Intercontinental (3):</p>
+                                                                    1960, 1998, 2002
+                                                                    <p>Champions League (14):</p>
+                                                                    1955/56,
+                                                                    1958/59, 1959/60, 1965/66,
+                                                                    <p> Europa League (2):</p>
+                                                                    1984/85, 1985/86
+                                                                    <p>Supercopa Europa (5):</p>
+                                                                    2002, 2014, 2016, 2017, 2022
+                                                                </td>
+                                                            </tr>   
+                                                            <tr class="table-block__row table-block__row-border">
+                                                                <td class="table-block__col-team "> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <span>
+                                                                                <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                            </span>
+                                                                        </div>
+                                                                        <p class="comand__text">M. Borja (River Plate) </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">29</td>
+                                                                
+                                                            </tr>
+                                                            
+                                                            <tr class="table-block__row">
+                                                                <td colspan="2" class="table-block__col table-block__col-text"> 
+                                                                    <p>Mundial de Clubes (5):</p>
+                                                                    2014, 2016, 2017, 2018, 2022
+                                                                    <p>Intercontinental (3):</p>
+                                                                    1960, 1998, 2002
+                                                                    <p>Champions League (14):</p>
+                                                                    1955/56,
+                                                                    1958/59, 1959/60, 1965/66,
+                                                                    <p> Europa League (2):</p>
+                                                                    1984/85, 1985/86
+                                                                    <p>Supercopa Europa (5):</p>
+                                                                    2002, 2014, 2016, 2017, 2022
+                                                                </td>
+                                                            </tr>   
+                                                            
+                                                            <tr class="table-block__row">
+                                                                <td colspan="2" class="table-block__col-green-bg"> 
+                                                                    DECADA 2020
+                                                                </td>
+                                                            </tr>  
+                                                            <tr style="display: none;"> </tr>
+                                                            <tr class="table-block__row table-block__row-border">
+                                                                <td class="table-block__col-team "> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <span>
+                                                                                <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                            </span>
+                                                                        </div>
+                                                                        <p class="comand__text">M. Borja (River Plate) </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">29</td>
+                                                                
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td colspan="2" class="table-block__col table-block__col-text"> 
+                                                                    Libertadores 1967 - Intercontinental 1967 - Supercopa 1988
+                                                                </td>
+                                                            </tr> 
+
+                                                            <tr class="table-block__row table-block__row-border">
+                                                                <td class="table-block__col-team "> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <span>
+                                                                                <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                            </span>
+                                                                        </div>
+                                                                        <p class="comand__text">M. Borja (River Plate) </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">29</td>
+                                                                
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td colspan="2" class="table-block__col table-block__col-text"> 
+                                                                    Libertadores 1967 - Intercontinental 1967 - Supercopa 1988
+                                                                </td>
+                                                            </tr>
+                                                            
+                                                            <tr class="table-block__row table-block__row-border">
+                                                                <td class="table-block__col-team "> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <span>
+                                                                                <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                            </span>
+                                                                        </div>
+                                                                        <p class="comand__text">M. Borja (River Plate) </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">29</td>
+                                                                
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td colspan="2" class="table-block__col table-block__col-text"> 
+                                                                    Libertadores 1967 - Intercontinental 1967 - Supercopa 1988
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="table-block__row table-block__row-border">
+                                                                <td class="table-block__col-team "> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <span>
+                                                                                <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                            </span>
+                                                                        </div>
+                                                                        <p class="comand__text">M. Borja (River Plate) </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">29</td>
+                                                                
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td colspan="2" class="table-block__col table-block__col-text"> 
+                                                                    Libertadores 1967 - Intercontinental 1967 - Supercopa 1988
+                                                                </td>
+                                                            </tr>
+
+
+                                                        </table>
+
+                                                    </div>
+                                                    <div class="table-body__bottom table-bottom">
+                                                        <ul class="table-bottom__list">
+                                                            
+                                                            <li class="table-bottom__item table-info table-info-text">
+                                                                <span class="table-info__span">—</span>
+                                                                <p class="table-info__text">Se toman copas oficializadas/organizadas por FIFA o por la confederación continental (Conmebol en el caso de Sudamerica). Por lo tanto las Copas AFA/AUF y otras copas organizadas por asociaciones nacionales no son incluídas.</p>
+                                                            </li>
+                                                            <li class="table-bottom__item table-info table-info-text">
+                                                                <span class="table-info__span">—</span>
+                                                                <p class="table-info__text">La Copa de Ferias es oficializada por FIFA y fue organizada por dicha entidad, por mas que no es contemplada por UEFA.</p>
+                                                            </li>
+                                                            <li class="table-bottom__item table-info table-info-text">
+                                                                <span class="table-info__span">—</span>
+                                                                <p class="table-info__text">La Supercopa Interamericana 1988 ganada por Racing Club no es reconocida por Conmebol a pesar del reclamo del club.</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dashboard__layout-right ">
+                                            <div class="table">
+                                                <div class="table__body table-body">
+                                                    <div class="table-body__header">
+                                                        <h3 class="title-16">COPAS INTERNACIONALES DOMINIO DECAD</h3>
+                                                    </div>
+                                                    <div class="table-block-scroll">
+                                                        <table class="table-block table-block-sticky-1 "  >
+                                                            <thead>
+                                                                <tr class="table-block__row-top">
+                                                                    <td class="table-block__col-team ">Detalle</td>
+                                                                    
+                                                                    <td class="table-block__col table-block__col-no-opacity" >Copas</td>
+                                                                    <td class="table-block__col table-block__col-no-opacity" >№ Clubes</td>
+                                                                </tr>
+                                                            </thead>    
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            <tr class="table-block__row table-block__row-border">
+                                                                <td class="table-block__col-team "> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <span>
+                                                                                <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                            </span>
+                                                                        </div>
+                                                                        <p class="comand__text">M. Borja (River Plate) </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">29</td>
+                                                                <td class="table-block__col table-block__col-no-opacity" >0</td>
+                                                                
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td colspan="3" class="table-block__col table-block__col-text"> 
+                                                                    Libertadores 1967 - Intercontinental 1967 - Supercopa 1988
+                                                                </td>
+                                                            </tr> 
+
+                                                            <tr class="table-block__row table-block__row-border">
+                                                                <td class="table-block__col-team "> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <span>
+                                                                                <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                            </span>
+                                                                        </div>
+                                                                        <p class="comand__text">M. Borja (River Plate) </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">29</td>
+                                                                <td class="table-block__col table-block__col-no-opacity" >0</td>
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td colspan="3" class="table-block__col table-block__col-text"> 
+                                                                    Libertadores 1967 - Intercontinental 1967 - Supercopa 1988
+                                                                </td>
+                                                            </tr>
+                                                            
+                                                            <tr class="table-block__row table-block__row-border">
+                                                                <td class="table-block__col-team "> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <span>
+                                                                                <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                            </span>
+                                                                        </div>
+                                                                        <p class="comand__text">M. Borja (River Plate) </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">29</td>
+                                                                <td class="table-block__col table-block__col-no-opacity" >0</td>
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td colspan="3" class="table-block__col table-block__col-text"> 
+                                                                    Libertadores 1967 - Intercontinental 1967 - Supercopa 1988
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="table-block__row table-block__row-border">
+                                                                <td class="table-block__col-team "> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <span>
+                                                                                <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                            </span>
+                                                                        </div>
+                                                                        <p class="comand__text">M. Borja (River Plate) </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">29</td>
+                                                                <td class="table-block__col table-block__col-no-opacity" >0</td>
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td colspan="3" class="table-block__col table-block__col-text"> 
+                                                                    Libertadores 1967 - Intercontinental 1967 - Supercopa 1988
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="table-block__row table-block__row-border">
+                                                                <td class="table-block__col-team "> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <span>
+                                                                                <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                            </span>
+                                                                        </div>
+                                                                        <p class="comand__text">M. Borja (River Plate) </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">29</td>
+                                                                <td class="table-block__col table-block__col-no-opacity" >0</td>
+                                                                
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td colspan="3" class="table-block__col table-block__col-text"> 
+                                                                    Libertadores 1967 - Intercontinental 1967 - Supercopa 1988
+                                                                </td>
+                                                            </tr> 
+
+                                                            <tr class="table-block__row table-block__row-border">
+                                                                <td class="table-block__col-team "> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <span>
+                                                                                <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                            </span>
+                                                                        </div>
+                                                                        <p class="comand__text">M. Borja (River Plate) </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">29</td>
+                                                                <td class="table-block__col table-block__col-no-opacity" >0</td>
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td colspan="3" class="table-block__col table-block__col-text"> 
+                                                                    Libertadores 1967 - Intercontinental 1967 - Supercopa 1988
+                                                                </td>
+                                                            </tr>
+                                                            
+                                                            <tr class="table-block__row table-block__row-border">
+                                                                <td class="table-block__col-team "> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <span>
+                                                                                <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                            </span>
+                                                                        </div>
+                                                                        <p class="comand__text">M. Borja (River Plate) </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">29</td>
+                                                                <td class="table-block__col table-block__col-no-opacity" >0</td>
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td colspan="3" class="table-block__col table-block__col-text"> 
+                                                                    Libertadores 1967 - Intercontinental 1967 - Supercopa 1988
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="table-block__row table-block__row-border">
+                                                                <td class="table-block__col-team "> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <span>
+                                                                                <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                            </span>
+                                                                        </div>
+                                                                        <p class="comand__text">M. Borja (River Plate) </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">29</td>
+                                                                <td class="table-block__col table-block__col-no-opacity" >0</td>
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td colspan="3" class="table-block__col table-block__col-text"> 
+                                                                    Libertadores 1967 - Intercontinental 1967 - Supercopa 1988
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="table-block__row table-block__row-border">
+                                                                <td class="table-block__col-team "> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <span>
+                                                                                <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                            </span>
+                                                                        </div>
+                                                                        <p class="comand__text">M. Borja (River Plate) </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">29</td>
+                                                                <td class="table-block__col table-block__col-no-opacity" >0</td>
+                                                                
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td colspan="3" class="table-block__col table-block__col-text"> 
+                                                                    Libertadores 1967 - Intercontinental 1967 - Supercopa 1988
+                                                                </td>
+                                                            </tr> 
+
+                                                            <tr class="table-block__row table-block__row-border">
+                                                                <td class="table-block__col-team "> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <span>
+                                                                                <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                            </span>
+                                                                        </div>
+                                                                        <p class="comand__text">M. Borja (River Plate) </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">29</td>
+                                                                <td class="table-block__col table-block__col-no-opacity" >0</td>
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td colspan="3" class="table-block__col table-block__col-text"> 
+                                                                    Libertadores 1967 - Intercontinental 1967 - Supercopa 1988
+                                                                </td>
+                                                            </tr>
+                                                            
+                                                            <tr class="table-block__row table-block__row-border">
+                                                                <td class="table-block__col-team "> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <span>
+                                                                                <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                            </span>
+                                                                        </div>
+                                                                        <p class="comand__text">M. Borja (River Plate) </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">29</td>
+                                                                <td class="table-block__col table-block__col-no-opacity" >0</td>
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td colspan="3" class="table-block__col table-block__col-text"> 
+                                                                    Libertadores 1967 - Intercontinental 1967 - Supercopa 1988
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="table-block__row table-block__row-border">
+                                                                <td class="table-block__col-team "> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <span>
+                                                                                <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                            </span>
+                                                                        </div>
+                                                                        <p class="comand__text">M. Borja (River Plate) </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">29</td>
+                                                                <td class="table-block__col table-block__col-no-opacity" >0</td>
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td colspan="3" class="table-block__col table-block__col-text"> 
+                                                                    <span >Independiente(18) Boca Juniors(18) River Plate(12) Estudiantes (LP)(6) Velez(5) Racing Club(3) San Lorenzo(3) Argentinos(2) Lanus(2) Def y Justicia(2) Arsenal(2) Rosario Central(1) Talleres (C)(1)</span>
+                                                                </td>
+                                                            </tr>
+
+                                                        </table>
+
+                                                    </div>
+                                                   
+                                                </div>
+                                            </div>
+                                            <div class="table">
+                                                <div class="table__body table-body">
+                                                    <div class="table-body__header">
+                                                        <h3 class="title-16">COPAS INTERNACIONALES DOMINIO DECAD</h3>
+                                                    </div>
+                                                    <div class="table-block-scroll">
+                                                        <table class="table-block table-block-sticky-1 "  >
+                                                            <thead>
+                                                                <tr class="table-block__row-top">
+                                                                    <td class="table-block__col-team ">Equipo</td>
+                                                                    
+                                                                    <td class="table-block__col table-block__col-no-opacity" >Ligas</td>
+                                                                    
+                                                                </tr>
+                                                            </thead>      
+                                                            <tr class="table-block__row">
+                                                                <td colspan="2" class="table-block__col-green-bg"> 
+                                                                    DECADA 2020
+                                                                </td>
+                                                            </tr>                                             
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team table-block__col-team-w-100"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <span>
+                                                                                <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                            </span>
+                                                                        </div>
+                                                                        <p class="comand__text">M. Borja (River Plate) </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">13</td>
+                                                                
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team table-block__col-team-w-100"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text"> A. Martinez (Racing Club)</p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">12</td>
+                                                            </tr>
+
+                                                            <tr class="table-block__row">
+                                                                <td colspan="2" class="table-block__col-green-bg"> 
+                                                                    DECADA 2010
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team table-block__col-team-w-100"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text">Real Madrif </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">7</td>
+                                                                
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team table-block__col-team-w-100"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text">Velez </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                               
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team table-block__col-team-w-100"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text">Tallerec (C) </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                                
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team table-block__col-team-w-100"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text">Instituto </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                                
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team table-block__col-team-w-100"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text"> Banifield</p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                               
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team table-block__col-team-w-100"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text">Huracan </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                               
+                                                            </tr>
+
+                                                            <tr class="table-block__row">
+                                                                <td colspan="2" class="table-block__col-green-bg"> 
+                                                                    DECADA 2000
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team table-block__col-team-w-100"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text"> Gimnasia (LP)</p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                                
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team table-block__col-team-w-100"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text"> Rosario Central</p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                               
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team table-block__col-team-w-100"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text">Riestra </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                               
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td colspan="2" class="table-block__col-green-bg"> 
+                                                                    DECADA 1990
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team table-block__col-team-w-100"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text">Atl Tucuman </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                                
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team table-block__col-team-w-100"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text">Ind Rivadavia </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                               
+                                                            </tr>
+                                                            <tr class="table-block__row">
+                                                                <td class="table-block__col-team table-block__col-team-w-100"> 
+                                                                    <div class="comand-average comand">
+                                                                        <div class="comand__image-block">
+                                                                            <img alt="teams" src="@img/teams/columbus.webp" class="comand__image"/>
+                                                                        </div>
+                                                                        <p class="comand__text">Ind Rivadavia </p>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-block__col table-block__col-no-opacity">6</td>
+                                                               
+                                                            </tr>
+                                                            
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				
+				
+			</main>
+			@@include('html/calendar.html',{})
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/air-datepicker@2.2.3/dist/js/datepicker.min.js"></script>
+		<script src="js/app.min.js"></script>
+	</body>
+</html>

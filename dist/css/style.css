@@ -274,6 +274,9 @@ input[type=search]::-webkit-search-cancel-button {
 }
 
 .text-14 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.2; /* 16.8px */
@@ -3123,6 +3126,20 @@ input[type=search]::-webkit-search-cancel-button {
   padding: 6.5px 12px;
   border-bottom: 1px solid #60756C;
 }
+.table-body .table-block__col-green {
+  color: #6FAA54 !important;
+}
+.table-body .table-block .table-block__col-green {
+  opacity: 1;
+  color: #6FAA54 !important;
+}
+.table-body .table-block .table-block__col-red {
+  color: #FF4848 !important;
+}
+.table-body .table-block .table-block__col-yellow {
+  color: #FFC61A !important;
+}
+
 .table__items,
 .table-bottom__list {
   display: flex;
@@ -3172,23 +3189,6 @@ input[type=search]::-webkit-search-cancel-button {
   min-width: 26px;
 }
 
-.table-block__col-green {
-  color: #6FAA54 !important;
-}
-
-.table-block .table-block__col-green {
-  opacity: 1;
-  color: #6FAA54 !important;
-}
-
-.table-block__col-red {
-  color: #FF4848 !important;
-}
-
-.table-block__col-yellow {
-  color: #FFC61A !important;
-}
-
 /************************************/
 .table-block {
   width: 100%;
@@ -3232,6 +3232,7 @@ input[type=search]::-webkit-search-cancel-button {
 }
 .table-block .table-block__col-no-opacity {
   color: #fff !important;
+  opacity: 1;
   border-right: 1px solid #60756C;
 }
 .table-block .table-block__col {
@@ -3588,6 +3589,33 @@ input[type=search]::-webkit-search-cancel-button {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.table-block__col-border {
+  border-right: #60756C 1px solid;
+}
+
+.table-block__col-text {
+  text-align: left;
+  padding: 4px 8px;
+  font-size: 10px;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.7);
+}
+.table-block__col-text p {
+  color: #6FAA54;
+}
+
+.table-block__row-border {
+  border-top: #60756C 1px solid;
+  border-bottom: #60756C 1px solid;
+}
+
+.table-block .table-block__row:last-child .table-block__col-text {
+  border-radius: 0px 0px 8px 8px !important;
+}
+.table-block .table-block__row:last-child .table-block__col-result {
+  border-radius: 0px 0px 8px 0px !important;
 }
 
 .champion {
@@ -3965,6 +3993,7 @@ table, td, th, tr {
 /************Layout Dashboard Page**********************/
 .dashboard__layout {
   width: 100%;
+  display: flex;
 }
 
 @media (max-width: 1200px) {
@@ -4203,4 +4232,14 @@ table, td, th, tr {
 .game-info__right {
   text-align: right;
   font-weight: 400;
+}
+
+.team-map {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 1200px) {
+  .team-map iframe {
+    width: 100%;
+  }
 }
