@@ -64,11 +64,129 @@
 
 /***********************************/
 
+.game-center__h2h {
+    display: grid;
+    padding: 16px 8px;
+    gap: 8px;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    @media(max-width:487.98px){
+        padding: 8px;
+    }
+}
 
+.h2h-item {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-direction: column;
+}
 
+.block-image__block .block-image__number-player-yellow {
+    background: #FFC61A !important;
+    color: #0A2B1D;
+}
 
+.h2h-item__text {
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    @media(max-width:767.98px){
+        font-size: 11px;
+    }
+}
+.h2h-green {
+    color: #6FAA54;
+}
 
+.h2h-yellow {
+    color: #FFC61A;
+}
+.h2h-opacity {
+    opacity: 0.4;
+}
 
+.h2h-item-right {
+    align-items: end;
+    padding-right: 57px;
+    text-align: right;
+    @media(max-width:767.98px){
+        padding-right: 12px;
+    }
+}
+.h2h-item-left {
+    padding-left: 57px;
+    align-items: start;
+    text-align: left;
+    @media(max-width:767.98px){
+        padding-left: 12px;
+    }
+}
+.h2h-item-number {
+    gap: 10px !important;
+}
 
+.game-center__h2h:not(:last-child) {
+    border-bottom: 1px solid #60756C;
+}
+.match-comand-center {
+    display: flex;
+    width: 100%;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.content-block__body-gc {
+    padding: 12px;
+    @media(max-width:767.98px){
+        .champion-item__comand {
+            width: 36px !important;
+            height: 36px !important;
+        }
+        .champion-item__flag {
+            width: 20px !important;
+            height: 20px !important;
+        }
+    }
 
+}
 
+.team-span__date {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 14px;
+    font-weight: 400;
+    @media(max-width:767.98px){
+        font-size: 11px;
+    }
+}
+.team-span__label {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    @media(max-width:767.98px){
+        font-size: 11px;
+    }
+}
+
+.team-span__name {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    @media(max-width:767.98px){
+        font-size: 11px;
+    }
+}
+.match-team__span-gc {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
+}
+.team-span__block-gc{
+    flex-direction: column;
+    gap: 4px;
+}

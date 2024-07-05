@@ -29,18 +29,28 @@
         
     }
 }
+.result-item__block-left {
+    display: flex;
+    gap: 16px;
+    flex: 0 1 50%;
+    justify-self: start;
+    align-items: center;
+}
+
+.result-item__block-right {
+    align-items: center;
+    flex: 0 1 50%;
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+}
+
 .result-item {
 
     // .result-item__position
-    display: grid;
+    display: flex;
     align-items: center;
     gap: 10px;
-    @media(min-width:500.98px){
-        grid-template-columns: 0.5fr 1.1fr 1.1fr 0.3fr;
-        @media(max-width:991.98px){
-            grid-template-columns: 0.2fr 1.2fr 1.2fr 0.3fr;
-        }
-    }
 
     @media(max-width:500.98px){
         display: flex;
@@ -70,4 +80,31 @@
     }
 
 
+}
+.team-player-name__player-name {
+    @media(max-width:767.98px){
+        white-space: wrap;
+        font-size: 11px !important;
+    }
+}
+.result-list__block-win {
+    background:  #EEFFA5;
+}
+.result-list__block-loss {
+    background-color: #FF4848;
+}
+.result-list__block-draw {
+    background: rgba(255, 255, 255, 0.50);
+}
+
+.result-item__block-right {
+    .result-list__block-win {
+        background:  #6FAA54;
+    }
+    .result-list__block-loss {
+        background-color: #FFC61A;
+    }
+    .result-list__block-draw {
+        background: #FF4848;
+    }
 }

@@ -262,7 +262,9 @@
 
 /**********************************/
 
-
+.red {
+    color:#FF4848;
+}
 .rates {
     // .rates__list
     &__list {
@@ -279,7 +281,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 1px 10px;
+        padding: 4px 10px 5px 10px;
         font-size: 12px;
         font-weight: 400;
         @media(max-width:487.98px){
@@ -293,8 +295,8 @@
         border-top:1px solid #60756C;
         border-bottom:1px solid #60756C;
         padding: 8px 12px;
-        
     }
+
     // .rates__content
     &__content {
         display: flex;
@@ -303,7 +305,7 @@
     // .rates__element
 
     &__element {
-        padding: 7px 8px;
+        padding: 9px 8px;
         &:first-child {
             text-align: left;
             border-radius:8px 0px 0px 8px;
@@ -390,6 +392,7 @@
 }
 
 .block-image-32 {
+    display: inline-flex;
     .block-image__flag {
         width: 16px;
         height: 16px;
