@@ -261,7 +261,12 @@
 
 
 /**********************************/
-
+.text-center {
+    text-align: center !important; 
+}
+.bottom-info__button {
+    border-radius:4px;
+}
 .red {
     color:#FF4848;
 }
@@ -548,4 +553,13 @@
     opacity: 1;
     visibility: visible;
     position: relative;
+}
+
+.game-tabs-content-2 {
+    display: none;
+}
+.game-tabs-content-2._active {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }

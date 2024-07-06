@@ -9,8 +9,7 @@ burgerMenu();
 import  accordion  from "./ui/accordion.js";
 accordion();
 
-import tabs from "./ui/tabs.js";
-tabs(".game-tabs__button", "[data-tabs-content]")
+
 
 import addBorderToScrollTable from "./modules/addBorderToScrollTable.js"
 import addWrapperPageDashboard from "./modules/addWrapperPageDashboard.js";
@@ -307,65 +306,11 @@ function updateGridColumns(block, lengthItem, line) {
     //line.style.width = `${elementWidth}px`;
 }
 
-
-// const activeTabstriggers = () => {
-//     const gameTabs = document.querySelectorAll(".game-tabs");
-
-//     gameTabs.forEach(block => {
-//         let elementsItems = block.querySelectorAll(".game-tabs__button");
-//         let itemsLength = elementsItems.length;
-//         const activeLine = block.querySelector(".game-tabs__span");
-        
-//         function changeWidthLine() {
-//             var elementsItems = block.querySelectorAll(".game-tabs__button");
-//             activeLine.style.width = `${elementsItems[0].clientWidth}px`;
-//         }
-
-//         changeWidthLine();
-
-//         function deleteActiveClass() {
-//             elementsItems.forEach(item => item.classList.remove("active"));
-//         }
-
-//         function changeLeftStyle() {
-//             var elementsItems = block.querySelectorAll(".game-tabs__button");
-//             elementsItems.forEach((button, index) => {
-//                 button.addEventListener("click", () => {
-//                     deleteActiveClass();
-//                     button.classList.add("active");
-//                     activeLine.style.left = `${Math.floor((100 / itemsLength)) * index}%`;
-//                     //activateLinesPaint();
-//                 })
-//             })
-//         }
-
-//         changeLeftStyle();
-
-//         function updateWidth(length) {
-//             console.log(length)
-//             updateGridColumns(block, length);
-//             changeWidthLine();
-//         }
-
-
-
-//         updateWidth(itemsLength);
-
-//         const observer = new MutationObserver(() => {
-//             elementsItems = block.querySelectorAll(".game-tabs__button");
-//             itemsLength = elementsItems.length;
-//             updateWidth(itemsLength);
-//         });
-
-//         const config = { childList: true };
-
-//         observer.observe(block, config);
-//     });
-// }
 const activeTabstriggers = () => {
     const gameTabs = document.querySelectorAll(".game-tabs");
 
     gameTabs.forEach(block => {
+        
         let elementsItems = block.querySelectorAll(".game-tabs__button");
         let itemsLength = elementsItems.length;
         const activeLine = block.querySelector(".game-tabs__span");
@@ -397,7 +342,7 @@ const activeTabstriggers = () => {
         changeLeftStyle();
 
         function updateWidth(length) {
-            console.log(length);
+            
             updateGridColumns(block, length);
             changeWidthLine();
         }
@@ -433,6 +378,8 @@ const activeTabstriggers = () => {
 
 document.addEventListener("DOMContentLoaded", activeTabstriggers);
 document.addEventListener("DOMContentLoaded", activeTabstriggers);
+
+
 /**All Pages */
 
 activeAnimation();
@@ -477,6 +424,43 @@ inputs.forEach(input => {
         input.value = value;
     });
 });
+
+
+const tabs = (tabsTrigger, tabsContent) => {
+    const triggers = document.querySelectorAll(tabsTrigger),
+        contents = document.querySelectorAll(tabsContent);
+
+    function removeActiveClass() {
+        triggers.forEach(trigger => {
+            trigger.classList.remove("_active");
+        });
+        contents.forEach(content => {
+            content.classList.remove("_active");
+        });
+    }
+
+    function addActiveClass(i = 0) {
+        setTimeout(() => {
+            activeTabstriggers();
+        }, 300)
+        triggers[i].classList.add("_active");
+        contents[i].classList.add("_active");
+    }
+
+    triggers.forEach((item, i) => {
+        item.addEventListener("click", (e)=> {
+            e.preventDefault();
+            
+            removeActiveClass();
+            addActiveClass(i);
+        });
+    });
+    
+    
+};
+tabs("[data-tabs-trigger]", "[data-tabs-content]");
+
+tabs("[data-tabs-2]", "[data-tabs-2-content]");
 
 
 

@@ -13,35 +13,27 @@
 @import "slider-buttons";
 @import "counter-page";
 @import "champion";
+@import "reclama";
+@import "main-header-block";
+@import "reset";
+
 
 /********Dashboard***************/
 @import "dashboard";
 @import "modals-dashboard";
-/********Competentions Group League***************/
-
-// @import "table";
-
+@import "table";
 @import "league-match-block";
+@import "comand-result";
+@import "table";
 
 /********Game Center***************/
 
-@import "player";
 @import "game-center";
 @import "static-game-block";
 @import "player-and-pole";
 @import "game-center-lineups";
 @import "game-result-list";
 
-/********Home***************/
-@import "reclama";
-@import "main-header-block";
-
-/********Competention Dashboard***************/
-@import "comand-result";
-@import "table";
-@import "champion";
-/*********Reset Styles**************/
-@import "reset";
 
 /*******************************************/
 .block-info-table {
