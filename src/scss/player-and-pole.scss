@@ -126,12 +126,7 @@
 .pole__content {
     position: relative;
 }
-.pole__body {
-    width: 100%;
-    height: 558px;
-    border-bottom: 1px solid #115E2A;
-    border-top: 1px solid #115E2A;
-}
+
 .pole {
 
     // .pole__rectanle-top
@@ -145,6 +140,12 @@
         left: 50%;
         transform: translateX(-50%);
         z-index: 2;
+        @media(max-width:991.98px){
+            display: block;
+        }
+        @media(min-width:991.98px){
+            display: none;
+        }
     }
     // .pole__rectanle-bottom
 
@@ -156,7 +157,6 @@
 .pole__rectangle-center,
 .pole__rectangle-circle {
     position: absolute;
-    display: block;
     z-index: 2;
 }
 
@@ -166,6 +166,12 @@
     top: calc(50% - 1px);
     width: 100%;
     background-color: #115E2A;
+    @media(max-width:991.98px){
+        display: block;
+    }
+    @media(min-width:991.98px){
+        display: none;
+    }
 }
 
 .pole__rectangle-circle {
@@ -176,15 +182,33 @@
     left:calc(50% - 35px);
     border-radius:50%;
     border:2px solid #115E2A;
+    @media(max-width:991.98px){
+        display: block;
+    }
+    @media(min-width:991.98px){
+        display: none;
+    }
 }
 
 
 .pole-block-bottom {
     padding: 19px 12px 12px 12px;
+    @media(max-width:991.98px){
+        display: block;
+    }
+    @media(min-width:991.98px){
+        display: none;
+    }
 }
 
 .pole-block-top {
     padding: 12px 12px 19px 12px;
+    @media(max-width:991.98px){
+        display: block;
+    }
+    @media(min-width:991.98px){
+        display: none;
+    }
 }
 
 .pole {
@@ -203,13 +227,7 @@
 
 }
 
-.pole-body__top,
-.pole-body__bottom {
-    position: relative;
-    width: 80%;
-    height: 50%;
-    margin: 0px auto;
-}
+
 .pole__comand-name .comand-name__title{
     display: block !important;
 }
@@ -218,54 +236,14 @@
 
 /********************************/
 
-.pole-ds-left {
-    border-right: #60756C 1px solid;
-}
-
-.pole-ds-left,
-.pole-ds-right {
-    
-    position: relative;
-    flex: 0 1 50%;
-    display: flex;
-    width: 100%;
-    .span {
-        position: absolute;
-        display: block;
-        width: 10%;
-        height: 100%;
-        &:nth-child(even){
-            //background: rgba(255, 255, 255, 0.05);
-            background: #163629;
-        }
-        &:nth-child(odd){
-            background: #234134;
-            //background: rgba(255, 255, 255, 0.10);
-        }
-    }
-}
-.pole-ds-left__data,
-.pole-ds-right__data {
-    position: absolute;
-    height: 70%;
-    top: 15%;
-    width: 100%;
-}
 
 
 
-.pole-ds-left  {
-    .span.active-1 {
-        border-radius:8px 0px 0px 8px;
-    }
-}
 
-.pole-ds-right {
-    border-left: #60756C 1px solid;
-    .span:last-child {
-        border-radius: 0px  8px 8px  0px;
-    }
-}
+
+
+
+
 .pole-ds-left__block-2 {
     z-index: 4;
     position: absolute;
@@ -287,6 +265,7 @@
     left: -1px;
     border:1px solid #60756C;
 }
+
 .pole-ds-right__block-1 {
     z-index: 4;
     position: absolute;
@@ -308,22 +287,116 @@
     border:1px solid #60756C;
 }
 
+/************************************/
 
-.pole-ds__body {
-    display: flex;
-    border-radius:8px;
-    margin: 14px;
-    border: 2px solid #60756C;
-    position: relative;
-    height: 420px;
-    &::after {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        content: url("@img/icon/pole-ellipsis.svg");
+@media(min-width:991.98px){
+    .pole-ds-left__block-1,
+    .pole-ds-left__block-2,
+    .pole-ds-right__block-1,
+    .pole-ds-right__block-2 {
+        display: block;
     }
 }
+@media(max-width:991.98px){
+    .pole-ds-left__block-1,
+    .pole-ds-left__block-2,
+    .pole-ds-right__block-1,
+    .pole-ds-right__block-2 {
+        display: none;
+    }
+}
+
+/************************************/
+
+.pole__body {
+
+    @media(max-width:991.98px){
+        width: 100%;
+        height: 558px;
+        border-bottom: 1px solid #115E2A;
+        border-top: 1px solid #115E2A;
+    }
+
+    @media(min-width:991.98px){
+        display: flex;
+        border-radius:8px;
+        margin: 14px;
+        border: 2px solid #60756C;
+        position: relative;
+        height: 420px;
+        &::after {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            content: url("@img/icon/pole-ellipsis.svg");
+        }
+    }
+}
+
+
+
+@media(max-width:991.98px){
+    .pole-body__top,
+    .pole-body__bottom {
+        position: relative;
+        width: 80%;
+        height: 100%;
+        margin: 0px auto;
+    }
+    .pole-body__top-content,
+    .pole-body__bottom-content{
+        height: 50%;
+    }
+}
+
+@media(min-width:991.98px){
+    .pole-body__top-content  {
+        .span.active-1 {
+            border-radius:8px 0px 0px 8px;
+        }
+    }
+    
+    .pole-body__bottom-content {
+        border-left: #60756C 1px solid;
+        .span:last-child {
+            border-radius: 0px  8px 8px  0px;
+        }
+    }
+    .pole-body__bottom-content,
+    .pole-body__top-content {
+        flex: 0 1 50%;
+        position: relative;
+        display: flex;
+        .span {
+            position: absolute;
+            display: block;
+            width: 10%;
+            height: 100%;
+            &:nth-child(even){
+                //background: rgba(255, 255, 255, 0.05);
+                background: #163629;
+            }
+            &:nth-child(odd){
+                background: #234134;
+                //background: rgba(255, 255, 255, 0.10);
+            }
+        }
+    }
+}
+
+
+@media(min-width:991.98px){
+    .pole-body__top,
+    .pole-body__bottom {
+        width: 100%;
+        position: relative;
+        height: 70%;
+        margin: auto 0px;
+        
+    }
+}
+
 
 .pole-line {
     position:absolute;
@@ -358,6 +431,7 @@
         font-size: 14px;
     }
 }
+
 .pole-ds-content__command-left {
     display: flex;
     justify-content: start;
@@ -365,4 +439,13 @@
 .pole-ds-content__command-right {
     display: flex;
     justify-content: end;
+}
+
+.pole-ds__content {
+    @media(max-width:991.98px){
+        display: none;
+    }
+    @media(min-width:991.98px){
+        display: grid;
+    }
 }

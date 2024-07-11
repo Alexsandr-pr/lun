@@ -4134,13 +4134,6 @@ table, td, th, tr {
   position: relative;
 }
 
-.pole__body {
-  width: 100%;
-  height: 558px;
-  border-bottom: 1px solid #115E2A;
-  border-top: 1px solid #115E2A;
-}
-
 .pole__rectanle-top {
   top: -1px;
 }
@@ -4150,6 +4143,16 @@ table, td, th, tr {
   transform: translateX(-50%);
   z-index: 2;
 }
+@media (max-width: 991.98px) {
+  .pole__rectanle-top, .pole__rectanle-bottom {
+    display: block;
+  }
+}
+@media (min-width: 991.98px) {
+  .pole__rectanle-top, .pole__rectanle-bottom {
+    display: none;
+  }
+}
 .pole__rectanle-bottom {
   bottom: -1px;
 }
@@ -4157,7 +4160,6 @@ table, td, th, tr {
 .pole__rectangle-center,
 .pole__rectangle-circle {
   position: absolute;
-  display: block;
   z-index: 2;
 }
 
@@ -4166,6 +4168,16 @@ table, td, th, tr {
   top: calc(50% - 1px);
   width: 100%;
   background-color: #115E2A;
+}
+@media (max-width: 991.98px) {
+  .pole__rectangle-center {
+    display: block;
+  }
+}
+@media (min-width: 991.98px) {
+  .pole__rectangle-center {
+    display: none;
+  }
 }
 
 .pole__rectangle-circle {
@@ -4177,13 +4189,43 @@ table, td, th, tr {
   border-radius: 50%;
   border: 2px solid #115E2A;
 }
+@media (max-width: 991.98px) {
+  .pole__rectangle-circle {
+    display: block;
+  }
+}
+@media (min-width: 991.98px) {
+  .pole__rectangle-circle {
+    display: none;
+  }
+}
 
 .pole-block-bottom {
   padding: 19px 12px 12px 12px;
 }
+@media (max-width: 991.98px) {
+  .pole-block-bottom {
+    display: block;
+  }
+}
+@media (min-width: 991.98px) {
+  .pole-block-bottom {
+    display: none;
+  }
+}
 
 .pole-block-top {
   padding: 12px 12px 19px 12px;
+}
+@media (max-width: 991.98px) {
+  .pole-block-top {
+    display: block;
+  }
+}
+@media (min-width: 991.98px) {
+  .pole-block-top {
+    display: none;
+  }
 }
 
 .pole__block-comand {
@@ -4197,65 +4239,11 @@ table, td, th, tr {
   background: #115E2A;
 }
 
-.pole-body__top,
-.pole-body__bottom {
-  position: relative;
-  width: 80%;
-  height: 50%;
-  margin: 0px auto;
-}
-
 .pole__comand-name .comand-name__title {
   display: block !important;
 }
 
 /********************************/
-.pole-ds-left {
-  border-right: #60756C 1px solid;
-}
-
-.pole-ds-left,
-.pole-ds-right {
-  position: relative;
-  flex: 0 1 50%;
-  display: flex;
-  width: 100%;
-}
-.pole-ds-left .span,
-.pole-ds-right .span {
-  position: absolute;
-  display: block;
-  width: 10%;
-  height: 100%;
-}
-.pole-ds-left .span:nth-child(even),
-.pole-ds-right .span:nth-child(even) {
-  background: #163629;
-}
-.pole-ds-left .span:nth-child(odd),
-.pole-ds-right .span:nth-child(odd) {
-  background: #234134;
-}
-
-.pole-ds-left__data,
-.pole-ds-right__data {
-  position: absolute;
-  height: 70%;
-  top: 15%;
-  width: 100%;
-}
-
-.pole-ds-left .span.active-1 {
-  border-radius: 8px 0px 0px 8px;
-}
-
-.pole-ds-right {
-  border-left: #60756C 1px solid;
-}
-.pole-ds-right .span:last-child {
-  border-radius: 0px 8px 8px 0px;
-}
-
 .pole-ds-left__block-2 {
   z-index: 4;
   position: absolute;
@@ -4300,22 +4288,104 @@ table, td, th, tr {
   border: 1px solid #60756C;
 }
 
-.pole-ds__body {
-  display: flex;
-  border-radius: 8px;
-  margin: 14px;
-  border: 2px solid #60756C;
-  position: relative;
-  height: 420px;
+/************************************/
+@media (min-width: 991.98px) {
+  .pole-ds-left__block-1,
+  .pole-ds-left__block-2,
+  .pole-ds-right__block-1,
+  .pole-ds-right__block-2 {
+    display: block;
+  }
 }
-.pole-ds__body::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  content: url("../img/icon/pole-ellipsis.svg");
+@media (max-width: 991.98px) {
+  .pole-ds-left__block-1,
+  .pole-ds-left__block-2,
+  .pole-ds-right__block-1,
+  .pole-ds-right__block-2 {
+    display: none;
+  }
+}
+/************************************/
+@media (max-width: 991.98px) {
+  .pole__body {
+    width: 100%;
+    height: 558px;
+    border-bottom: 1px solid #115E2A;
+    border-top: 1px solid #115E2A;
+  }
+}
+@media (min-width: 991.98px) {
+  .pole__body {
+    display: flex;
+    border-radius: 8px;
+    margin: 14px;
+    border: 2px solid #60756C;
+    position: relative;
+    height: 420px;
+  }
+  .pole__body::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: url("../img/icon/pole-ellipsis.svg");
+  }
 }
 
+@media (max-width: 991.98px) {
+  .pole-body__top,
+  .pole-body__bottom {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    margin: 0px auto;
+  }
+  .pole-body__top-content,
+  .pole-body__bottom-content {
+    height: 50%;
+  }
+}
+@media (min-width: 991.98px) {
+  .pole-body__top-content .span.active-1 {
+    border-radius: 8px 0px 0px 8px;
+  }
+  .pole-body__bottom-content {
+    border-left: #60756C 1px solid;
+  }
+  .pole-body__bottom-content .span:last-child {
+    border-radius: 0px 8px 8px 0px;
+  }
+  .pole-body__bottom-content,
+  .pole-body__top-content {
+    flex: 0 1 50%;
+    position: relative;
+    display: flex;
+  }
+  .pole-body__bottom-content .span,
+  .pole-body__top-content .span {
+    position: absolute;
+    display: block;
+    width: 10%;
+    height: 100%;
+  }
+  .pole-body__bottom-content .span:nth-child(even),
+  .pole-body__top-content .span:nth-child(even) {
+    background: #163629;
+  }
+  .pole-body__bottom-content .span:nth-child(odd),
+  .pole-body__top-content .span:nth-child(odd) {
+    background: #234134;
+  }
+}
+@media (min-width: 991.98px) {
+  .pole-body__top,
+  .pole-body__bottom {
+    width: 100%;
+    position: relative;
+    height: 70%;
+    margin: auto 0px;
+  }
+}
 .pole-line {
   position: absolute;
   top: 0;
@@ -4358,6 +4428,17 @@ table, td, th, tr {
 .pole-ds-content__command-right {
   display: flex;
   justify-content: end;
+}
+
+@media (max-width: 991.98px) {
+  .pole-ds__content {
+    display: none;
+  }
+}
+@media (min-width: 991.98px) {
+  .pole-ds__content {
+    display: grid;
+  }
 }
 
 .list-icon-teams {
