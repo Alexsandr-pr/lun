@@ -190,7 +190,9 @@
     flex-direction: column;
     gap: 4px;
 }
-
+.mb-2 {
+    margin-bottom: 8px;
+}
 
 
 .game-video {
@@ -209,4 +211,248 @@
         height: 100%;
         object-fit: cover;
     }
+}
+
+.team-span-game {
+    .team-span__tire.red {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .team-span__number {
+        span {
+            font-size: 24px;
+        }
+        font-size: 14px;
+    }
+}
+
+
+/********************************/
+.calendario-events {
+
+    display: flex;
+    flex-direction: column;
+    
+    // .calendario-events__item-titles
+
+    &__item-titles {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 2px 10px;
+        display: flex;
+        justify-content: center;
+        height: 24px;
+        gap: 10px;
+        align-items: center;
+        &:not(:last-child) {
+            border-bottom:1px solid rgba(96, 117, 108, 1);
+        }
+        &:last-child {
+            border-radius:0px 0px 8px 8px;
+        }
+    }
+}
+.events-titles {
+
+    // .events-titles__item-left
+
+    &__item-left,
+    &__item-right{
+        width: 40px;
+        color:  #FF4848;
+        text-align: center;
+    }
+
+    // .events-titles__item-center
+
+    &__item-center {
+        width: 100px;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    // .events-titles__item-right
+}
+
+.calendario-events__block {
+    padding: 4px 0px;
+    &:not(:last-child) {
+        border-bottom:1px solid rgba(96, 117, 108, 1);
+    }
+    &:last-child {
+        border-radius:0px 0px 8px 8px;
+    }
+}
+
+.events-block {
+    
+    // .events-block__center
+
+    &__center {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        justify-content: center;
+        @media(max-width:767.98px){
+            gap: 8px;
+            img {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+}
+.events-block-center {
+
+    // .events-block-center__number
+    min-height: 30px;
+    &__number {
+        width: 40px;
+        text-align: center;
+        font-size: 16px;
+        @media(max-width:767.98px){
+            font-size: 11px;
+            width: 25px;
+        }
+
+    }
+}
+
+.events-block__element {
+    padding: 4px 12px;
+    justify-content: space-between;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.events-block__item {
+    flex: 0 1 40%;
+}
+.events-block__center {
+    flex: 0 1 20%;
+}
+.events-block__item-left {
+    .team-player-name {
+        text-align: left;
+    }
+    
+}
+.events-block__item-right {
+    display: flex;
+    justify-content: end;
+    .team-player-name__player-name {
+        text-align: right;
+    }
+    .team-player-name {
+        text-align: right;
+    }
+    .team-player-name__comand-name {
+        text-align: right !important;
+    }
+    .team-player-name {
+        align-items: end;
+    }
+}
+.events-border-bottom {
+    border-bottom:#60756C 1px solid;
+}
+
+.text-10 {
+    font-size: 10px !important; 
+}
+
+.events-block-center__text {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.70);
+    @media(max-width:767.98px){
+        font-size: 11px;
+    }
+}
+
+.text-12 {
+    font-size: 12px !important;
+}
+.secondary-active {
+    color: #EEFFA5 !important;
+}
+
+.events-block {
+
+    // .events-block__gols
+
+    &__gols {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+}
+.events-gols {
+
+    // .events-gols__image
+
+    &__image {
+        width: 16px;
+        height: 16px;
+    }
+
+    // .events-gols__items
+
+    &__items {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        font-size: 12px;
+        
+    }
+}
+.block-image__block-bg-secondary {
+    background-color: #EEFFA5 !important;
+    color: #0A2B1D !important;
+}
+
+.static-game__text {
+    
+    font-size: 12px;
+    font-style: normal;
+    margin-bottom: 4px;
+}
+
+.static-game__item {
+    &:not(:last-child){
+    margin-bottom:12px;
+    }
+    .static-game__button{
+        border-radius:4px;
+        padding: 12px;
+        color:#018000;
+        background: #fff;
+        @media(hover:hover) {
+            &:hover {
+                background:#018000;
+                color:#fff;
+            }
+        }
+        
+        &.disabled {
+            opacity: 0.3;
+        }
+        @media(max-width:767.98px){
+            width: 100%;
+            padding: 7.5px;
+        }
+    }
+}
+.static-game__item-start {
+    display: flex;
+    justify-content: start;
+}
+
+.game-center__h2h-static{
+    border-bottom:none;
 }
