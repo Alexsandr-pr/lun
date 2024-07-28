@@ -17,6 +17,7 @@
         }
     }
 }
+
 .content-header__bottom,
 .content-header__top {
     display: flex;
@@ -139,12 +140,10 @@
         z-index: 30;
     }
     .header-select__button {
-        
-            color:#FF4848;
-                path {
-                    fill: #FF4848;
-                }
-        
+        color:#FF4848;
+        path {
+            fill: #FF4848;
+        }
     }
 }
 

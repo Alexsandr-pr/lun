@@ -770,25 +770,6 @@ input[type=search]::-webkit-search-cancel-button {
 .aside__select,
 .aside__links {
   border-bottom: 1px solid #fff;
-  width: 250px;
-}
-@media (max-width: 767.98px) {
-  .aside__select,
-  .aside__links {
-    width: 100%;
-  }
-}
-@media (max-width: 1100.98px) {
-  .aside__select,
-  .aside__links {
-    width: 210px;
-  }
-}
-@media (max-width: 767.98px) {
-  .aside__select,
-  .aside__links {
-    width: 100%;
-  }
 }
 
 .aside__bottom,
@@ -4939,6 +4920,8 @@ table, td, th, tr {
 
 .main-content__items {
   gap: 12px;
+  display: flex;
+  flex-direction: column;
 }
 @media (max-width: 640.98px) {
   .main-content__items {
@@ -4946,7 +4929,6 @@ table, td, th, tr {
   }
 }
 
-.main-content__items,
 .bottom-info,
 .bottom-info__items,
 .bottom-info__item,

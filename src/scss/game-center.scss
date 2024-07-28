@@ -244,6 +244,7 @@
         gap: 10px;
         align-items: center;
         &:not(:last-child) {
+            //not-variables
             border-bottom:1px solid rgba(96, 117, 108, 1);
         }
         &:last-child {

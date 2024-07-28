@@ -60,11 +60,12 @@
 
 .main-content__items {
     gap: 12px;
+    display: flex;
+    flex-direction: column;
     @media(max-width:640.98px){
         gap: 8px;
     }
 }
-.main-content__items,
 .bottom-info,
 .bottom-info__items,
 .bottom-info__item,
